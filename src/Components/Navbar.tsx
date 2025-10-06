@@ -103,7 +103,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-black/90 backdrop-blur-md text-white text-center py-6 space-y-4"
+            className="md:hidden bg-[3333]/90 backdrop-blur-md text-white text-center py-6 space-y-4 "
           >
             {navLinks.map(link => (
               <a

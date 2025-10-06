@@ -1,11 +1,43 @@
 import { motion } from "framer-motion";
-
-import { ArrowRight, MapPin, Calendar, Users, } from "lucide-react";
+import { useState } from "react";
+import type { ChangeEvent } from "react";
+import { ArrowRight, MapPin,Calendar,  Users, } from "lucide-react";
 import heroBg from "../assets/hero.png";
 
 const Hero = () => {
+  
+  const [formData, setFormData] = useState({
+    origin: "",
+    destination: "",
+    guests: "",
+      checkin: "",
+    checkout: "",
+  });
+
+   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+ const handleWhatsAppConnect = () => {
+    const { origin, destination, guests, checkin, checkout } = formData;
+    const message = `Hi Ekaiva, I'm looking for a hotel.\n\nOrigin: ${
+      origin || "Not specified"
+    }\nDestination: ${destination || "Not specified"}\nGuests: ${
+      guests || "Not specified"
+    }\nCheck-in: ${checkin || "Not specified"}\nCheck-out: ${
+      checkout || "Not specified"
+    }\n\nPlease share available options.`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const phone = "917011020040";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
+
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="cont                                                                                                                       relative min-h-screen flex items-center justify-center overflow-hidden ">
       {/* Background Image with Parallax Effect */}
       <motion.div
         initial={{ scale: 1.2 }}
@@ -21,7 +53,8 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center text-white">
+     <div className="relative z-10 conta sm:px-6 text-center text-white mt-24 sm:mt-0">
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,102 +89,176 @@ const Hero = () => {
             className="w-full max-w-md lg:max-w-4xl bg-white rounded-3xl shadow-2xl p-6"
           >
             {/* Desktop Layout */}
-            <div className="hidden lg:flex flex-row gap-6 items-center">
+            
               {/* Origin */}
-              <div className="flex items-start gap-3 flex-1">
-                <MapPin className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
-                <div className="flex flex-col">
-                  <label className="text-sm font-semibold text-gray-800">Origin</label>
-                  <input
-                    type="text"
-                    placeholder="Search Airport"
-                    className="text-sm text-gray-500 outline-none border-none bg-transparent"
-                  />
-                </div>
-              </div>
+             <div className="hidden lg:flex flex-row gap-6 items-center  monst">
+      {/* Origin */}
+      <div className="flex items-start gap-1 flex-1">
+        <MapPin className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
+        <div className="flex flex-col w-full">
+          <label className="text-sm font-semibold text-start text-gray-800">
+            Origin
+          </label>
+          <input
+            type="text"
+            name="origin"
+            value={formData.origin}
+            onChange={handleChange}
+            placeholder="Search Airport"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent"
+          />
+        </div>
+      </div>
 
-              {/* Divider */}
-              <div className="w-px h-12 bg-gray-200 flex-shrink-0"></div>
+      {/* Divider */}
+      <div className="w-px h-13 bg-gray-200 flex-shrink-0"></div>
 
-              {/* Destination */}
-              <div className="flex items-start gap-3 flex-1">
-                <MapPin className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
-                <div className="flex flex-col">
-                  <label className="text-sm font-semibold text-gray-800">Destination</label>
-                  <input
-                    type="text"
-                    placeholder="Search Departure"
-                    className="text-sm text-gray-500 outline-none border-none bg-transparent"
-                  />
-                </div>
-              </div>
+      {/* Destination */}
+      <div className="flex items-start gap-1 flex-1">
+        <MapPin className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
+        <div className="flex flex-col w-full">
+          <label className="text-sm font-semibold text-start text-gray-800">
+            Destination
+          </label>
+          <input
+            type="text"
+            name="destination"
+            value={formData.destination}
+            onChange={handleChange}
+            placeholder="Search Departure"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent"
+          />
+        </div>
+      </div>
 
-              {/* Divider */}
-              <div className="w-px h-12 bg-gray-200 flex-shrink-0"></div>
+      {/* Divider */}
+      <div className="w-px h-13 bg-gray-200 flex-shrink-0"></div>
 
-              {/* Guests */}
-              <div className="flex items-start gap-3 flex-1">
-                <Users className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
-                <div className="flex flex-col">
-                  <label className="text-sm font-semibold text-gray-800">Guests</label>
-                  <input
-                    type="text"
-                    placeholder="No. of Guests"
-                    className="text-sm text-gray-500 outline-none border-none bg-transparent"
-                  />
-                </div>
-              </div>
+      {/* Guests */}
+      <div className="flex items-start gap-2 flex-1">
+        <Users className="h-5 w-5 text-gray-400 mt-1 flex-shrink-0" />
+        <div className="flex flex-col w-full">
+          <label className="text-sm font-semibold text-start text-gray-800">
+            Guests
+          </label>
+          <input
+            type="text"
+            name="guests"
+            value={formData.guests}
+            onChange={handleChange}
+            placeholder="No. of Guests"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent"
+          />
+        </div>
+        {/* Connect Button */}
+       
+      </div>
 
-              
-            </div>
+       <button
+        onClick={handleWhatsAppConnect}
+        className="bg-[#333333f8] hover:bg-gray-800 text-white px-6 py-4  rounded-2xl flex items-center gap-2 transition-colors group whitespace-nowrap flex-shrink-0 ml-[-6vw]"
+      >
+        Connect
+        <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+      </button>
+      
+    </div>
 
             {/* Mobile Layout */}
-            <div className="flex lg:hidden flex-col gap-4">
-              {/* Origin */}
-              <div className="flex items-center gap-3 pb-4 border-b border-gray-200">
-                <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <div className="flex flex-col flex-1">
-                  <label className="text-sm font-semibold text-gray-800">Origin</label>
-                  <input
-                    type="text"
-                    placeholder="Search Arrival"
-                    className="text-sm text-gray-400 outline-none border-none bg-transparent w-full"
-                  />
-                </div>
-              </div>
+               <div className="flex lg:hidden flex-col gap-3 bg-white rounded-2xl pt-2 mx-auto   w-[90%] ">
+      {/* Origin */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
+        <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col flex-1 text-left">
+          <label className="text-sm font-semibold text-gray-800">Origin</label>
+          <input
+            type="text"
+            name="origin"
+            value={formData.origin}
+            onChange={handleChange}
+            placeholder="Search Arrival"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent w-[90%]"
+          />
+        </div>
+      </div>
 
-              {/* Destination */}
-              <div className="flex items-center gap-3 pb-4 border-b border-gray-200">
-                <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <div className="flex flex-col flex-1">
-                  <label className="text-sm font-semibold text-gray-800">Destination</label>
-                  <input
-                    type="text"
-                    placeholder="Search Departure"
-                    className="text-sm text-gray-400 outline-none border-none bg-transparent w-full"
-                  />
-                </div>
-              </div>
+      {/* Destination */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
+        <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col flex-1 text-left">
+          <label className="text-sm font-semibold text-gray-800">
+            Destination
+          </label>
+          <input
+            type="text"
+            name="destination"
+            value={formData.destination}
+            onChange={handleChange}
+            placeholder="Search Departure"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent w-[90%]"
+          />
+        </div>
+      </div>
 
-              {/* Guests */}
-              <div className="flex items-center gap-3 pb-4 border-b border-gray-200">
-                <Users className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <div className="flex flex-col flex-1">
-                  <label className="text-sm font-semibold text-gray-800">Guests</label>
-                  <input
-                    type="text"
-                    placeholder="No. Of Guests"
-                    className="text-sm text-gray-400 outline-none border-none bg-transparent w-full"
-                  />
-                </div>
-              </div>
+      {/* Check-in */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
+        <Calendar className="h-5 w-5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col flex-1 text-left">
+          <label className="text-sm font-semibold text-gray-800">
+            Check-in
+          </label>
+          <input
+            type="date"
+            name="checkin"
+            value={formData.checkin}
+            onChange={handleChange}
+            className="text-sm text-gray-500 outline-none border-none bg-transparent w-[90%]"
+          />
+        </div>
+      </div>
 
-              {/* Search Button */}
-              <button className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors group w-full mt-2">
-                <ArrowRight className="h-5 w-5 rotate-90" />
-                Search
-              </button>
-            </div>
+      {/* Check-out */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
+        <Calendar className="h-5 w-5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col flex-1 text-left">
+          <label className="text-sm font-semibold text-gray-800">
+            Check-out
+          </label>
+          <input
+            type="date"
+            name="checkout"
+            value={formData.checkout}
+            onChange={handleChange}
+            className="text-sm text-gray-500 outline-none border-none bg-transparent w-[90%]"
+          />
+        </div>
+      </div>
+
+      {/* Guests */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
+        <Users className="h-5 w-5 text-gray-400 flex-shrink-0" />
+        <div className="flex flex-col flex-1 text-left">
+          <label className="text-sm font-semibold text-gray-800">Guests</label>
+          <input
+            type="text"
+            name="guests"
+            value={formData.guests}
+            onChange={handleChange}
+            placeholder="No. of Guests"
+            className="text-sm text-gray-500 outline-none border-none bg-transparent w-[90%]"
+          />
+        </div>
+      </div>
+
+      {/* Connect Button */}
+      <button
+        onClick={handleWhatsAppConnect}
+        className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors group w-full mt-2"
+      >
+        <ArrowRight className="h-5 w-5 rotate-90" />
+        Connect
+      </button>
+    </div>
           </motion.div>
         </motion.div>
       </div>
