@@ -1,4 +1,4 @@
-'use client'
+
 import { useState, useEffect } from 'react'
 import { X, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -29,7 +29,7 @@ export default function Navbar() {
           isScrolled ? 'bg-[#333333]/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-6">
+        <div className="container  px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="text-white font-bold text-xl leading-tight">
@@ -38,7 +38,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Links */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-4">
               {navLinks.map(link => (
                 <a
                   key={link.href}
