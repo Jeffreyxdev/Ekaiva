@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 import { FaXTwitter, FaInstagram, FaFacebook } from 'react-icons/fa6'
 import image from '../assets/Frame 52.png'

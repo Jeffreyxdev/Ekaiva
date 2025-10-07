@@ -165,7 +165,7 @@ const Hero = () => {
     </div>
 
             {/* Mobile Layout */}
-               <div className="flex lg:hidden flex-col gap-3 bg-white rounded-2xl pt-2 mx-auto   w-[90%] ">
+               <div className="flex lg:hidden flex-col gap-3 bg-white rounded-2xl pt-2 mx-auto  h-[80%] w-[90%] ">
       {/* Origin */}
       <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
         <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
@@ -273,7 +273,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2"
+          className="w-6 h-10 border-2  border-white rounded-full flex items-start justify-center p-2"
         >
           <motion.div className="w-1 h-2 bg-white rounded-full" />
         </motion.div>
