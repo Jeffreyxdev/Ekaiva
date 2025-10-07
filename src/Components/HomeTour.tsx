@@ -1,4 +1,3 @@
-
 import  { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
@@ -6,8 +5,8 @@ import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import png1 from '../assets/Frame 57.png'
 import png2 from '../assets/Frame 58.png'
 import png3 from '../assets/Frame 59.png'
+
 const HomeTour = () => {
-    const [activeSlide, setActiveSlide] = useState(0);
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
   const tours = [
@@ -28,7 +27,7 @@ const HomeTour = () => {
       title: "Panorama Rise",
       subtitle: "Experience the Golden Temple",
       description:
-        "Wake up to the golden reflection of Amritsar’s sacred temple and a morning that feels divine.",
+        "Wake up to the golden reflection of Amritsar's sacred temple and a morning that feels divine.",
       price: 2800,
       highlight: "UAH/night",
       image:
@@ -64,7 +63,7 @@ const HomeTour = () => {
       title: "Panorama Rise",
       subtitle: "Heritage Walk Through Time",
       description:
-        "Rediscover Delhi’s timeless culture and vibrant life on this heritage stay.",
+        "Rediscover Delhi's timeless culture and vibrant life on this heritage stay.",
       price: 2800,
       highlight: "UAH/night",
       image:
@@ -72,20 +71,8 @@ const HomeTour = () => {
       location: "Delhi, India",
     },
   ];
-
-  // Auto-slide
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % tours.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [tours.length]);
    
-  
   return (
-    <>
-  
- 
     <section className="min-h-screen bg-[#f8f9fa] py-16 px-4">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-10">
@@ -98,7 +85,7 @@ const HomeTour = () => {
               Choose a Tour <br /> that speaks to you
             </h2>
             <p className="text-gray-600 max-w-md">
-              We’ve combined boutique hotel comfort with nature’s calm for
+              We've combined boutique hotel comfort with nature's calm for
               unforgettable journeys.
             </p>
           </div>
@@ -117,7 +104,7 @@ const HomeTour = () => {
         </div>
 
         {/* Tour Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {tours.map((tour) => (
             <motion.div
               key={tour.id}
@@ -127,89 +114,103 @@ const HomeTour = () => {
               }
               transition={{ layout: { duration: 0.5, type: "spring" } }}
               className={`relative bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer transition-all duration-500 ${
-                expandedCard === tour.id ? "col-span-2 md:col-span-1" : ""
+                expandedCard === tour.id ? "col-span-1 sm:col-span-2" : "col-span-1"
               }`}
             >
-              <motion.img
-                src={tour.image}
-                alt={tour.title}
-                className="w-full h-[360px] object-cover rounded-2xl"
-                layout
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent rounded-2xl"></div>
+              {/* Main Card Container - Side by Side when expanded */}
+              <div className={`flex ${expandedCard === tour.id ? 'flex-row' : 'flex-col'}`}>
+                {/* Image Section */}
+                <div className={`relative ${expandedCard === tour.id ? 'w-1/2' : 'w-full'}`}>
+                  <motion.img
+                    src={tour.image}
+                    alt={tour.title}
+                    className="w-full h-[360px] object-cover"
+                    layout
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-                <h3 className="text-2xl font-semibold">{tour.title}</h3>
-                <p className="text-sm text-gray-200 line-clamp-2">
-                  {tour.description}
-                </p>
+                  {/* Content Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <h3 className="text-2xl font-semibold">{tour.title}</h3>
+                    {!expandedCard && (
+                      <p className="text-sm text-gray-200 line-clamp-2 mt-1">
+                        {tour.description}
+                      </p>
+                    )}
 
-                <div className="flex items-center justify-between mt-4">
-                  <span className="font-bold text-lg">₹{tour.price}</span>
-                  <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
-                    {expandedCard === tour.id ? "Close" : "Know more"}
-                  </button>
-                </div>
-              </div>
-
-              <AnimatePresence>
-                {expandedCard === tour.id && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.4 }}
-                    className="bg-white p-6 text-gray-700 space-y-3"
-                  >
-                    <p className="font-medium text-gray-800">{tour.subtitle}</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {tour.description}
-                    </p>
-                    <div className="flex items-center gap-2 text-gray-500 text-sm">
-                      <MapPin size={16} />
-                      <span>{tour.location}</span>
+                    <div className="flex items-center justify-between mt-4">
+                      <span className="font-bold text-lg">₹{tour.price}</span>
+                      <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
+                        {expandedCard === tour.id ? "Close" : "Know more"}
+                      </button>
                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                  </div>
+                </div>
+
+                {/* Expanded Details Section */}
+                <AnimatePresence>
+                  {expandedCard === tour.id && (
+                    <motion.div
+                      initial={{ opacity: 0, width: 0 }}
+                      animate={{ opacity: 1, width: "50%" }}
+                      exit={{ opacity: 0, width: 0 }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                      className="bg-white p-6 text-gray-700 flex flex-col justify-center space-y-4"
+                    >
+                      <p className="font-semibold text-xl text-gray-800">{tour.subtitle}</p>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {tour.description}
+                      </p>
+                      <div className="flex items-center gap-2 text-gray-500 text-sm">
+                        <MapPin size={16} />
+                        <span>{tour.location}</span>
+                      </div>
+                      <div className="pt-4">
+                       <a
+                          href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors text-center block"
+                        >
+                          Book Now
+                        </a>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </motion.div>
           ))}
         </div>
 
         {/* Bottom Text */}
-       <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="max-w-3xl mx-auto text-center mt-20"
-            >
-            <h2 className="text-3xl text-gray-700 leading-relaxed font-montserrat monst">
-                Whether you're planning a{" "}
-                {/* Romantic getaway image pill */}
-                <span
-                className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-                style={{ backgroundImage:`url(${png1})`}}
-                ></span>{" "}
-                romantic getaway, a solo getaway or a cozy weekend  every home{" "}
-                {/* Home image pill */}
-                <span
-                className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-                style={{ backgroundImage:`url(${png2})` }}
-                ></span>{" "}
-                is more than just a place to be surrounded by nature, with{" "}
-                {/* Nature image pill */}
-                <span
-                className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-                style={{ backgroundImage: `url(${png3})` }}
-                ></span>{" "}
-                everything taken care of.
-            </h2>
-            </motion.div>
-
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="max-w-3xl mx-auto text-center mt-20"
+        >
+          <h2 className="text-3xl text-gray-700 leading-relaxed font-montserrat monst">
+            Whether you're planning a{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage:`url(${png1})`}}
+            ></span>{" "}
+            romantic getaway, a solo getaway or a cozy weekend  every home{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage:`url(${png2})` }}
+            ></span>{" "}
+            is more than just a place to be surrounded by nature, with{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage: `url(${png3})` }}
+            ></span>{" "}
+            everything taken care of.
+          </h2>
+        </motion.div>
       </div>
     </section>
-    </>
   )
 }
 

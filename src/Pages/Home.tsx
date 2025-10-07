@@ -6,13 +6,37 @@ import PlanningSection from "../Components/PlanningSection"
 
 const Home = () => {
   return (
-    <div>
-        <Navbar/>
-        <Hero/>
-        <Homeabout/>
-        <HomeTour/>
-        <PlanningSection/>
-    </div>
+    <main
+      className="
+        flex flex-col items-center justify-center 
+        w-full overflow-hidden 
+        bg-[#f6f8f7] 
+        text-gray-900 
+         
+      "
+    >
+      <Navbar />
+
+      {/* Hero Section */}
+      <section className="w-full">
+        <Hero />
+      </section>
+
+      {/* About Section */}
+      <section className="w-full max-w-7xl mx-auto">
+        <Homeabout />
+      </section>
+
+      {/* Tour Section */}
+      <section className="w-full max-w-7xl mx-auto">
+        <HomeTour />
+      </section>
+
+      {/* Planning Section */}
+      <section className="w-full max-w-7xl mx-auto pb-10 sm:pb-0">
+        <PlanningSection />
+      </section>
+    </main>
   )
 }
 
