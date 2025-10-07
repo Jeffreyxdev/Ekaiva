@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { X, Mail, Menu } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { FaWhatsapp, FaTelegram } from 'react-icons/fa'
+import { FaWhatsapp,} from 'react-icons/fa'
 import { PiTelegramLogoLight } from "react-icons/pi"
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)

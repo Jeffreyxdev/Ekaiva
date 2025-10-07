@@ -1,6 +1,6 @@
-import  { useState, useEffect } from "react";
+import  { useState,  } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
+import {  MapPin } from "lucide-react";
 
 import png1 from '../assets/Frame 57.png'
 import png2 from '../assets/Frame 58.png'
