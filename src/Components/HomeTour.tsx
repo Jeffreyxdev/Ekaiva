@@ -167,13 +167,14 @@ const HomeTour = () => {
                       </div>
                       <div className="pt-4">
                        <a
-                          href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors text-center block"
-                        >
-                          Book Now
-                        </a>
+                        href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full px-4 py-2.5 bg-[#333] text-white rounded-xl hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base text-center block"
+                      >
+                        Book Now
+                      </a>
+
                       </div>
                     </motion.div>
                   )}
