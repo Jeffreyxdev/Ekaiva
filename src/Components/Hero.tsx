@@ -37,7 +37,7 @@ const Hero = () => {
 
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden mb-5">
       {/* Background Image with Parallax Effect */}
       <motion.div
         initial={{ scale: 1.2 }}
@@ -86,12 +86,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="w-full max-w-md lg:max-w-4xl  rounded-3xl shadow-2xl p-6"
+            className="w-auto max-w-md lg:max-w-4xl bg-white rounded-2xl shadow-2xl "
           >
             {/* Desktop Layout */}
             
               {/* Origin */}
-             <div className="hidden lg:flex items-center justify-between gap-5 bg-white rounded-2xl px-6 py-3.5    monst w-fit mx-auto">
+             <div className="hidden lg:flex items-start justify-between gap-5  px-7 py-4    monst w-fit mx-auto">
   {/* Origin */}
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
@@ -158,7 +158,7 @@ const Hero = () => {
 
 
             {/* Mobile Layout */}
-            <div className="flex lg:hidden flex-col gap-3">
+            <div className="flex lg:hidden flex-col  gap-3 px-5 py-6 pb-[-3px] monst w-[300px]   mx-auto">
       {/* Origin */}
       <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
         <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0" />
@@ -246,9 +246,9 @@ const Hero = () => {
       {/* Connect Button */}
       <button
         onClick={handleWhatsAppConnect}
-        className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors group w-full mt-2"
+        className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors  group w-full mt-2"
       >
-        <ArrowRight className="h-5 w-5 rotate-90" />
+        <ArrowRight className="h-5 w-5 rotate-90 " />
         Connect
       </button>
     </div>
@@ -256,21 +256,23 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator (hidden on mobile) */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1.2 }}
+      className="hidden sm:absolute sm:bottom-8 sm:left-1/2 sm:-translate-x-1/2 sm:z-10 sm:flex"
+    >
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+        className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2"
-        >
-          <motion.div className="w-1 h-2 bg-white rounded-full" />
-        </motion.div>
+        <motion.div className="w-1 h-2 bg-white rounded-full" />
       </motion.div>
+    </motion.div>
+
+      
     </section>
   );
 };
