@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: '', label: 'HOME' },
+    { href: '/', label: 'HOME' },
     { href: 'tours', label: 'TOURS' },
     { href: 'mice', label: 'MICE' },
     { href: 'guide', label: 'GUIDE' },

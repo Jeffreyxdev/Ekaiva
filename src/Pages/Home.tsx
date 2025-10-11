@@ -3,6 +3,8 @@ import Navbar from "../Components/Navbar"
 import Homeabout from "../Components/Homeabout"
 import HomeTour from "../Components/HomeTour"
 import PlanningSection from "../Components/PlanningSection"
+import FAQSection from "../Components/HomeFaq"
+import EkaivaFooter from "../Components/Footer"
 
 const Home = () => {
   return (
@@ -35,7 +37,11 @@ const Home = () => {
       {/* Planning Section */}
       <section className="w-full max-w-7xl mx-auto pb-10 sm:pb-0">
         <PlanningSection />
-      </section>
+         
+      </section><FAQSection />
+      {/* Footer Section */}
+      
+<EkaivaFooter />
     </main>
   )
 }

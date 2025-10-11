@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { FaXTwitter, FaInstagram, FaFacebook } from 'react-icons/fa6'
 import image from '../assets/Frame 52.png'
+import { Link } from 'react-router-dom'
 
 const Homeabout = () => {
   return (
@@ -95,7 +96,7 @@ const Homeabout = () => {
               the ordinary.
             </p>
             <button className="bg-[#333333] hover:bg-gray-800 text-white px-6 py-2.5 rounded-full text-sm transition-colors">
-              Learn more
+             <Link to={'/about'}> Learn more</Link>
             </button>
 
             <div className="mt-10">
