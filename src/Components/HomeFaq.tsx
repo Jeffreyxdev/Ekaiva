@@ -54,9 +54,10 @@ const FAQSection = () => {
   },
   ];
 
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? -1 : index);
-  };
+const toggleFAQ = (index: number) => {
+  setOpenIndex(openIndex === index ? -1 : index);
+};
+
 
   return (
     <div className="min-h-screen py-16 px-6 sm:px-10 lg:px-20">
