@@ -100,7 +100,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-[#333333]/95 backdrop-blur-md text-white py-4"
+            className="md:hidden backdrop-blur-md text-white py-4"
           >
             <div className="px-4 space-y-1">
               {navLinks.map(link => (
