@@ -262,11 +262,9 @@ const HomeTour = () => {
           
 
             <p className="text-2xl text-gray-800 leading-relaxed mb-4">
-              with every home is more than just a place to surrounded by nature, with
+              with every home is more than just a place to surrounded by nature, with everything taken care of.
             </p>
-             <p className="text-2xl text-gray-800 leading-relaxed">
-              everything taken care of.
-            </p>
+            
             <div className="w-full h-full rounded-3xl overflow-hidden mb-4">
               <img
                 src={bottomImages[1]}
