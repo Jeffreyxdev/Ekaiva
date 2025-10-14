@@ -2,26 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-import { MapPin, Calendar, Users } from "lucide-react";
 
 
-const features = [
-  {
-    icon: MapPin,
-    title: "Expertly Curated Routes",
-    description: "Every journey is planned with precision and local expertise",
-  },
-  {
-    icon: Calendar,
-    title: "Flexible Scheduling",
-    description: "Travel on your terms with customizable itineraries",
-  },
-  {
-    icon: Users,
-    title: "Local Guides",
-    description: "Connect with authentic experiences through expert guides",
-  },
-];
 
 const PlanningSection = () => {
   const ref = useRef(null);
@@ -66,29 +48,8 @@ const PlanningSection = () => {
           </motion.div>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-              className="text-center"
-            >
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: 360 }}
-                transition={{ duration: 0.6 }}
-                className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-4"
-              >
-                <feature.icon className="h-8 w-8" />
-              </motion.div>
-              <h3 className="text-xl font-bold text-primary mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
-            </motion.div>
-          ))}
-        </div>
-
+      
+      
         {/* Second Section - Alternating Layout */}
         <div className="grid md:grid-cols-2 gap-12 items-center mt-24">
           <motion.div

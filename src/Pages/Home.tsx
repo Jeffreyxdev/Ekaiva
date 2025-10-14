@@ -2,7 +2,6 @@ import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 import Homeabout from "../Components/Homeabout"
 import HomeTour from "../Components/HomeTour"
-import PlanningSection from "../Components/PlanningSection"
 import FAQSection from "../Components/HomeFaq"
 import EkaivaFooter from "../Components/Footer"
 import FAQ from '../Components/faq'
@@ -38,10 +37,7 @@ const Home = () => {
       </section>
 
       {/* Planning Section */}
-      <section className="w-full max-w-7xl mx-auto pb-10 sm:pb-0">
-        <PlanningSection />
-         
-      </section><FAQSection />
+      <FAQSection />
       {/* Footer Section */}
       <Exp/>
       <FAQ/>

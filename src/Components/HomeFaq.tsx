@@ -70,15 +70,14 @@ const toggleFAQ = (index: number) => {
       <span className="text-sm font-medium text-gray-600">04. FAQ</span>
     </div>
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-      Inclusion / Exclusion<br className="hidden lg:block" /> based on Graphic
+     Ekaiva is not just a vacation, <br className="hidden lg:block" />Its a reboot
     </h1>
   </div>
 
   {/* Right side - paragraph */}
   <div className="flex-1">
     <p className="text-gray-600 max-w-xl mt-10 mx-auto lg:mx-0 text-base lg:text-lg leading-relaxed">
-      Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. 
-      Whether you're seeking a romantic escape, a cultural adventure, or a family outing.
+      We have combined the comfot of boutique hotel  and the solitude of nature: seperate houses, panoramic views, caring servide and an  atmosphere where you want to breathe deeper. 
     </p>
   </div>
 </div>

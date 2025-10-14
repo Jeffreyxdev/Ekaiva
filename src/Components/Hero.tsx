@@ -3,7 +3,7 @@ import {  useState, useEffect } from "react";
 import type { ChangeEvent } from "react";
 import { ArrowRight, MapPin,Calendar,  Users,Search } from "lucide-react";
 import heroBg from "../assets/hero.png";
-
+import heroBgMobile from "../assets/image.png";
 const Hero = () => {
   
   const [formData, setFormData] = useState({
@@ -34,14 +34,20 @@ const Hero = () => {
     const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
-const [isLoaded, setIsLoaded] = useState(false);
 
-useEffect(() => {
-  const img = new Image();
-  img.src = heroBg;
-  img.onload = () => setIsLoaded(true);
-}, []);
 
+ const [bgImage, setBgImage] = useState("");
+  useEffect(() => {
+    const updateBg = () => {
+      const image = window.innerWidth < 768 ? heroBgMobile : heroBg;
+      const img = new Image();
+      img.src = image;
+      img.onload = () => setBgImage(image);
+    };
+    updateBg();
+    window.addEventListener("resize", updateBg);
+    return () => window.removeEventListener("resize", updateBg);
+  }, []);
 
   return (
     <section id="home" className="relative min-h-screen pb-5 flex items-center justify-center overflow-hidden mb-5">
@@ -54,7 +60,7 @@ useEffect(() => {
       >
         <div
           className="absolute inset-0 bg-cover bg-center blur-[1px] scale-105"
-          style={{ backgroundImage: `url(${isLoaded ? heroBg : ""})` }}
+          style={{ backgroundImage: `url(${bgImage})` }}
           draggable="false"
        
         />

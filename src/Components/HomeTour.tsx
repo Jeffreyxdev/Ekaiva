@@ -1,13 +1,11 @@
-import  { useState,  } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {  MapPin } from "lucide-react";
-
-import png1 from '../assets/Frame 57.png'
-import png2 from '../assets/Frame 58.png'
-import png3 from '../assets/Frame 59.png'
+import { MapPin } from "lucide-react";
 
 const HomeTour = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const tours = [
     {
@@ -71,7 +69,22 @@ const HomeTour = () => {
       location: "Delhi, India",
     },
   ];
-   
+
+  const bottomImages = [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
+  ];
+
+  // Handle horizontal scroll tracking
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    const scrollLeft = scrollRef.current.scrollLeft;
+    const cardWidth = scrollRef.current.clientWidth * 0.85;
+    const index = Math.round(scrollLeft / cardWidth);
+    setCurrentIndex(index);
+  };
+
   return (
     <section className="min-h-screen bg-[#f8f9fa] py-16 px-4" id="tours">
       {/* Header */}
@@ -104,7 +117,14 @@ const HomeTour = () => {
         </div>
 
         {/* Tour Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <div
+          ref={scrollRef}
+          onScroll={handleScroll}
+          className="
+            flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide
+            pb-4
+          "
+        >
           {tours.map((tour) => (
             <motion.div
               key={tour.id}
@@ -113,19 +133,29 @@ const HomeTour = () => {
                 setExpandedCard(expandedCard === tour.id ? null : tour.id)
               }
               transition={{ layout: { duration: 0.5, type: "spring" } }}
-              className={`relative bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer transition-all duration-500 ${
-                expandedCard === tour.id ? "col-span-1 sm:col-span-2" : "col-span-1"
-              }`}
+              className={`
+                relative bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer transition-all duration-500
+                snap-center shrink-0 w-[85%] sm:w-[350px]
+              `}
             >
-              {/* Main Card Container - Side by Side when expanded */}
-              <div className={`flex ${expandedCard === tour.id ? 'flex-row' : 'flex-col'}`}>
+              {/* Main Card Container */}
+              <div
+                className={`flex ${
+                  expandedCard === tour.id ? "flex-row" : "flex-col"
+                }`}
+              >
                 {/* Image Section */}
-                <div className={`relative ${expandedCard === tour.id ? 'w-1/2' : 'w-full'}`}>
+                <div
+                  className={`relative ${
+                    expandedCard === tour.id ? "w-1/2" : "w-full"
+                  }`}
+                >
                   <motion.img
                     src={tour.image}
                     alt={tour.title}
                     className="w-full h-[360px] object-cover"
                     layout
+                    draggable="false"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
@@ -157,7 +187,9 @@ const HomeTour = () => {
                       transition={{ duration: 0.5, ease: "easeInOut" }}
                       className="bg-white p-6 text-gray-700 flex flex-col justify-center space-y-4"
                     >
-                      <p className="font-semibold text-xl text-gray-800">{tour.subtitle}</p>
+                      <p className="font-semibold text-xl text-gray-800">
+                        {tour.subtitle}
+                      </p>
                       <p className="text-sm text-gray-600 leading-relaxed">
                         {tour.description}
                       </p>
@@ -166,15 +198,14 @@ const HomeTour = () => {
                         <span>{tour.location}</span>
                       </div>
                       <div className="pt-4">
-                       <a
-                        href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full px-4 py-2.5 bg-[#333] text-white rounded-xl hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base text-center block"
-                      >
-                        Book Now
-                      </a>
-
+                        <a
+                          href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full px-4 py-2.5 bg-[#333] text-white rounded-xl hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base text-center block"
+                        >
+                          Book Now
+                        </a>
                       </div>
                     </motion.div>
                   )}
@@ -184,35 +215,82 @@ const HomeTour = () => {
           ))}
         </div>
 
-        {/* Bottom Text */}
+        {/* Mobile Scroll Indicator */}
+        <div className="flex justify-center mt-6 space-x-2 sm:hidden">
+          {tours.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full transition-all duration-300 ${
+                currentIndex === index ? "bg-gray-800" : "bg-gray-300"
+              }`}
+            ></div>
+          ))}
+        </div>
+
+        {/* Bottom Text - Desktop: Inline images, Mobile: Full-width stacked */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="max-w-3xl mx-auto text-center mt-20"
         >
-          <h2 className="text-3xl text-gray-700 leading-relaxed font-montserrat monst">
+          {/* Desktop Version - Hidden on Mobile */}
+          <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
             Whether you're planning a{" "}
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage:`url(${png1})`}}
+              style={{ backgroundImage: `url(${bottomImages[0]})` }}
             ></span>{" "}
-            romantic getaway, a solo getaway or a cozy weekend  every home{" "}
+            romantic getaway, a solo getaway or a cozy weekend every home{" "}
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage:`url(${png2})` }}
+              style={{ backgroundImage: `url(${bottomImages[1]})` }}
             ></span>{" "}
             is more than just a place to be surrounded by nature, with{" "}
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${png3})` }}
+              style={{ backgroundImage: `url(${bottomImages[2]})` }}
             ></span>{" "}
             everything taken care of.
           </h2>
+
+          {/* Mobile Version - Vertical Layout with Full-Width Images */}
+          <div className="md:hidden text-left px-2">
+            <p className="text-2xl text-gray-800 leading-relaxed mb-4">
+              Whether you're planning a romantic getaway, a solo getaway or a cozy weekend
+            </p>
+          
+
+            <p className="text-2xl text-gray-800 leading-relaxed mb-4">
+              with every home is more than just a place to surrounded by nature, with
+            </p>
+             <p className="text-2xl text-gray-800 leading-relaxed">
+              everything taken care of.
+            </p>
+            <div className="w-full h-full rounded-3xl overflow-hidden mb-4">
+              <img
+                src={bottomImages[1]}
+                alt="Nature surroundings"
+                className="w-lg h-10 "
+              />
+            </div>
+
+           
+          </div>
         </motion.div>
       </div>
-    </section>
-  )
-}
 
-export default HomeTour
+      <style>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+    </section>
+  );
+};
+
+export default HomeTour;
