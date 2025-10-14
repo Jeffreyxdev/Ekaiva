@@ -67,7 +67,7 @@ const toggleFAQ = (index: number) => {
   {/* Left side - title section */}
   <div className="text-center lg:text-left flex-1">
     <div className="inline-block px-5 py-2 bg-white rounded-full shadow-sm mb-4">
-      <span className="text-sm font-medium text-gray-600">06. FAQ</span>
+      <span className="text-sm font-medium text-gray-600">04. FAQ</span>
     </div>
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
       Inclusion / Exclusion<br className="hidden lg:block" /> based on Graphic

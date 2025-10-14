@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import {  useState, useEffect } from "react";
 import type { ChangeEvent } from "react";
-import { ArrowRight, MapPin,Calendar,  Users, } from "lucide-react";
+import { ArrowRight, MapPin,Calendar,  Users,Search } from "lucide-react";
 import heroBg from "../assets/hero.png";
 
 const Hero = () => {
@@ -34,6 +34,13 @@ const Hero = () => {
     const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
+const [isLoaded, setIsLoaded] = useState(false);
+
+useEffect(() => {
+  const img = new Image();
+  img.src = heroBg;
+  img.onload = () => setIsLoaded(true);
+}, []);
 
 
   return (
@@ -47,7 +54,9 @@ const Hero = () => {
       >
         <div
           className="absolute inset-0 bg-cover bg-center blur-[1px] scale-105"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          style={{ backgroundImage: `url(${isLoaded ? heroBg : ""})` }}
+          draggable="false"
+       
         />
         <div className="absolute inset-0 bg-black/40" />
       </motion.div>
@@ -244,8 +253,8 @@ const Hero = () => {
           onClick={handleWhatsAppConnect}
           className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-colors group w-full mt-2"
         >
-          <ArrowRight className="h-5 w-5 rotate-90" />
-          Connect
+          <Search className="h-5 w-5 rotate-90" />
+         Search 
         </button>
       </div>
           </motion.div>

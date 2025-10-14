@@ -5,6 +5,9 @@ import HomeTour from "../Components/HomeTour"
 import PlanningSection from "../Components/PlanningSection"
 import FAQSection from "../Components/HomeFaq"
 import EkaivaFooter from "../Components/Footer"
+import FAQ from '../Components/faq'
+import Exp from "../Components/exp"
+import Gallery from "../Components/Gallery"
 
 const Home = () => {
   return (
@@ -40,8 +43,10 @@ const Home = () => {
          
       </section><FAQSection />
       {/* Footer Section */}
-      
-<EkaivaFooter />
+      <Exp/>
+      <FAQ/>
+      <Gallery/>
+      <EkaivaFooter />
     </main>
   )
 }
