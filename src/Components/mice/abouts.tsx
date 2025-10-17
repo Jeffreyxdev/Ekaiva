@@ -1,6 +1,6 @@
-import  { useState } from 'react';
-import ong from '../../assets/Frame 70.png'
-import miceh from '../../assets/miceh.png'
+import { useState } from 'react';
+import ong from '../../assets/Frame 70.png';
+import miceh from '../../assets/miceh.png';
 
 export default function EkaivaMICE() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -10,8 +10,8 @@ export default function EkaivaMICE() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="mb-12 md:mb-16">
-
-          <button className="px-6 py-2 mb-8 border-2 border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-1 hover:shadow-2xl"
+          <button
+            className="px-6 py-2 mb-8 border-2 border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-1 hover:shadow-2xl"
           >
             02. About
           </button>
@@ -24,19 +24,21 @@ export default function EkaivaMICE() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight mont">
               What is MICE and what it actually means
             </h1>
-            
+
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. Whether you're seeking a romantic escape, a cultural exploration, or a mix of both, this journey promises to be one filled with comfort and wonder. From the iconic Taj Mahal to grand Mughal forts and vibrant bazaars, every moment becomes a story to cherish. Discover, explore, and celebrate India with "In Agra" – where travel meets unforgettable experiences.
             </p>
 
             {/* First Image - Conference Setup */}
-            <div 
-              className="relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 order-1 lg:order-2"
+            <div
+              className={`relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 order-1 lg:order-2 ${
+                hoveredCard === 1 ? 'ring-2 ring-gray-300' : ''
+              }`}
               onMouseEnter={() => setHoveredCard(1)}
               onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img 
+                <img
                   src={ong}
                   alt="Corporate Meeting Setup"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -47,13 +49,15 @@ export default function EkaivaMICE() {
           </div>
 
           {/* Right Column - Conference Image */}
-          <div 
-            className="relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20"
+          <div
+            className={`relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 ${
+              hoveredCard === 2 ? 'ring-2 ring-gray-300' : ''
+            }`}
             onMouseEnter={() => setHoveredCard(2)}
             onMouseLeave={() => setHoveredCard(null)}
           >
             <div className="relative aspect-[3/4] overflow-hidden">
-              <img 
+              <img
                 src={miceh}
                 alt="Business Presentation"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -62,8 +66,7 @@ export default function EkaivaMICE() {
             </div>
           </div>
         </div>
-
-        </div>
+      </div>
 
       <style>{`
         @keyframes float {
