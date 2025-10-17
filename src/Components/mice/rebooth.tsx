@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 export default function EkaivaRebootSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const [touchStart, setTouchStart] = useState<number>(0);
+  const [touchEnd, setTouchEnd] = useState<number>(0);
 
-  const images = [
+  const images: string[] = [
     "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&h=800&fit=crop",
     "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop",
     "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&h=800&fit=crop",
@@ -14,15 +14,21 @@ export default function EkaivaRebootSection() {
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % images.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
-  const goToSlide = (index) => setCurrentSlide(index);
+  const goToSlide = (index: number) => setCurrentSlide(index);
 
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [currentSlide]);
 
-  const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
-  const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 75) nextSlide();
     if (touchStart - touchEnd < -75) prevSlide();
@@ -58,7 +64,7 @@ export default function EkaivaRebootSection() {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            {images.map((image, index) => (
+            {images.map((image: string, index: number) => (
               <div
                 key={index}
                 className={`absolute inset-0 transition-all duration-700 ease-in-out ${
@@ -77,7 +83,7 @@ export default function EkaivaRebootSection() {
 
           {/* Pagination */}
           <div className="flex justify-center gap-2 mt-6">
-            {images.map((_, index) => (
+            {images.map((_, index: number) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
