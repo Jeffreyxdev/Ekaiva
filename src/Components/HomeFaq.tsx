@@ -46,39 +46,44 @@ const FAQSection = () => {
       answer: 'Stay hydrated throughout your journey with complimentary mineral water bottles provided in the vehicle. We ensure you have access to safe drinking water at all times during your tour. Additional bottles are available upon request. Your health and comfort are our top priorities, especially during the warmer months when staying hydrated is essential.',
       image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&h=500&fit=crop'
     },
-     {
-    id: '008',
-    question: 'All applicable taxes/charges',
-    answer: 'All government taxes, tolls, and service charges are included in your package price no hidden costs or extra fees.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=500&fit=crop'
-  },
+    {
+      id: '008',
+      question: 'All applicable taxes/charges',
+      answer: 'All government taxes, tolls, and service charges are included in your package price no hidden costs or extra fees.',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=500&fit=crop'
+    },
   ];
 
-const toggleFAQ = (index: number) => {
-  setOpenIndex(openIndex === index ? -1 : index);
-};
-
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
 
   return (
-    <div className="min-h-screen py-16 px-6 sm:px-10 lg:px-20">
+    <div className="min-h-screen py-16 px-6 sm:px-10 lg:px-20 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-  {/* Left side - title section */}
-  <div className="text-center lg:text-left flex-1">
-    <div className="inline-block px-5 py-2 bg-white rounded-full shadow-sm mb-4">
-      <span className="text-sm font-medium text-gray-600">04. FAQ</span>
-    </div>
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-     Ekaiva is not just a vacation, <br className="hidden lg:block" />Its a reboot
+        {/* Header Section */}
+<div className="mb-12 md:mb-20">
+  {/* FAQ Header Section */}
+<div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 mb-12">
+  
+  {/* Left side — Button + Title inline */}
+  <div className="flex items-center gap-4 flex-shrink-0">
+    <button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400  hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm">
+      06. FAQ
+    </button>
+
+    <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900">
+      Inclusion/ Exclusion based<br /> on  Graphic
     </h1>
   </div>
 
-  {/* Right side - paragraph */}
-  <div className="flex-1">
-    <p className="text-gray-600 max-w-xl mt-10 mx-auto lg:mx-0 text-base lg:text-lg leading-relaxed">
-      We have combined the comfot of boutique hotel  and the solitude of nature: seperate houses, panoramic views, caring servide and an  atmosphere where you want to breathe deeper. 
-    </p>
+  {/* Right side — Paragraph */}
+  <p className="text-gray-600 text-base lg:text-lg max-w-xl leading-relaxed">
+    Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. Whether you’re seeking a romantic escape, a cultural adventure, or a family outing.
+  </p>
+</div>
+
   </div>
 </div>
 
@@ -124,37 +129,33 @@ const toggleFAQ = (index: number) => {
                   openIndex === index ? 'max-h-[1000px]' : 'max-h-0'
                 }`}
               >
-              <div className="px-6 pb-6 pt-2">
-              <div className="flex flex-col lg:flex-row items-start gap-5">
-                {/* Image */}
-                {faq.image && (
-                  <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
-                    <img
-                      src={faq.image}
-                      alt={faq.question}
-                      className="w-140 h-46 sm:h-64 lg:h-50 object-cover items-center rounded-lg"
-                    />
+                <div className="px-6 pb-6 pt-2">
+                  <div className="flex flex-col lg:flex-row items-start gap-5">
+                    {/* Image */}
+                    {faq.image && (
+                      <div className="w-full lg:w-1/2 rounded-lg overflow-hidden">
+                        <img
+                          src={faq.image}
+                          alt={faq.question}
+                          className="w-full h-46 sm:h-64 lg:h-50 object-cover rounded-lg"
+                        />
+                      </div>
+                    )}
+
+                    {/* Text */}
+                    <div className="flex-1 mt-4 lg:mt-0">
+                      <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
                   </div>
-                )}
-
-                {/* Text */}
-                <div className="flex-1 mt-4 lg:mt-0">
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                    {faq.answer}
-                  </p>
                 </div>
-              </div>
-            </div>
-
               </div>
             </div>
           ))}
         </div>
-
-        {/* Additional Info */}
-        
       </div>
-    </div>
+    
   );
 };
 

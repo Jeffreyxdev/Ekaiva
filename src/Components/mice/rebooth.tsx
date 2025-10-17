@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { motion } from "framer-motion"
 
 export default function EkaivaRebootSection() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -11,7 +12,11 @@ export default function EkaivaRebootSection() {
     "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&h=800&fit=crop",
     "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&h=800&fit=crop"
   ];
-
+const bottomImages = [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
+  ];
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % images.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   const goToSlide = (index: number) => setCurrentSlide(index);
@@ -134,6 +139,38 @@ export default function EkaivaRebootSection() {
             </p>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="max-w-3xl mx-auto text-center mt-20"
+        >
+          {/* Desktop Version - Hidden on Mobile */}
+          <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
+            Whether you're planning a{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage: `url(${bottomImages[0]})` }}
+            ></span>{" "}
+            romantic getaway, a solo getaway or a cozy weekend every home{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage: `url(${bottomImages[1]})` }}
+            ></span>{" "}
+            is more than just a place to be surrounded by nature, with{" "}
+            <span
+              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              style={{ backgroundImage: `url(${bottomImages[2]})` }}
+            ></span>{" "}
+            everything taken care of.
+          </h2>
+
+       
+
+
+           
+          
+        </motion.div>
       </div>
     </section>
   );
