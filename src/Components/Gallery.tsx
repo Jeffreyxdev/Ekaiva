@@ -58,7 +58,7 @@ function Gallery() {
   };
 
   return (
-    <div className="bg-gray-50 py-14 md:py-20">
+    <div className=" pt-14 md:pt-20 pb-10 md:pb-14">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10">
           <button className="px-3 py-1.5 text-xs sm:text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition mb-4">
@@ -78,19 +78,20 @@ function Gallery() {
 
         {isMobile ? (
           <div className="relative">
-            <div
-              ref={scrollContainerRef}
-              className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide"
-              style={{
-                scrollbarWidth: 'none',
-                msOverflowStyle: 'none',
-                WebkitOverflowScrolling: 'touch',
-              }}
-            >
+                  <div
+                    ref={scrollContainerRef}
+                    className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide"
+                    style={{
+                      scrollbarWidth: 'none',
+                      msOverflowStyle: 'none',
+                      WebkitOverflowScrolling: 'touch',
+                    }}
+                  >
+
               {testimonials.map((t, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl overflow-hidden shadow-sm min-w-[85%] max-w-sm mx-auto snap-center flex-shrink-0"
+                  className="bg-white rounded-2xl overflow-hidden shadow-sm min-w-[85%]  max-w-sm sm:w-[60%] mx-auto snap-center flex-shrink-0"
                 >
                   <div className="relative h-40 sm:h-44">
                     <img
@@ -125,7 +126,7 @@ function Gallery() {
               ))}
             </div>
 
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-2 mt-4">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
@@ -142,10 +143,11 @@ function Gallery() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition max-w-sm mx-auto"
-              >
+             <div
+                  key={index}
+                  className="bg-white rounded-2xl overflow-hidden shadow-sm  max-w-sm w-[85%] sm:w-[60%] mx-auto snap-center flex-shrink-0"
+                >
+
                 <div className="relative h-44 sm:h-48 md:h-52">
                   <img
                     src="https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -186,6 +188,10 @@ function Gallery() {
       <style>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
+          .scrollbar-hide {
+          -webkit-overflow-scrolling: touch;
+        }
+
         }
       `}</style>
     </div>

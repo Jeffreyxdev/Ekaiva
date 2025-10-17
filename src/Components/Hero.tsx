@@ -106,7 +106,7 @@ const Hero = () => {
             {/* Desktop Layout */}
             
               {/* Origin */}
-             <div className="hidden lg:flex items-start justify-between gap-5  px-7 py-4    monst w-fit mx-auto">
+             <div className="hidden lg:flex items-start justify-between gap-5  px-7 py-4  text-start  monst w-fit mx-auto">
   {/* Origin */}
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />

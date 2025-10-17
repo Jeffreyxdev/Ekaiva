@@ -80,7 +80,7 @@ function exp() {
             </p>
           </div>
           </div>
-          <div className="mt-32 text-center">
+          <div className="mt-32 text-center" id="gallery">
             <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-8">
               02. Customer Gallery
             </button>

@@ -153,7 +153,7 @@ const HomeTour = () => {
                   <motion.img
                     src={tour.image}
                     alt={tour.title}
-                    className="w-full h-[360px] object-cover"
+                    className="w-full h-[460px] object-cover"
                     layout
                     draggable="false"
                   />
