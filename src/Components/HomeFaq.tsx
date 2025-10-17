@@ -89,11 +89,11 @@ const FAQSection = () => {
 
 
         {/* FAQ Items */}
-        <div className="space-y-6 lg:space-y-8">
+        <div className="space-y-[0px] rounded-xl">
           {faqData.map((faq, index) => (
             <div
               key={faq.id}
-              className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300"
+              className="bg-white  shadow-sm border border-gray-200 overflow-hidden transition-all duration-300"
             >
               {/* Header */}
               <button
