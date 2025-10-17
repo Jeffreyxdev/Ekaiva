@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react'
 import { X, Mail, Menu } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { FaWhatsapp,} from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { PiTelegramLogoLight } from "react-icons/pi"
+import { Link } from 'react-router-dom'
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   const navLinks = [
     { href: '/', label: 'HOME' },
-    { href: 'tours', label: 'TOURS' },
-    { href: 'mice', label: 'MICE' },
-    { href: 'guide', label: 'GUIDE' },
-    { href: 'about', label: 'ABOUT US' },
+    { href: '/tours', label: 'TOURS' },
+    { href: '/mice', label: 'MICE' },
+    { href: '/guide', label: 'GUIDE' },
+    { href: '/about', label: 'ABOUT US' },
   ]
 
   useEffect(() => {
@@ -30,35 +32,33 @@ export default function Navbar() {
       >
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo - Far Left */}
+            {/* Logo */}
             <div className="flex-shrink-0 text-white font-bold text-xl leading-tight">
               <div>EKAIVA</div>
               <div className="text-sm font-normal">INDIA</div>
             </div>
 
-            {/* Desktop Links - Centered */}
+            {/* Desktop Links */}
             <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
               {navLinks.map(link => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   className="text-white hover:text-gray-300 transition-colors text-sm font-medium tracking-wide"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 
-            {/* Icons - Far Right */}
+            {/* Icons */}
             <div className="flex items-center space-x-4 ml-auto">
               <button
                 className="text-white hover:text-green-400 transition-colors"
-                onClick={() =>
-                  window.open('https://wa.me/917011020040', '_blank')
-                }
+                onClick={() => window.open('https://wa.me/917011020040', '_blank')}
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp className="h-5 w-5  "  />
+                <FaWhatsapp className="h-5 w-5" />
               </button>
 
               <button 
@@ -70,9 +70,7 @@ export default function Navbar() {
 
               <button 
                 className="text-white hover:text-orange-300 transition-colors"
-                onClick={() =>
-                  window.open('mailto:info@ekaivaindia.com', '_blank')
-                }
+                onClick={() => window.open('mailto:info@ekaivaindia.com', '_blank')}
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
@@ -84,11 +82,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Toggle menu"
               >
-                {menuOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
+                {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
           </div>
@@ -104,14 +98,14 @@ export default function Navbar() {
           >
             <div className="px-4 space-y-1">
               {navLinks.map(link => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  to={link.href}
                   className="block py-3 text-sm font-medium hover:text-gray-300 hover:bg-white/10 rounded-md px-3 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>
