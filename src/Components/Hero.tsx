@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {  useState, useEffect } from "react";
 import type { ChangeEvent } from "react";
-import { ArrowRight, MapPin,Calendar,  Users,Search } from "lucide-react";
+import { ArrowRight, MapPin,  Users,Search } from "lucide-react";
 import heroBg from "../assets/hero.png";
 import heroBgMobile from "../assets/image.png";
 const Hero = () => {
