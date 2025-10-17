@@ -10,8 +10,7 @@ const Hero = () => {
     origin: "",
     destination: "",
     guests: "",
-    checkin: "",
-    checkout: "",
+ 
   });
 
    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -20,13 +19,12 @@ const Hero = () => {
   };
 
  const handleWhatsAppConnect = () => {
-    const { origin, destination, guests, checkin, checkout } = formData;
+    const { origin, destination, guests, } = formData;
     const message = `Hi Ekaiva, I'm looking for a hotel.\n\nOrigin: ${
       origin || "Not specified"
     }\nDestination: ${destination || "Not specified"}\nGuests: ${
       guests || "Not specified"
-    }\nCheck-in: ${checkin || "Not specified"}\nCheck-out: ${
-      checkout || "Not specified"
+    
     }\n\nPlease share available options.`;
 
     const encodedMessage = encodeURIComponent(message);
@@ -208,35 +206,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Check-in */}
-        <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
-          <Calendar className="h-5 w-5 text-gray-400 flex-shrink-0" />
-          <div className="flex flex-col flex-1 text-left">
-            <label className="text-sm font-semibold text-gray-800">Check-in</label>
-            <input
-              type="date"
-              name="checkin"
-              value={formData.checkin}
-              onChange={handleChange}
-              className="text-sm text-gray-500 outline-none border-none bg-transparent w-full"
-            />
-          </div>
-        </div>
+      
 
-        {/* Check-out */}
-        <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
-          <Calendar className="h-5 w-5 text-gray-400 flex-shrink-0" />
-          <div className="flex flex-col flex-1 text-left">
-            <label className="text-sm font-semibold text-gray-800">Check-out</label>
-            <input
-              type="date"
-              name="checkout"
-              value={formData.checkout}
-              onChange={handleChange}
-              className="text-sm text-gray-500 outline-none border-none bg-transparent w-full"
-            />
-          </div>
-        </div>
+        
 
         {/* Guests */}
         <div className="flex items-center gap-3 pb-3 border-b border-gray-200">
