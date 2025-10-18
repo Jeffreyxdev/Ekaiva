@@ -6,52 +6,35 @@ const FAQSection = () => {
   const faqData = [
     {
       id: '001',
-      question: 'Airport/Hotel pick-up and Drop',
-      answer: 'Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. Whether you\'re seeking a romantic escape, a cultural adventure, or a family outing, our comfortable and reliable airport/hotel pick-up and drop service ensures a seamless journey. Our professional drivers will greet you at your location and transport you safely to your destination in a private air-conditioned vehicle.',
+      question: 'How can I book a cheap India tour package with Ekaiva?',
+      answer: 'Start by searching your preferred destination and travel dates on our easy site. Compare deals—every option comes with guaranteed savings versus the major travel portals.Booking is hassle-free, and confirmation arrives instantly for all hotels and tours, so you can plan with confidence.',
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop'
     },
     {
       id: '002',
-      question: 'Private Air-Conditioned Car with Driver',
-      answer: 'Experience the ultimate comfort with our premium private air-conditioned vehicles. Our experienced and courteous drivers are well-versed with all routes between Delhi and Agra, ensuring a smooth and pleasant journey. The vehicles are regularly maintained and sanitized for your safety and comfort. Enjoy complimentary WiFi, bottled water, and the flexibility to stop at points of interest along the way.',
+      question: 'Can NRIs and foreigners customize their trips?',
+      answer: 'Yes—Ekaiva’s experts actively work to personalize your journey. From local guides to unique stops, elderly care, and family priorities, every detail can be tailored.You’ll receive 1:1 support and recommendations, so you experience India exactly as you want.',
       image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop'
     },
     {
       id: '003',
-      question: 'Monuments Entrance Tickets to all places',
-      answer: 'Your tour package includes entrance tickets to all major monuments and attractions. Visit the iconic Taj Mahal, explore the magnificent Agra Fort, discover the beautiful Itmad-ud-Daulah (Baby Taj), and experience other historical sites. We handle all ticketing arrangements in advance, so you can skip the queues and make the most of your time exploring these UNESCO World Heritage Sites.',
+      question: 'What makes Ekaiva more affordable than other sites?',
+      answer: 'Ekaiva negotiates exclusive rates, offers transparent pricing, and never adds hidden fees. Our smart search engine finds deals others miss, saving you more on every trip.Promotions, bulk discounts, and loyalty offers stack up to maximize value for all guests.',
       image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=500&fit=crop'
     },
     {
       id: '004',
-      question: 'Rickshaw Ride in Old Delhi',
-      answer: 'Immerse yourself in the vibrant chaos and charm of Old Delhi with an authentic rickshaw ride through its narrow lanes. Navigate through the bustling bazaars of Chandni Chowk, witness the everyday life of locals, smell the aromatic spices, and experience the rich cultural heritage. This traditional mode of transport offers a unique perspective of Delhi\'s historic heart that you won\'t get from a car.',
+      question: 'Are group or senior discounts available?',
+      answer: 'Absolutely—special rates for families, large friend groups, business travelers, and seniors are available on both tours and accommodation.Simply mention your group details when booking or reach out to customer care for easy savings on tailored travel plans.',
       image: 'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&h=500&fit=crop'
     },
     {
       id: '005',
-      question: 'Live Tour Guide Service',
-      answer: 'Enhance your journey with our expert live tour guides who bring history to life. Our knowledgeable guides are certified by the Government of India and speak multiple languages. They provide fascinating insights into the Mughal architecture, historical significance, and captivating stories behind each monument. Ask questions, learn about local customs, and get recommendations for authentic experiences and dining options.',
+      question: 'Is Ekaiva safe for solo or elderly travelers?',
+      answer: 'Safety is our top priority. Partners are vetted for reliability, cars are monitored, and support is one tap away at all times.Elderly travelers can request greater assistance and wheelchair-friendly hotels, plus our helpline is always open.',
       image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop'
     },
-    {
-      id: '006',
-      question: '1-Night Hotel Accommodation with Breakfast',
-      answer: 'Rest and rejuvenate in comfortable hotel accommodations in Agra. Your package includes one night stay in a carefully selected 3-star or 4-star hotel with modern amenities. Wake up to a delicious complimentary breakfast featuring both Indian and continental options. Hotels are centrally located, providing easy access to major attractions. Rooms feature air-conditioning, comfortable bedding, WiFi, and attached bathrooms.',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop'
-    },
-    {
-      id: '007',
-      question: 'Mineral Water Bottles',
-      answer: 'Stay hydrated throughout your journey with complimentary mineral water bottles provided in the vehicle. We ensure you have access to safe drinking water at all times during your tour. Additional bottles are available upon request. Your health and comfort are our top priorities, especially during the warmer months when staying hydrated is essential.',
-      image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&h=500&fit=crop'
-    },
-    {
-      id: '008',
-      question: 'All applicable taxes/charges',
-      answer: 'All government taxes, tolls, and service charges are included in your package price no hidden costs or extra fees.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=500&fit=crop'
-    },
+    
   ];
 
   const toggleFAQ = (index: number) => {
@@ -65,22 +48,24 @@ const FAQSection = () => {
         {/* Header Section */}
 <div className="mb-12 md:mb-20">
   {/* FAQ Header Section */}
-<div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 mb-12">
+<div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-12 mb-12">
   
   {/* Left side — Button + Title inline */}
-  <div className="flex items-center gap-4 flex-shrink-0">
-    <button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400  hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm">
-      06. FAQ
-    </button>
+ <div className="flex items-center gap-4 flex-shrink-0">
+  <button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm">
+    06. FAQ
+  </button>
 
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900">
-      Inclusion/ Exclusion based<br /> on  Graphic
-    </h1>
-  </div>
+  <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight">
+    Frequently Asked Questions
+    <br />
+  </h1>
+</div>
+
 
   {/* Right side — Paragraph */}
   <p className="text-gray-600 text-base lg:text-lg max-w-xl leading-relaxed">
-    Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. Whether you’re seeking a romantic escape, a cultural adventure, or a family outing.
+   Get quick answers to the most common concerns from travelers booking with Ekaiva. Each response is designed to be clear, reassuring, and thorough—so visitors know exactly what to expect.
   </p>
 </div>
 

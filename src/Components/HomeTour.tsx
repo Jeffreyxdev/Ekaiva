@@ -10,11 +10,11 @@ const HomeTour = () => {
   const tours = [
     {
       id: 1,
-      title: "Panorama Rise",
-      subtitle: "Taj Mahal with Agra Sightseeing",
+      title: "Taj Mahal Express",
+      subtitle: "One Day Tour",
       description:
-        "For those who want to wake up with a view that is impossible to forget. A stay near the Taj Mahal that blends modern comfort with timeless history.",
-      price: 2800,
+        "See the iconic Taj Mahal, skip lines, expert guides",
+      
       highlight: "UAH/night",
       image:
         "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
@@ -22,11 +22,11 @@ const HomeTour = () => {
     },
     {
       id: 2,
-      title: "Panorama Rise",
-      subtitle: "Experience the Golden Temple",
+      title: "Golden Triangle Classic",
+      subtitle: "5 Nights",
       description:
-        "Wake up to the golden reflection of Amritsar's sacred temple and a morning that feels divine.",
-      price: 2800,
+        "Delhi, Agra, Jaipur—culture, monuments, heritage hotels",
+      
       highlight: "UAH/night",
       image:
         "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=800&q=80",
@@ -34,11 +34,11 @@ const HomeTour = () => {
     },
     {
       id: 3,
-      title: "Panorama Rise",
-      subtitle: "Pink City Palace Tour",
+      title: "Rajasthan Explorer",
+      subtitle: "7 Nights",
       description:
-        "A royal escape in Jaipur surrounded by history, art, and architectural wonder.",
-      price: 2800,
+        "Forts, palaces, deserts, and vibrant local markets",
+      
       highlight: "UAH/night",
       image:
         "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
@@ -46,28 +46,17 @@ const HomeTour = () => {
     },
     {
       id: 4,
-      title: "Panorama Rise",
-      subtitle: "Sacred Temples of South",
+      title: "Kerala Backwaters Bliss",
+      subtitle: "4 Nights",
       description:
-        "From intricate carvings to serene surroundings, this is your peaceful temple retreat.",
-      price: 2800,
+        "Houseboats, tranquil scenery, authentic cuisine",
+      
       highlight: "UAH/night",
       image:
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
       location: "Tamil Nadu, India",
     },
-    {
-      id: 5,
-      title: "Panorama Rise",
-      subtitle: "Heritage Walk Through Time",
-      description:
-        "Rediscover Delhi's timeless culture and vibrant life on this heritage stay.",
-      price: 2800,
-      highlight: "UAH/night",
-      image:
-        "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800&q=80",
-      location: "Delhi, India",
-    },
+    
   ];
 
   const bottomImages = [
@@ -98,8 +87,10 @@ const HomeTour = () => {
               Choose a Tour <br /> that speaks to you
             </h2>
             <p className="text-gray-600 max-w-md">
-              We've combined boutique hotel comfort with nature's calm for
-              unforgettable journeys.
+              Explore a curated list of top Indian packages each crafted for culture lovers, 
+              history buffs, and relaxation seekers.Every tour offers the best local guides, 
+              priority access, and savings you won’t find on mainstream travel sites.
+
             </p>
           </div>
 
@@ -169,7 +160,7 @@ const HomeTour = () => {
                     )}
 
                     <div className="flex items-center justify-between mt-4">
-                      <span className="font-bold text-lg">₹{tour.price}</span>
+                      
                       <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
                         {expandedCard === tour.id ? "Close" : "Know more"}
                       </button>
@@ -236,33 +227,34 @@ const HomeTour = () => {
         >
           {/* Desktop Version - Hidden on Mobile */}
           <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
-            Whether you're planning a{" "}
+           Join thousands who trust Ekaiva for budget-friendly packages{" "}savings on every b
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[0]})` }}
-            ></span>{" "}
-            romantic getaway, a solo getaway or a cozy weekend every home{" "}
+            ></span>
+           king, {" "}and stress-free travel.Get the l
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[1]})` }}
-            ></span>{" "}
-            is more than just a place to be surrounded by nature, with{" "}
+            ></span>
+            west prices on hotels and tours{" "}
             <span
               className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[2]})` }}
             ></span>{" "}
-            everything taken care of.
+          always authentic and reliable.​
+
           </h2>
 
           {/* Mobile Version - Vertical Layout with Full-Width Images */}
           <div className="md:hidden text-left px-2">
             <p className="text-2xl text-gray-800 leading-relaxed mb-4">
-              Whether you're planning a romantic getaway, a solo getaway or a cozy weekend
+              Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,
             </p>
           
 
             <p className="text-2xl text-gray-800 leading-relaxed mb-4">
-              with every home is more than just a place to surrounded by nature, with everything taken care of.
+             and stress-free travel. Get the lowest prices on hotels and tours—always authentic and reliable.​
             </p>
             
             <div className="w-full h-full rounded-3xl overflow-hidden mb-4">

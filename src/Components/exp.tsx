@@ -9,13 +9,13 @@ function exp() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-10">
           <div>
             <h1 className="text-5xl font-light leading-tight mb-8">
-              Exceptional Stays for<br />
-              Memorable MICE experience
+              Unlock India’s Best Budget <br />
+              MICE Packages
             </h1>
           </div>
           <div>
             <p className="text-gray-600 leading-relaxed">
-              We have combined the comfort of boutique hotel and the solitude of nature: seperate houses, panoramic views, caring service and an atmosphere where you
+              Access expert MICE planning nationwide—meetings, incentives, conferences, and events, all budgeted for maximum value.Choose from state-of-the-art venues, local group excursions, and tailored activities to match your business goals and budget.
             </p>
           </div>
         </div>
@@ -24,18 +24,16 @@ function exp() {
           <div>
             <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
               <span className="w-12 h-px bg-gray-300"></span>
-              GET STARTED
+              
             </div>
             <h2 className="text-4xl font-light mb-6">
-              Picking the right Hiking<br />
-              Gear!
+              Smart, Cost-Efficient MICE Solutions<br />
+             
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              The nice thing about beginning hiking is that you don't really need any special gear; you can probably get away with things you already have.
+              Enjoy professional venues, seamless event logistics, and custom group activities—all designed to maximize impact while saving costs for teams of any size.​
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Let's start with clothing. A typical mistake hiking beginners make is wearing jeans or regular clothes, which will get heavy and chafe wif they get sweaty or wet.
-            </p>
+           
           </div>
           <div className="relative">
             <img
@@ -66,17 +64,18 @@ function exp() {
               </button>
             </div>
           </div>
+          
           <div className="order-1 lg:order-2">
             <div className="text-sm text-gray-500 mb-4 flex items-center justify-end gap-2">
-              GET STARTED
+             Why Choose Ekaiva for MICE?
               <span className="w-12 h-px bg-gray-300"></span>
             </div>
             <h2 className="text-4xl font-light mb-6 text-right">
-              Picking the right Hiking<br />
-              Gear!
+              Why Choose Ekaiva for MICE?<br />
+              
             </h2>
             <p className="text-gray-600 leading-relaxed text-right">
-              The nice thing about beginning hiking is that you don't really need any special gear; you can probably get away with things you already have.
+              Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses.​
             </p>
           </div>
           </div>
@@ -86,12 +85,12 @@ function exp() {
             </button>
 
             <h2 className="text-5xl font-light mb-6">
-              Journey through the moments<br />
-              captured in our gallery
+              Memorable Journeys Captured<br />
+              
             </h2>
 
             <p className="text-gray-600 max-w-2xl mx-auto mb-16 leading-relaxed">
-              We have combined the comfort of boutique hotel and the solitude of nature: separate houses, panoramic views, caring service and an atmosphere where you want to escape together
+              Take a peek at real photos from Ekaiva travelers—smiling families, happy solo guests, and exotic locations all enjoyed at budget prices.Our gallery highlights authentic Indian experiences, MICE events, and international tours made memorable by value and care.
             </p>
 
             {/* ✅ Added text-left to override parent text-center */}
