@@ -8,13 +8,13 @@ function exp() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-10">
           <div>
-            <h1 className="text-5xl font-light leading-tight mb-8">
+            <h1 className="text-5xl font-light leading-tight lg:mb-8">
               Unlock India’s Best Budget <br />
               MICE Packages
             </h1>
           </div>
           <div>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600  leading-relaxed lg:mt-4">
               Access expert MICE planning nationwide—meetings, incentives, conferences, and events, all budgeted for maximum value.Choose from state-of-the-art venues, local group excursions, and tailored activities to match your business goals and budget.
             </p>
           </div>
@@ -44,6 +44,55 @@ function exp() {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+           <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Scenic bay with boats and mountains"
+              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+            />
+          </div>
+          <div>
+            
+            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+              <span className="w-12 h-px bg-gray-300"></span>
+              
+            </div>
+            <h2 className="text-4xl font-light mb-6">
+              Why Choose Ekaiva for MICE?<br />
+             
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses
+            </p>
+           
+          </div>
+         
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+          <div>
+            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+               Why Choose Ekaiva for MICE?
+              <span className="w-12 h-px bg-gray-300"></span>
+              
+            </div>
+            <h2 className="text-4xl font-light mb-6">
+              Custom Itineraries and Group Perks<br />
+             
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+             Every Ekaiva MICE package is flexible, letting you add local excursions, cultural experiences, and special amenities for a truly unique event.​
+            </p>
+           
+          </div>
+          <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Scenic bay with boats and mountains"
+              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+            />
+          </div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
             <img
@@ -71,11 +120,11 @@ function exp() {
               <span className="w-12 h-px bg-gray-300"></span>
             </div>
             <h2 className="text-4xl font-light mb-6 text-right">
-              Why Choose Ekaiva for MICE?<br />
+             Get a Free MICE Quote Today<br />
               
             </h2>
             <p className="text-gray-600 leading-relaxed text-right">
-              Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses.​
+             Contact Ekaiva for competitive rates, seasonal offers, and dedicated support for every stage—from concept to completion.
             </p>
           </div>
           </div>

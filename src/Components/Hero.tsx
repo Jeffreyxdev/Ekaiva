@@ -80,9 +80,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Redefining Journeys,
+           Lets Just Get Travel 
             <br />
-            Unlocking Horizons
+            Around The World
           </motion.h1>
 
           <motion.p
@@ -91,7 +91,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Explore the world one destination at a time From hidden escapes to iconic landmarks, Ekaiva takes you where dreams meet destinations.
+            Find budget travel to India, lowest hotel rates,custom itineraries,<br /> and unforgettable local adventures.​
           </motion.p>
 
           {/* Search Bar */}

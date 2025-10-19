@@ -22,11 +22,12 @@ export default function EkaivaMICE() {
           {/* Left Column - Text Content */}
           <div className="space-y-6 lg:pr-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight mont">
-              What is MICE and what it actually means
+              What is MICE?
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Step into history and culture as you travel from the bustling heart of Delhi to the timeless beauty of Agra. Whether you're seeking a romantic escape, a cultural exploration, or a mix of both, this journey promises to be one filled with comfort and wonder. From the iconic Taj Mahal to grand Mughal forts and vibrant bazaars, every moment becomes a story to cherish. Discover, explore, and celebrate India with "In Agra" – where travel meets unforgettable experiences.
+              Transforming Business Gatherings in India
+                MICE isn’t just an acronym—it’s the future of professional collaboration. At Ekaiva, our events foster real business connections, reward outstanding teams, spark fresh ideas, and present your brand with impact. Whether you’re planning a boardroom get-together or a global exhibition, we provide seamless solutions matched to every business goal.
             </p>
 
             {/* First Image - Conference Setup */}

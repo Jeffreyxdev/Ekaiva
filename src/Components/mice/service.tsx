@@ -1,39 +1,39 @@
 
-import { Calendar, Users, Building2, Utensils, Wifi, MapPin } from 'lucide-react';
+import { Building2, Users, Presentation, Lightbulb, Coffee, Handshake } from "lucide-react";
 
 export default function Service() {
   const features = [
-    {
-      icon: <Building2 className="w-6 h-6" />,
-      title: "Premium Conference Venues",
-      description: "State-of-the-art meeting spaces with panoramic views, accommodating teams from 10 to 200 people with cutting-edge audiovisual technology."
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Team Building Experiences",
-      description: "Curated activities and workshops designed to strengthen bonds, from outdoor adventures to creative collaborative sessions in nature."
-    },
-    {
-      icon: <Utensils className="w-6 h-6" />,
-      title: "Gourmet Catering Services",
-      description: "Exceptional dining experiences with customizable menus, from working lunches to elegant banquets, all prepared by our expert culinary team."
-    },
-    {
-      icon: <Calendar className="w-6 h-6" />,
-      title: "Flexible Event Planning",
-      description: "Dedicated event coordinators to manage every detail of your corporate retreat, incentive trip, or conference from start to finish."
-    },
-    {
-      icon: <Wifi className="w-6 h-6" />,
-      title: "High-Speed Connectivity",
-      description: "Enterprise-grade WiFi and tech infrastructure throughout the property, ensuring seamless virtual meetings and presentations."
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Secluded Natural Setting",
-      description: "Escape the urban chaos to a tranquil environment where nature meets luxury, providing the perfect backdrop for focused work and relaxation."
-    }
-  ];
+  {
+    icon: <Building2 className="w-6 h-6" />,
+    title: "Boardroom Strategy Sessions",
+    description: "Private, soundproof rooms for focused leadership meetings and executive planning."
+  },
+  {
+    icon: <Presentation className="w-6 h-6" />,
+    title: "Conference & Seminar Halls",
+    description: "Modern facilities, flexible seating, and multi-format AV support for inspirational talks or panel events."
+  },
+  {
+    icon: <Lightbulb className="w-6 h-6" />,
+    title: "Breakout & Training Workshops",
+    description: "Modular rooms for skill development, brainstorming, and collaborative problem-solving."
+  },
+  {
+    icon: <Users className="w-6 h-6" />,
+    title: "Networking Lounges & Business Mixers",
+    description: "Curated spaces for relaxed conversations, meaningful contacts, and post-session decompression."
+  },
+  {
+    icon: <Handshake className="w-6 h-6" />,
+    title: "Onsite Team-Building",
+    description: "Icebreaking activities, business games, and short group challenges designed for synergy and creativity."
+  },
+  {
+    icon: <Coffee className="w-6 h-6" />,
+    title: "Dedicated Event Support",
+    description: "Expert facilitators and event staff ensuring your team can focus fully on connection and achievement."
+  }
+];
 
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-6 md:px-12 lg:px-16">
@@ -45,13 +45,14 @@ export default function Service() {
           </button>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Journey through the moments<br />
-            captured in our gallery
+           Focused on Meetings, <br />
+           Seminars, and Team Synergy
           </h1>
           
           <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            We have combined the comforts of boutique hotel and the solitude of nature: separate houses, 
-            panoramic views, caring services and an atmosphere where you want to breathe deeper.
+            MICE Event Experiences: Designed for Business Excellence
+              Choose from a complete lineup of professional event formats, each crafted to foster productivity and engagement.
+
           </p>
         </div>
 
@@ -94,23 +95,12 @@ export default function Service() {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-2  gap-8">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">500+</div>
-            <div className="text-gray-600 font-medium">Events Hosted</div>
+            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2"></div>
+            <div className="text-gray-600 text-center font-medium">Each offering is led by expert facilitators and supported by dedicated event staff, so your team can focus fully on connection and achievement.</div>
           </div>
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">200</div>
-            <div className="text-gray-600 font-medium">Max Capacity</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">15+</div>
-            <div className="text-gray-600 font-medium">Meeting Rooms</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">24/7</div>
-            <div className="text-gray-600 font-medium">Support Available</div>
-          </div>
+         
         </div>
       </div>
     </div>

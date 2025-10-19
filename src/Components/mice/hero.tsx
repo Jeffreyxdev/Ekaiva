@@ -81,9 +81,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Redefining Journeys,
+            Elevate Your Corporate 
+
             <br />
-            Unlocking Horizons
+            Events with Ekaiva
           </motion.h1>
 
           <motion.p
@@ -92,7 +93,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Explore the world one destination at a time From hidden escapes to iconic landmarks, Ekaiva takes you where dreams meet destinations.
+            Take your meetings, incentives, conferences, and exhibitions to the next level with Ekaiva’s expert planning and attention to detail.
           </motion.p>
 
           {/* Search Bar */}

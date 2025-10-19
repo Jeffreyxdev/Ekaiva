@@ -13,7 +13,7 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-white/10 h-[60vh]"></div>
+        <div className="absolute inset-0 bg-white/10 "></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
         <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#F6F8F7] via-[#F6F8F7]/80 via-[#F6F8F7]/50 via-[#F6F8F7]/20 to-transparent z-10 pointer-events-none"></div>

@@ -78,7 +78,7 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div
               key={faq.id}
-              className="   border-gray-200 overflow-hidden transition-all duration-300"
+              className="  border border-gray-200 overflow-hidden transition-all duration-300"
             >
               {/* Header */}
               <button

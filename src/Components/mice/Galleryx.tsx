@@ -7,29 +7,29 @@ const Gallery = () => {
     {
       id: 1,
       image: gly,
-      location: "Bali, Indonesia",
-      caption: "by @kawaii.n68993 on Instagram captions and an  atmosphere where you want to breathe deeper. by @kawaii.n68993 on Instagram",
+      location: "Star-Studded Seminar",
+      caption: "Exhibitor meetups and industry mixers create valuable partnerships, all in one space.",
       size: "large"
     },
     {
       id: 2,
       image: miceh,
-      location: "Bali, Indonesia",
-      caption: "by @kawaii.n68993 on Instagram captions and an  atmosphere where you want to breathe deeper. by @kawaii.n68993 on Instagram",
+      location: "Networking on the Floor",
+      caption: "International speakers, Q&A, and live digital interaction boost learning and engagement",
       size: "tall"
     },
     {
       id: 3,
       image: frame9,
-      location: "Bali, Indonesia",
-      caption: "by @kawaii.n68993 on Instagram captions and an  atmosphere where you want to breathe deeper. by @kawaii.n68993 on Instagram",
+      location: "Showcase Success",
+      caption: "Elegant award ceremonies and product launches that spotlight your achievements.",
       size: "medium"
     },
     {
       id: 4,
       image: bdn,
-      location: "Bali, Indonesia",
-      caption: "by @kawaii.n68993 on Instagram captions and an  atmosphere where you want to breathe deeper. by @kawaii.n68993 on Instagram",
+      location: "Creative Collaboration",
+      caption: "Workshops and brainstorming sessions in inspirational settings tailor-made for breakthroughs.",
       size: "medium"
     },
     
@@ -46,13 +46,13 @@ const Gallery = () => {
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
             Journey through the moments<br />
-            captured in our gallery
+           
           </h2>
           
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            We've combined the comfort of boutique hotel, and the sounds of nature together: 
-            houses, panoramic views, curing services and an atmosphere where you want to 
-            breathe deeper.
+            Our Events, Captured in Every Detail
+            Ekaiva’s gallery showcases vibrant conferences, expert talks, and elegant forums where innovation thrives. Each image is a testament to meticulous event execution, interactive sessions, and immersive brand experiences.
+
           </p>
         </div>
 

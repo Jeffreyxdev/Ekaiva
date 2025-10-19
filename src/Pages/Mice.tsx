@@ -6,7 +6,7 @@ import Service from "../Components/mice/service";
 import Tourm from "../Components/mice/tourm";
 import EkaivaRebootSection from "../Components/mice/rebooth";
 import MiceHeroSection from "../Components/mice/micem";
-import FAQ from "../Components/faq";
+import FAQ from "../Components/mice/faq";
 import Gallery from "../Components/mice/Galleryx";
 import EkaivaFooter from "../Components/mice/Footer";
 

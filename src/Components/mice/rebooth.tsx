@@ -126,16 +126,15 @@ const bottomImages = [
             </button>
 
             <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Feel the atmosphere<br />
-              before you arrive
+              Curated Experiences for Every Group<br />
+              
             </h1>
           </div>
 
           <div className="max-w-sm">
-            <h3 className="text-gray-800 font-semibold mb-2">Grain in the middle</h3>
-            <p className="text-gray-700 leading-relaxed">
-              We have combined the comfort of boutique hotel and the solitude of nature — separate houses,
-              panoramic views, caring service and an atmosphere where you want to breathe deeper.
+            <h3 className="text-gray-800 font-semibold mb-2"></h3>
+            <p className="text-gray-700 leading-relaxed mt-20">
+            Unlock inspiring team journeys, premium venues, and curated activities—each crafted to deliver business results and unforgettable group moments. Ekaiva’s tours are tailored for high-performing teams, incentives, conferences, or relaxing escapes, blending expert planning with seamless service from start to finish.
             </p>
           </div>
           

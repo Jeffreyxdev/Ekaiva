@@ -19,9 +19,11 @@ const MiceHeroSection = () => {
           </div>
 
           {/* Right Side - Description */}
-          <div className="flex-1 max-w-md">
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              We have composed the comfort of boutique hotel, and the sounds of nature together: houses, panoramic views, and space to breathe - all in one place.
+          <div className="flex-1 max-w-prose">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed lg:mt-20 ">
+             Your Partner in Event Excellence
+      We set the stage for ambition, building each event around your goals—be it team recognition, knowledge sharing, or network expansion.
+      With Ekaiva, every gathering transforms routine business into extraordinary collective achievement.
             </p>
           </div>
         </div>

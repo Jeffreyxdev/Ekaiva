@@ -78,34 +78,41 @@ const HomeTour = () => {
     <section className="min-h-screen bg-[#f8f9fa] py-16 px-4" id="tours">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-10">
-        <div className="flex flex-wrap justify-between items-start mb-12">
-          <div>
-            <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
-              03. Tours
-            </button>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
-              Choose a Tour <br /> that speaks to you
-            </h2>
-            <p className="text-gray-600 max-w-md">
-              Explore a curated list of top Indian packages each crafted for culture lovers, 
-              history buffs, and relaxation seekers.Every tour offers the best local guides, 
-              priority access, and savings you won’t find on mainstream travel sites.
+  <div className="flex flex-wrap justify-between items-start mb-12">
+    {/* Left Side */}
+    <div>
+      <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
+        03. Tours
+      </button>
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
+        Choose a Tour <br /> that speaks to you
+      </h2>
+    </div>
 
-            </p>
-          </div>
+    {/* Right Side */}
+    <div className="flex flex-col items-start gap-3 mt-4 sm:mt-0 max-w-md">
+      <div className="flex gap-3">
+        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
+          Date
+        </button>
+        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
+          People
+        </button>
+        <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
+          Choose Tour
+        </button>
+      </div>
 
-          <div className="flex gap-3 mt-4 sm:mt-0">
-            <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-              Date
-            </button>
-            <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-              People
-            </button>
-            <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
-              Choose Tour
-            </button>
-          </div>
-        </div>
+      {/* Paragraph now under buttons (opposite H2) */}
+      <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+        Explore a curated list of top Indian packages each crafted for culture lovers,
+        history buffs, and relaxation seekers. Every tour offers the best local guides,
+        priority access, and savings you won’t find on mainstream travel sites.
+      </p>
+    </div>
+  </div>
+
+
 
         {/* Tour Cards */}
         <div

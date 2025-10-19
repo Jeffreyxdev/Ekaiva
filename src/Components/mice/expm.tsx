@@ -8,14 +8,15 @@ function Expm() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-10">
           <div>
-            <h1 className="text-5xl font-light leading-tight mb-8">
-              Exceptional Stays for<br />
-              Memorable MICE experience
+            <h1 className="text-5xl font-light leading-tight lg:mb-8">
+             Robust Features for Powerful Events<br />
+             
             </h1>
           </div>
           <div>
-            <p className="text-gray-600 leading-relaxed">
-              We have combined the comfort of boutique hotel and the solitude of nature: seperate houses, panoramic views, caring service and an atmosphere where you
+            <p className="text-gray-600 lg:mt-5 leading-relaxed">
+             Discover the Ekaiva advantage—every meeting, seminar, and conference is backed by solutions that ensure precision, comfort, and successful collaboration. From state-of-the-art venues and seamless tech to comprehensive logistics, detailed budgeting,
+
             </p>
           </div>
         </div>
@@ -24,18 +25,17 @@ function Expm() {
           <div>
             <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
               <span className="w-12 h-px bg-gray-300"></span>
-              GET STARTED
+              
             </div>
             <h2 className="text-4xl font-light mb-6">
-              Picking the right Hiking<br />
-              Gear!
+              Venue Selection<br />
+             
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              The nice thing about beginning hiking is that you don't really need any special gear; you can probably get away with things you already have.
+             We find venues that match your objectives, ensuring each space is accessible, well-equipped, and welcoming. You get optimal capacity, ambiance, and location—making every attendee feel valued and engaged.
+
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Let's start with clothing. A typical mistake hiking beginners make is wearing jeans or regular clothes, which will get heavy and chafe wif they get sweaty or wet.
-            </p>
+           
           </div>
           <div className="relative">
             <img
@@ -46,6 +46,55 @@ function Expm() {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+           <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Scenic bay with boats and mountains"
+              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+            />
+          </div>
+          <div>
+            
+            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+              <span className="w-12 h-px bg-gray-300"></span>
+              
+            </div>
+            <h2 className="text-4xl font-light mb-6">
+             Budget Planning<br />
+             
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Smart budgeting gives you clarity and confidence. We itemize costs for venue, catering, transport, and more, sharing options and savings strategies so your resources go further without compromise.
+            </p>
+           
+          </div>
+         
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+          <div>
+            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+              
+              <span className="w-12 h-px bg-gray-300"></span>
+              
+            </div>
+            <h2 className="text-4xl font-light mb-6">
+              Technology Integration<br />
+             
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+            Upgrade your event with cutting-edge tech. From interactive apps and virtual networking to advanced AV and digital check-ins, we boost engagement for in-person and remote delegates alike.
+            </p>
+           
+          </div>
+          <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Scenic bay with boats and mountains"
+              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+            />
+          </div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
             <img
@@ -66,17 +115,19 @@ function Expm() {
               </button>
             </div>
           </div>
+          
           <div className="order-1 lg:order-2">
             <div className="text-sm text-gray-500 mb-4 flex items-center justify-end gap-2">
-              GET STARTED
+           
               <span className="w-12 h-px bg-gray-300"></span>
             </div>
             <h2 className="text-4xl font-light mb-6 text-right">
-              Picking the right Hiking<br />
-              Gear!
+            Logistics & Transportation<br />
+              
             </h2>
             <p className="text-gray-600 leading-relaxed text-right">
-              The nice thing about beginning hiking is that you don't really need any special gear; you can probably get away with things you already have.
+             Ekaiva handles all movement for your guests and staff—professional transport, easy coordination, and flexible schedules. We smooth every transition so your agenda flows, stress-free.
+
             </p>
           </div>
           </div>
