@@ -6,33 +6,36 @@ function FAQ() {
 
   const faqs = [
     {
-      question: 'How many people can fit in one house?',
-      answer: 'A standard house can comfortably accommodate 2 people. There are houses with an additional bed for a child or another adult.'
+      
+      question: 'How can I book a cheap India tour package with Ekaiva?',
+      answer: 'Start by searching your preferred destination and travel dates on our easy site. Compare deals—every option comes with guaranteed savings versus the major travel portals.Booking is hassle-free, and confirmation arrives instantly for all hotels and tours, so you can plan with confidence.',
+      
     },
     {
-      question: 'Is there a shower or a toilet?',
-      answer: 'Yes, each house comes with a private bathroom including a modern shower, toilet, and sink. All bathrooms are equipped with eco-friendly amenities and hot water.'
+      
+      question: 'Can NRIs and foreigners customize their trips?',
+      answer: 'Yes—Ekaiva’s experts actively work to personalize your journey. From local guides to unique stops, elderly care, and family priorities, every detail can be tailored.You’ll receive 1:1 support and recommendations, so you experience India exactly as you want.',
+      
     },
     {
-      question: 'Are pets Allowed?',
-      answer: 'We welcome well-behaved pets in select accommodations. There is an additional fee of $50 per pet per night. Please inform us in advance so we can arrange a pet-friendly house for you.'
+      
+      question: 'What makes Ekaiva more affordable than other sites?',
+      answer: 'Ekaiva negotiates exclusive rates, offers transparent pricing, and never adds hidden fees. Our smart search engine finds deals others miss, saving you more on every trip.Promotions, bulk discounts, and loyalty offers stack up to maximize value for all guests.',
+      
     },
     {
-      question: 'Is there a shower or a toilet?',
-      answer: 'All our houses include modern bathroom facilities with showers, toilets, and premium toiletries. We maintain high standards of cleanliness and comfort.'
+     
+      question: 'Are group or senior discounts available?',
+      answer: 'Absolutely—special rates for families, large friend groups, business travelers, and seniors are available on both tours and accommodation.Simply mention your group details when booking or reach out to customer care for easy savings on tailored travel plans.',
+      
     },
     {
-      question: 'Whats included in this price?',
-      answer: 'The price includes accommodation, daily breakfast, access to all resort facilities, WiFi, parking, and basic amenities. Additional services like guided tours, spa treatments, and special dining experiences can be arranged separately.'
+     
+      question: 'Is Ekaiva safe for solo or elderly travelers?',
+      answer: 'Safety is our top priority. Partners are vetted for reliability, cars are monitored, and support is one tap away at all times.Elderly travelers can request greater assistance and wheelchair-friendly hotels, plus our helpline is always open.',
+     
     },
-    {
-      question: 'Whats included in this price?',
-      answer: 'Your booking includes the house rental, linens, towels, kitchen essentials, WiFi, parking, and 24/7 concierge service. Meals and activities can be added to your package.'
-    },
-    {
-      question: 'Can I come for 1night?',
-      answer: 'Yes, we accept one-night bookings based on availability. However, we recommend staying at least 2-3 nights to fully experience the natural beauty and tranquility of our location. Weekend bookings may require a minimum 2-night stay.'
-    }
+    
   ];
 
   const toggleQuestion = (index: number) => {

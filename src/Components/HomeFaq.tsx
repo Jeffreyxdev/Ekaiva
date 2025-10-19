@@ -6,32 +6,32 @@ const FAQSection = () => {
   const faqData = [
     {
       id: '001',
-      question: 'How can I book a cheap India tour package with Ekaiva?',
-      answer: 'Start by searching your preferred destination and travel dates on our easy site. Compare deals—every option comes with guaranteed savings versus the major travel portals.Booking is hassle-free, and confirmation arrives instantly for all hotels and tours, so you can plan with confidence.',
+      question: 'Lowest Cost, Every Time',
+      answer: 'Always get the cheapest deals on every booking—hotels, tours, and more.',
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop'
     },
     {
       id: '002',
-      question: 'Can NRIs and foreigners customize their trips?',
-      answer: 'Yes—Ekaiva’s experts actively work to personalize your journey. From local guides to unique stops, elderly care, and family priorities, every detail can be tailored.You’ll receive 1:1 support and recommendations, so you experience India exactly as you want.',
+      question: 'Custom Trips',
+      answer: 'Personalize your itinerary for a trip that fits you perfectly—ideal for NRIs and international guests.',
       image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop'
     },
     {
       id: '003',
-      question: 'What makes Ekaiva more affordable than other sites?',
-      answer: 'Ekaiva negotiates exclusive rates, offers transparent pricing, and never adds hidden fees. Our smart search engine finds deals others miss, saving you more on every trip.Promotions, bulk discounts, and loyalty offers stack up to maximize value for all guests.',
+      question: 'Authentic Experiences',
+      answer: 'Get real local flavors, trusted guides, and offbeat adventures.',
       image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=500&fit=crop'
     },
     {
       id: '004',
-      question: 'Are group or senior discounts available?',
-      answer: 'Absolutely—special rates for families, large friend groups, business travelers, and seniors are available on both tours and accommodation.Simply mention your group details when booking or reach out to customer care for easy savings on tailored travel plans.',
+      question: 'Fast, Easy Booking',
+      answer: 'Instant confirmation, secure payment, and 24/7 customer care whenever you need.',
       image: 'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&h=500&fit=crop'
     },
     {
       id: '005',
-      question: 'Is Ekaiva safe for solo or elderly travelers?',
-      answer: 'Safety is our top priority. Partners are vetted for reliability, cars are monitored, and support is one tap away at all times.Elderly travelers can request greater assistance and wheelchair-friendly hotels, plus our helpline is always open.',
+      question: 'Trusted By Many',
+      answer: 'NRIs and global travelers rate Ekaiva for honest service and seamless journeys.',
       image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop'
     },
     
@@ -53,11 +53,11 @@ const FAQSection = () => {
   {/* Left side — Button + Title inline */}
  <div className="flex items-center gap-4 flex-shrink-0">
   <button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm">
-    06. FAQ
+    06.WHY US
   </button>
 
   <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight">
-    Frequently Asked Questions
+    Why Book With Ekaiva?
     <br />
   </h1>
 </div>
@@ -65,7 +65,7 @@ const FAQSection = () => {
 
   {/* Right side — Paragraph */}
   <p className="text-gray-600 text-base lg:text-lg max-w-xl leading-relaxed">
-   Get quick answers to the most common concerns from travelers booking with Ekaiva. Each response is designed to be clear, reassuring, and thorough—so visitors know exactly what to expect.
+   Enjoy year-round savings and unmatched travel flexibility through Ekaiva.Get exclusive rates not offered by other platforms, with genuine price transparency and secure payment.
   </p>
 </div>
 
@@ -78,7 +78,7 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div
               key={faq.id}
-              className="bg-white  shadow-sm border border-gray-200 overflow-hidden transition-all duration-300"
+              className="   border-gray-200 overflow-hidden transition-all duration-300"
             >
               {/* Header */}
               <button
@@ -87,7 +87,7 @@ const FAQSection = () => {
               >
                 <div className="flex items-center gap-4 flex-1">
                   <span className="text-sm font-mono text-gray-400 flex-shrink-0">({faq.id})</span>
-                  <h3 className="text-lg lg:text-xl font-medium text-gray-900">{faq.question}</h3>
+                  <h3 className="text-[13px] lg:text-xl font-medium text-gray-900">{faq.question}</h3>
                 </div>
                 <div className="ml-4 flex-shrink-0">
                   <svg
@@ -128,7 +128,7 @@ const FAQSection = () => {
                     )}
 
                     {/* Text */}
-                    <div className="flex-1 mt-4 lg:mt-0">
+                    <div className="flex-1 mt-4 lg:mt-0 ">
                       <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                         {faq.answer}
                       </p>

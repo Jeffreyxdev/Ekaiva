@@ -138,8 +138,11 @@ const bottomImages = [
               panoramic views, caring service and an atmosphere where you want to breathe deeper.
             </p>
           </div>
+          
         </div>
-        <motion.div
+        
+      </div>
+      <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -163,15 +166,8 @@ const bottomImages = [
               style={{ backgroundImage: `url(${bottomImages[2]})` }}
             ></span>{" "}
             everything taken care of.
-          </h2>
-
-       
-
-
-           
-          
+          </h2>          
         </motion.div>
-      </div>
     </section>
   );
 }
