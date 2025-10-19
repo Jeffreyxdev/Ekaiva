@@ -20,7 +20,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20">
         <div className="text-white max-w-2xl">
           {/* ABOUT Label */}
           <motion.div

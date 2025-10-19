@@ -1,3 +1,7 @@
+import exp2 from '../assets/exp.png'
+import india from '../assets/india.png'
+import delhi from '../assets/Delhi.jpg'
+import mon from '../assets/mon.png'
 function exp() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -37,7 +41,7 @@ function exp() {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={exp2}
               alt="Scenic bay with boats and mountains"
               className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
             />
@@ -47,7 +51,7 @@ function exp() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
            <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={india}
               alt="Scenic bay with boats and mountains"
               className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
             />
@@ -87,7 +91,7 @@ function exp() {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={delhi}
               alt="Scenic bay with boats and mountains"
               className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
             />
@@ -96,7 +100,7 @@ function exp() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
             <img
-              src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={mon}
               alt="Scenic bay with boats and mountains"
               className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
             />

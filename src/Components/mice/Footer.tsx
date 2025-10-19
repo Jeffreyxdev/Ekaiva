@@ -14,10 +14,10 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-black/10 h-full"></div>
+        <div className="absolute inset-0 bg-black/70 h-full"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F6F8F7] via-[#F6F8F7]/50 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F6F8F7] to-transparent z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
         <div className="relative z-20 flex flex-col justify-between w-full">

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, X } from 'lucide-react';
-
+import dv from "../../assets/dv.png";
 function FAQ() {
   const [openQuestion, setOpenQuestion] = useState<number | null>(0);
 
@@ -106,9 +106,9 @@ function FAQ() {
           <div className="lg:sticky lg:top-16">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src={dv}
                 alt="Mountain lake landscape"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[730px] object-cover"
               />
             </div>
           </div>
