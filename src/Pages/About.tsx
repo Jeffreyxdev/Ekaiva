@@ -1,7 +1,7 @@
-import Navbar from "../Components/Navbar"
-import Hero from "../Components/About/hero"
-import MiceSection from "../Components/About/MiceSection"
-import Abouts from "../Components/About/about"
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/About/hero";
+import MiceSection from "../Components/About/MiceSection";
+import Abouts from "../Components/About/about";
 
 const About = () => {
   return (
