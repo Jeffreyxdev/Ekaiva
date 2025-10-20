@@ -25,113 +25,94 @@ function exp() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div>
-            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
-              <span className="w-12 h-px bg-gray-300"></span>
-              
-            </div>
-            <h2 className="text-4xl font-light mb-6">
-              Smart, Cost-Efficient MICE Solutions<br />
-             
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Enjoy professional venues, seamless event logistics, and custom group activities—all designed to maximize impact while saving costs for teams of any size.​
-            </p>
-           
-          </div>
-          <div className="relative">
-            <img
-              src={exp2}
-              alt="Scenic bay with boats and mountains"
-              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
-            />
-          </div>
-        </div>
+  {/* TEXT FIRST ON MOBILE */}
+  <div className="order-1 lg:order-1">
+    <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <span className="w-12 h-px bg-gray-300"></span>
+    </div>
+    <h2 className="text-4xl font-light mb-6">
+      Smart, Cost-Efficient MICE Solutions
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Enjoy professional venues, seamless event logistics, and custom group activities—all designed to maximize impact while saving costs for teams of any size.
+    </p>
+  </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-           <div className="relative">
-            <img
-              src={india}
-              alt="Scenic bay with boats and mountains"
-              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
-            />
-          </div>
-          <div>
-            
-            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
-              <span className="w-12 h-px bg-gray-300"></span>
-              
-            </div>
-            <h2 className="text-4xl font-light mb-6">
-              Why Choose Ekaiva for MICE?<br />
-             
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses
-            </p>
-           
-          </div>
-         
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div>
-            <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
-               Why Choose Ekaiva for MICE?
-              <span className="w-12 h-px bg-gray-300"></span>
-              
-            </div>
-            <h2 className="text-4xl font-light mb-6">
-              Custom Itineraries and Group Perks<br />
-             
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-             Every Ekaiva MICE package is flexible, letting you add local excursions, cultural experiences, and special amenities for a truly unique event.​
-            </p>
-           
-          </div>
-          <div className="relative">
-            <img
-              src={delhi}
-              alt="Scenic bay with boats and mountains"
-              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative order-2 lg:order-1">
-            <img
-              src={mon}
-              alt="Scenic bay with boats and mountains"
-              className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
-            />
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
-              <button className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          
-          <div className="order-1 lg:order-2">
-            <div className="text-sm text-gray-500 mb-4 flex items-center justify-end gap-2">
-             Why Choose Ekaiva for MICE?
-              <span className="w-12 h-px bg-gray-300"></span>
-            </div>
-            <h2 className="text-4xl font-light mb-6 text-right">
-             Get a Free MICE Quote Today<br />
-              
-            </h2>
-            <p className="text-gray-600 leading-relaxed text-right">
-             Contact Ekaiva for competitive rates, seasonal offers, and dedicated support for every stage—from concept to completion.
-            </p>
-          </div>
-          </div>
+  {/* IMAGE SECOND ON MOBILE */}
+  <div className="relative order-2 lg:order-2">
+    <img
+      src={exp2}
+      alt="Scenic bay with boats and mountains"
+      className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+    />
+  </div>
+</div>
+
+{/* SECOND SECTION — IMAGE FIRST ON DESKTOP, TEXT FIRST ON MOBILE */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+  <div className="relative order-2 lg:order-1">
+    <img
+      src={india}
+      alt="India travel event"
+      className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+    />
+  </div>
+  <div className="order-1 lg:order-2">
+    <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <span className="w-12 h-px bg-gray-300"></span>
+    </div>
+    <h2 className="text-4xl font-light mb-6">
+      Why Choose Ekaiva for MICE?
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses.
+    </p>
+  </div>
+</div>
+
+{/* THIRD SECTION — TEXT FIRST ALWAYS */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+  <div className="order-1 lg:order-1">
+    <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <span className="w-12 h-px bg-gray-300"></span>
+    </div>
+    <h2 className="text-4xl font-light mb-6">
+      Custom Itineraries and Group Perks
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Every Ekaiva MICE package is flexible, letting you add local excursions, cultural experiences, and special amenities for a truly unique event.
+    </p>
+  </div>
+  <div className="relative order-2 lg:order-2">
+    <img
+      src={delhi}
+      alt="Delhi event"
+      className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+    />
+  </div>
+</div>
+
+
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+< div className="relative order-2 lg:order-1">
+    <img
+      src={mon}
+      alt="Delhi event"
+      className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+    />
+  </div> <div className="order-1 lg:order-1">
+    <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <span className="w-12 h-px bg-gray-300"></span>
+    </div>
+    <h2 className="text-4xl font-light mb-6">
+        Get a Free MICE Quote Today
+    </h2>
+    <p className="text-gray-600 leading-relaxed mb-4">
+      Contact Ekaiva for competitive rates, seasonal offers, and dedicated support for every stage—from concept to completion
+    </p>
+  </div>
+  
+</div>
           <div className="mt-32 text-center" id="gallery">
             <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-8">
               02. Customer Gallery
