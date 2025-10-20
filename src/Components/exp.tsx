@@ -53,6 +53,8 @@ function exp() {
   <div className="relative order-2 lg:order-1">
     <img
       src={india}
+      loading="lazy"
+      decoding="async"
       alt="India travel event"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
     />
@@ -87,6 +89,8 @@ function exp() {
     <img
       src={delhi}
       alt="Delhi event"
+      loading="lazy"
+      decoding="async"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
     />
   </div>
@@ -97,6 +101,8 @@ function exp() {
 < div className="relative order-2 lg:order-1">
     <img
       src={mon}
+      loading="lazy"
+      decoding="async"
       alt="Delhi event"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
     />
@@ -135,6 +141,8 @@ function exp() {
                     <img
                       src="https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&w=800"
                       alt="Eiffel Tower in Paris"
+                       loading="lazy"
+                       decoding="async"
                       className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

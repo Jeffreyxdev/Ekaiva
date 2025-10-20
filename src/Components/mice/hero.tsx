@@ -57,12 +57,18 @@ const Hero = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center blur-[1px] scale-105"
-          style={{ backgroundImage: `url(${bgImage})` }}
-          draggable="false"
-       
-        />
+       <div className="absolute inset-0 z-0 overflow-hidden">
+  <img
+    src={bgImage}
+    alt="Background"
+    loading="lazy"
+    decoding="async"
+    draggable="false"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
         <div className="absolute inset-0 bg-black/40" />
       </motion.div>
 

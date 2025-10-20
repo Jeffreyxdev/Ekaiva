@@ -22,3 +22,8 @@ body, html {
 html {
   scroll-behavior: smooth;
 }
+
+img {
+  will-change: transform, opacity;
+ 
+}

@@ -10,12 +10,17 @@ const Hero = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${mfb})`,
-          }}
-        />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+  <img
+    src={mfb}
+    alt="Background"
+    loading="lazy"
+    decoding="async"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
         <div className="absolute inset-0 bg-black/50" />
       </motion.div>
 
