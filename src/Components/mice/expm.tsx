@@ -72,7 +72,7 @@ function Expm() {
          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div>
+          <div className="order-2 lg:order-1">
             <div className="text-sm text-gray-500 mb-4 flex items-center gap-2">
               
               <span className="w-12 h-px bg-gray-300"></span>
@@ -87,7 +87,7 @@ function Expm() {
             </p>
            
           </div>
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <img
               src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Scenic bay with boats and mountains"
