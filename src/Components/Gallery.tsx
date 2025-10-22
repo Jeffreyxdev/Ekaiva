@@ -56,7 +56,7 @@ const Gallery = () => {
     <div className="min-h-screen pt-14 md:pt-20 pb-10 md:pb-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-left sm:text-center lg:text-left mb-10">
           <button className="px-3 py-1.5 text-xs sm:text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition mb-4">
             02. Customer Gallery
           </button>

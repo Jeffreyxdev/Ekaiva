@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import {  useState, useEffect } from "react";
 import type { ChangeEvent } from "react";
 import { ArrowRight, MapPin,  Users,Search } from "lucide-react";
-import heroBg from "../assets/fbf.png";
-import heroBgMobile from "../assets/image.png";
+import heroBg from "../../assets/fbf.png";
+import heroBgMobile from "../../assets/image.png";
 const Hero = () => {
   
   const [formData, setFormData] = useState({
@@ -80,9 +80,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-           Lets Just Get Travel 
+           Explore the World
             <br />
-            Around The World
+            with Ekaiva Tours
           </motion.h1>
 
           <motion.p
@@ -91,7 +91,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Find budget travel to India, lowest hotel rates,custom itineraries,<br /> and unforgettable local adventures.​
+            Travel has never been simpler Ekaiva brings you expertly designed,<br /> all-inclusive international packages for business and leisure alike. 
           </motion.p>
 
           {/* Search Bar */}
@@ -109,7 +109,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Origin</label>
+      <label className="text-xs font-semibold text-gray-800">Location</label>
       <input
         type="text"
         name="origin"
@@ -128,7 +128,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Destination</label>
+      <label className="text-xs font-semibold text-gray-800">Package</label>
       <input
         type="text"
         name="destination"
@@ -147,7 +147,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <Users className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Guests</label>
+      <label className="text-xs font-semibold text-gray-800">Tour type</label>
       <input
         type="text"
         name="guests"

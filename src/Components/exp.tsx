@@ -119,7 +119,7 @@ function exp() {
   </div>
   
 </div>
-          <div className="mt-32 text-center" id="gallery">
+          <div className="mt-32 text-left sm:text-center lg:text-left" id="gallery">
             <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-8">
               02. Customer Gallery
             </button>
@@ -130,7 +130,7 @@ function exp() {
             </h2>
 
             <p className="text-gray-600 max-w-2xl mx-auto mb-16 leading-relaxed">
-              Take a peek at real photos from Ekaiva travelers—smiling families, happy solo guests, and exotic locations all enjoyed at budget prices.Our gallery highlights authentic Indian experiences, MICE events, and international tours made memorable by value and care.
+              Take a peek at real photos from Ekaiva travelers smiling families, happy solo guests, and exotic locations all enjoyed at budget prices.Our gallery highlights authentic Indian experiences, MICE events, and international tours made memorable by value and care.
             </p>
 
             {/* ✅ Added text-left to override parent text-center */}

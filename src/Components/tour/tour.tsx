@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin } from "lucide-react";
 
-const HomeTour = () => {
+const Tourc = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -10,10 +10,10 @@ const HomeTour = () => {
   const tours = [
     {
       id: 1,
-      title: "Taj Mahal Express",
+      title: "Rajasthan Royal Sojourn",
       subtitle: "One Day Tour",
       description:
-        "See the iconic Taj Mahal, skip lines, expert guides",
+        "From Jaipur’s pink city to Jodhpur’s blue lanes, live the stories of India’s kings and craftspeople.",
       
       highlight: "UAH/night",
       image:
@@ -22,10 +22,10 @@ const HomeTour = () => {
     },
     {
       id: 2,
-      title: "Golden Triangle Classic",
+      title: "Golden Triangle Discovery",
       subtitle: "5 Nights",
       description:
-        "Delhi, Agra, Jaipur—culture, monuments, heritage hotels",
+        "Visit Delhi, Agra, and Jaipur—palaces, forts, vibrant markets, and guided heritage trails.",
       
       highlight: "UAH/night",
       image:
@@ -34,10 +34,10 @@ const HomeTour = () => {
     },
     {
       id: 3,
-      title: "Rajasthan Explorer",
+      title: "Mystic Ganges Escape",
       subtitle: "7 Nights",
       description:
-        "Forts, palaces, deserts, and vibrant local markets",
+        "Rituals and river cruises in Varanasi. Deep cultural immersion, sacred temples, and local flavors.",
       
       highlight: "UAH/night",
       image:
@@ -46,10 +46,10 @@ const HomeTour = () => {
     },
     {
       id: 4,
-      title: "Kerala Backwaters Bliss",
+      title: "Kerala Backwater Magic",
       subtitle: "4 Nights",
       description:
-        "Houseboats, tranquil scenery, authentic cuisine",
+        "Glide on houseboats, explore tea plantations, and relax among lush beauty and authentic cuisine.",
       
       highlight: "UAH/night",
       image:
@@ -59,11 +59,7 @@ const HomeTour = () => {
     
   ];
 
-  const bottomImages = [
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
-  ];
+ 
 
   // Handle horizontal scroll tracking
   const handleScroll = () => {
@@ -84,30 +80,30 @@ const HomeTour = () => {
       <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
         03. Tours
       </button>
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
-        Choose a Tour <br /> that speaks to you
+      <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight mb-2">
+       Indulge in India’s  <br />Timeless Wonders 
       </h2>
     </div>
 
     {/* Right Side */}
-    <div className="flex flex-col items-start gap-3 mt-4 sm:mt-0 max-w-md">
-      <div className="flex gap-3">
-        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-          Date
-        </button>
-        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-          People
-        </button>
-        <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
-          Choose Tour
-        </button>
-      </div>
+<div className="  flex-col items-start gap-3 mt-4 sm:mt-0 max-w-md">
+  <div className="hidden sm:flex gap-3">
+    <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
+      Date
+    </button>
+    <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
+      People
+    </button>
+    <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
+      Choose Tour
+    </button>
+  </div>
+
+
 
       {/* Paragraph now under buttons (opposite H2) */}
       <p className="text-gray-600 text-sm mt-3 leading-relaxed">
-        Explore a curated list of top Indian packages each crafted for culture lovers,
-        history buffs, and relaxation seekers. Every tour offers the best local guides,
-        priority access, and savings you won’t find on mainstream travel sites.
+        Step into the heart of India on curated itineraries—whether you crave the majesty of the Taj Mahal, spiritual Varanasi, or the wild colors of Rajasthan. With Ekaiva, every Indian journey is guided by experts, enriched with local culture, and backed by 24/7 assistance from booking to your safe return.
       </p>
     </div>
   </div>
@@ -226,53 +222,7 @@ const HomeTour = () => {
         </div>
 
         {/* Bottom Text - Desktop: Inline images, Mobile: Full-width stacked */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="max-w-3xl mx-auto text-center mt-20"
-        >
-          {/* Desktop Version - Hidden on Mobile */}
-          <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
-           Join thousands who trust Ekaiva for budget-friendly packages{" "}savings on every b
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[0]})` }}
-            ></span>
-           king,and stress-free travel.Get the l
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[1]})` }}
-            ></span>
-            west prices on hotels and tours{" "}
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[2]})` }}
-            ></span>{" "}
-          always authentic and reliable.​
-
-          </h2>
-
-          {/* Mobile Version - Vertical Layout with Full-Width Images */}
-          <div className="md:hidden text-center px-2">
-            <p className="text-2xl text-gray-800 leading-relaxed ">
-              Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,and 
-            </p>
-            <p className="text-2xl text-gray-800 leading-relaxed mb-4">
-             stress-free travel. Get the lowest prices on hotels and tours always authentic and reliable.​
-            </p>
-            
-            <div className="w-full h-full rounded-3xl overflow-hidden mb-4">
-              <img
-                src={bottomImages[1]}
-                alt="Nature surroundings"
-                className="w-lg h-10 "
-              />
-            </div>
-
-           
-          </div>
-        </motion.div>
+        
       </div>
 
       <style>{`
@@ -288,4 +238,4 @@ const HomeTour = () => {
   );
 };
 
-export default HomeTour;
+export default Tourc;

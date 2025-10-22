@@ -52,7 +52,7 @@ const FAQSection = () => {
   
   {/* Left side — Button + Title inline */}
  <div className="flex items-center gap-4 flex-shrink-0">
-  <button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm">
+  <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
     06.WHY US
   </button>
 

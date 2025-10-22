@@ -25,7 +25,7 @@ const Homeabout = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid lg:grid-cols-3 gap-12 items-start text-center lg:text-left">
+        <div className="grid lg:grid-cols-3 gap-12 items-start text-left sm:text-center lg:text-left">
           {/* Left text */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
