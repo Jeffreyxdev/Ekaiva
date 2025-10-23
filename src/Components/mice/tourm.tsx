@@ -82,7 +82,7 @@ const Tourm = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[#f8f9fa] py-16 px-4" id="tours">
+    <section className="min-h-screen bg-white py-16 px-4" id="tours">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-10">
         <div className="flex flex-wrap justify-between items-start mb-12">

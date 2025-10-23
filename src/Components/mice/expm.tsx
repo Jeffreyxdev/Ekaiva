@@ -23,7 +23,7 @@ function Expm() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className=" bg-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Header */}
         <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-12">

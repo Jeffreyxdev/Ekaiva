@@ -23,14 +23,14 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="">
+      <div className="max-w-7xl mx-auto px-2 py-16">
         {/* Header Section */}
         <div className="mt-32" id="gallery">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left side — button + heading */}
             <div className="text-left">
-              <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-8">
+              <button className="px-3 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-8">
                 02. Customer Gallery
               </button>
 

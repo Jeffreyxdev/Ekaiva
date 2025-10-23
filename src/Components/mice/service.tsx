@@ -36,7 +36,7 @@ export default function Service() {
 ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6 md:px-12 lg:px-16">
+    <div className="min-h-screen bg-white py-16 px-6 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

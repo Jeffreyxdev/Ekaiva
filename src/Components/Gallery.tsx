@@ -53,8 +53,8 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16 md:pt-24 pb-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <div className=" pt-16 md:pt-24 pb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-16">
           {/* Left side - title & button */}
