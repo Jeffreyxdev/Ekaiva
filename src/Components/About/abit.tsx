@@ -1,29 +1,29 @@
-function Expm() {
+function Abit() {
   const sections = [
     {
-      title: "Venue Selection",
-      text: "We find venues that match your objectives, ensuring each space is accessible, well-equipped, and welcoming. You get optimal capacity, ambiance, and location—making every attendee feel valued and engaged.",
+      title: "The Ekaiva Touch",
+      text: "Thoughtful Spaces, Seamless Service Every Ekaiva property welcomes you with premium comfort, innovative design, and warm, attentive service. Whether it’s a lakeside villa or a bustling city hotel, we guarantee a memorable setting for work, rest, or play.",
       img: "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
-      title: "Budget Planning",
-      text: "Smart budgeting gives you clarity and confidence. We itemize costs for venue, catering, transport, and more, sharing options and savings strategies so your resources go further without compromise.",
+      title: "Meetings That Make a Difference",
+      text: "Tailored for Connection and Creativity Our venues host meetings, conferences, and MICE events where productivity meets pleasure. From high-tech boardrooms to inspiring outdoor areas, Ekaiva fuels fresh ideas and vibrant collaboration.",
       img: "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
-      title: "Technology Integration",
-      text: "Upgrade your event with cutting-edge tech. From interactive apps and virtual networking to advanced AV and digital check-ins, we boost engagement for in-person and remote delegates alike.",
+      title: "Experiences Beyond the Ordinary",
+      text: "Local Flavor, Lasting Memories Each Ekaiva stay is enriched by curated local experiences: think guided hikes, market tours, cultural workshops, and wellness escapes. Guests leave with stories, friendships, and true inspiration.",
       img: "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
-      title: "Logistics & Transportation",
-      text: "Ekaiva handles all movement for your guests and staff—professional transport, easy coordination, and flexible schedules. We smooth every transition so your agenda flows, stress-free.",
+      title: "Culinary Journeys",
+      text: "Taste the Region on Every Plate Our kitchens feature local ingredients and global influences, offering both comfort food and regional specialties. Every meal is crafted to delight—whether a buffet breakfast or a fireside barbecue.",
       img: "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen  bg-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Header */}
         <button className="px-4 py-2 text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition-colors mb-12">
@@ -33,15 +33,12 @@ function Expm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
           <div>
             <h1 className="text-5xl font-light leading-tight mb-8">
-              Robust Features for Powerful Events
+              Redefining Hospitality for Inspired Experiences
             </h1>
           </div>
           <div>
             <p className="text-gray-600 lg:mt-5 leading-relaxed">
-              Discover the Ekaiva advantage—every meeting, seminar, and
-              conference is backed by solutions that ensure precision, comfort,
-              and successful collaboration. From state-of-the-art venues and
-              seamless tech to comprehensive logistics and detailed budgeting.
+              We offer personalized stays in stunning locations, seamless logistics, and curated amenities for unforgettable corporate retreats, family vacations, and once-in-a-lifetime adventures. Our approach combines boutique hotel service with local authenticity, ensuring every guest feels both pampered and at home.
             </p>
           </div>
         </div>
@@ -114,4 +111,4 @@ function Expm() {
   );
 }
 
-export default Expm;
+export default Abit;

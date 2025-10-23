@@ -22,13 +22,11 @@ export default function Abouts() {
           {/* Left Column - Text Content */}
           <div className="space-y-6 lg:pr-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight mont">
-              Customer Tour Success
+              When and Why We Started Ekaiva
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Real Stories, Real Smiles
-                Our proudest achievement is the delight of our travelers—families reuniting at the Taj Mahal, solo adventurers exploring hidden cities, and business teams celebrating milestones in style.
-                See their stories in photos, testimonials, and shared memories—each proof that Ekaiva’s commitment to excellence is more than just words.
+              Ekaiva was founded in 2019 out of a desire to transform ordinary travel and events into truly memorable experiences. Seeing a need for hospitality that blends comfort, creativity, and genuine local connection, we set out to create places where guests feel inspired, welcomed, and genuinely cared for—no matter their journey’s purpose.
 
             </p>
 
