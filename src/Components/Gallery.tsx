@@ -21,7 +21,7 @@ const Gallery = () => {
     {
       id: '003',
       question: 'Monuments Entrance Tickets to all places',
-      answer: 'Visiting from overseas, Ekaiva’s team made our family feel special. The itinerary fit our needs perfectly, and the hotel was both safe and affordable',
+      answer: 'Visiting from overseas, Ekaiva’s team made our family feel special. The itinerary fit our needs perfectly, and the hotel was both safe and affordable.',
       author: 'Ashok S.',
       location: 'Professional Supervisor',
       image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -53,39 +53,46 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-14 md:pt-20 pb-10 md:pb-16 bg-gray-50">
+    <div className="min-h-screen pt-16 md:pt-24 pb-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-left sm:text-center lg:text-left mb-10">
-          <button className="px-3 py-1.5 text-xs sm:text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition mb-4">
-            02. Customer Gallery
-          </button>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-16">
+          {/* Left side - title & button */}
+          <div>
+            <button className="px-4 py-1.5 text-xs sm:text-sm border border-gray-300 rounded-full text-gray-700 hover:bg-gray-100 transition mb-4">
+              02. Customer Gallery
+            </button>
+            <h1 className="text-4xl sm:text-5xl font-light leading-tight">
+              Journey through the moments <br className="hidden sm:block" />
+              captured in our gallery
+            </h1>
+          </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light leading-snug mb-4">
-            Journey through the moments<br className="hidden sm:block" />
-            captured in our gallery
-          </h1>
-
-          <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
-            We have combined the comfort of boutique hotels and the solitude of nature:
-            separate houses, panoramic views, caring service and an atmosphere where you
-            want to breathe deeper.
-          </p>
+          {/* Right side - paragraph */}
+          <div className="flex items-center lg:justify-end">
+            <p className="text-gray-600 leading-relaxed max-w-md lg:text-right  lg:mt-8">
+              We’ve blended boutique comfort with nature’s calm—panoramic views, private stays,
+              and care that helps you breathe deeper. Each photo captures the heart of Ekaiva’s
+              travel experience.
+            </p>
+          </div>
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {faqData.map((faq) => (
             <div
               key={faq.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
               {/* Image */}
-              <div className="relative h-48 sm:h-56">
+              <div className="relative h-56 sm:h-64">
                 <img
                   src={faq.image}
                   alt={faq.question}
-                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -97,7 +104,7 @@ const Gallery = () => {
                   ))}
                 </div>
 
-                <p className="text-gray-900 text-sm leading-relaxed mb-4">
+                <p className="text-gray-800 text-sm leading-relaxed mb-4">
                   {faq.answer}
                 </p>
 

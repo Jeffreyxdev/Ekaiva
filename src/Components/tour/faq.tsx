@@ -57,8 +57,8 @@ function FAQ() {
               06. FAQ
             </button>
 
-            <h1 className="text-5xl font-light leading-tight mb-12">
-             Guide Service Questions,<br />
+            <h1 className="text-4xl  font-light leading-tight mb-12">
+             Guide Service<br />Questions,
               Clearly Answered
             </h1>
 
