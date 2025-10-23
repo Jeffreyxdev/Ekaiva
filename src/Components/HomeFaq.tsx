@@ -42,7 +42,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 px-6 sm:px-10 lg:px-20 bg-gray-50">
+    <div className="min-h-screen py-16 px-6 sm:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         {/* Header Section */}
