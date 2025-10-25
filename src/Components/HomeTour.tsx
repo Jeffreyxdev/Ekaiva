@@ -1,9 +1,8 @@
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // ✅ Correct import
 
 const HomeTour = () => {
-  const [expandedCard, setExpandedCard] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -13,9 +12,8 @@ const HomeTour = () => {
       title: "Taj Mahal Express",
       subtitle: "One Day Tour",
       description:
-        "See tw-full max-w-7xl mx-authe iconic Taj Mahal, skip lines, expert guides",
-      
-      highlight: "UAH/night",
+        "See the iconic Taj Mahal with expert guides and skip-the-line privileges.",
+      highlight: "₹4999 / night",
       image:
         "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
       location: "Agra, India",
@@ -25,9 +23,8 @@ const HomeTour = () => {
       title: "Golden Triangle Classic",
       subtitle: "5 Nights",
       description:
-        "Delhi, Agra, Jaipur—culture, monuments, heritage hotels",
-      
-      highlight: "UAH/night",
+        "Delhi, Agra, Jaipur — explore culture, monuments, and heritage hotels.",
+      highlight: "₹8999 / night",
       image:
         "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=800&q=80",
       location: "Amritsar, India",
@@ -37,9 +34,8 @@ const HomeTour = () => {
       title: "Rajasthan Explorer",
       subtitle: "7 Nights",
       description:
-        "Forts, palaces, deserts, and vibrant local markets",
-      
-      highlight: "UAH/night",
+        "Forts, palaces, deserts, and vibrant local markets across Rajasthan.",
+      highlight: "₹10999 / night",
       image:
         "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
       location: "Jaipur, India",
@@ -49,14 +45,12 @@ const HomeTour = () => {
       title: "Kerala Backwaters Bliss",
       subtitle: "4 Nights",
       description:
-        "Houseboats, tranquil scenery, authentic cuisine",
-      
-      highlight: "UAH/night",
+        "Houseboats, tranquil backwaters, and authentic South Indian cuisine.",
+      highlight: "₹7499 / night",
       image:
         "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
-      location: "Tamil Nadu, India",
+      location: "Kerala, India",
     },
-    
   ];
 
   const bottomImages = [
@@ -65,7 +59,6 @@ const HomeTour = () => {
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
   ];
 
-  // Handle horizontal scroll tracking
   const handleScroll = () => {
     if (!scrollRef.current) return;
     const scrollLeft = scrollRef.current.scrollLeft;
@@ -75,129 +68,63 @@ const HomeTour = () => {
   };
 
   return (
-    <section className="  py-16 px-4" id="tours">
+    <section className="py-16 px-4" id="tours">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-10">
-  <div className="flex flex-wrap justify-between items-start mb-12">
-    {/* Left Side */}
-    <div>
-      <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
-        03. Tours
-      </button>
-      <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight mb-2">
-        Choose a Tour <br /> that speaks to you
-      </h2>
-    </div>
+        <div className="flex flex-wrap justify-between items-start mb-12">
+          {/* Left */}
+          <div>
+            <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
+              03. Tours
+            </button>
+            <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight mb-2">
+              Choose a Tour <br /> that speaks to you
+            </h2>
+          </div>
 
-    {/* Right Side */}
-    <div className="flex flex-col items-start gap-3 mt-10 sm:mt-0 max-w-md">
-      
-
-      {/* Paragraph now under buttons (opposite H2) */}
-      <p className="text-gray-600 text-md lg:mt-13 mt-0 leading-relaxed">
-        Explore a curated list of top Indian packages each crafted for culture lovers,
-        history buffs, and relaxation seekers. Every tour offers the best local guides,
-        priority access, and savings you won’t find on mainstream travel sites.
-      </p>
-    </div>
-  </div>
-
-
+          {/* Right */}
+          <div className="flex flex-col items-start gap-3 mt-10 sm:mt-0 max-w-md">
+            <p className="text-gray-600 text-md leading-relaxed">
+              Explore a curated list of top Indian packages—crafted for culture lovers,
+              history buffs, and relaxation seekers. Enjoy the best guides, priority
+              access, and savings not found elsewhere.
+            </p>
+          </div>
+        </div>
 
         {/* Tour Cards */}
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="
-            flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide
-            pb-4
-          "
+          className="flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide pb-4"
         >
           {tours.map((tour) => (
             <motion.div
               key={tour.id}
               layout
-              onClick={() =>
-                setExpandedCard(expandedCard === tour.id ? null : tour.id)
-              }
-              transition={{ layout: { duration: 0.5, type: "spring" } }}
-              className={`
-                relative bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer transition-all duration-500
-                snap-center shrink-0 w-[85%] sm:w-[350px]
-              `}
+              className="relative bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer transition-all duration-500 snap-center shrink-0 w-[85%] sm:w-[350px]"
             >
-              {/* Main Card Container */}
-              <div
-                className={`flex ${
-                  expandedCard === tour.id ? "flex-row" : "flex-col"
-                }`}
-              >
-                {/* Image Section */}
-                <div
-                  className={`relative ${
-                    expandedCard === tour.id ? "w-1/2" : "w-full"
-                  }`}
-                >
-                  <motion.img
-                    src={tour.image}
-                    alt={tour.title}
-                    className="w-full h-[530px] object-cover"
-                    layout
-                    draggable="false"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              <div className="relative">
+                <motion.img
+                  src={tour.image}
+                  alt={tour.title}
+                  className="w-full h-[530px] object-cover"
+                  draggable="false"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
-                  {/* Content Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-                    <h3 className="text-2xl font-semibold">{tour.title}</h3>
-                    {!expandedCard && (
-                      <p className="text-sm text-gray-200 line-clamp-2 mt-1">
-                        {tour.description}
-                      </p>
-                    )}
-
-                    <div className="flex items-center justify-between mt-4">
-                      
+                {/* Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <h3 className="text-2xl font-semibold">{tour.title}</h3>
+                  <p className="text-sm text-gray-200 mt-1">{tour.subtitle}</p>
+                  <div className="flex items-center justify-between mt-4">
+                    <Link to="/category">
                       <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
-                        {expandedCard === tour.id ? "Close" : "Know more"}
+                        Know more
                       </button>
-                    </div>
+                    </Link>
                   </div>
                 </div>
-
-                {/* Expanded Details Section */}
-                <AnimatePresence>
-                  {expandedCard === tour.id && (
-                    <motion.div
-                      initial={{ opacity: 0, width: 0 }}
-                      animate={{ opacity: 1, width: "50%" }}
-                      exit={{ opacity: 0, width: 0 }}
-                      transition={{ duration: 0.5, ease: "easeInOut" }}
-                      className="bg-white p-6 text-gray-700 flex flex-col justify-center space-y-4"
-                    >
-                      <p className="font-semibold text-xl text-gray-800">
-                        {tour.subtitle}
-                      </p>
-                      <p className="text-sm text-gray-600 leading-relaxed">
-                        {tour.description}
-                      </p>
-                      <div className="flex items-center gap-2 text-gray-500 text-sm">
-                        <MapPin size={16} />
-                        <span>{tour.location}</span>
-                      </div>
-                      <div className="pt-4">
-                        <a
-                          href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20booking%20a%20stay."
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full px-4 py-2.5 bg-[#333] text-white rounded-xl hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base text-center block"
-                        >
-                          Book Now
-                        </a>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
               </div>
             </motion.div>
           ))}
@@ -215,56 +142,51 @@ const HomeTour = () => {
           ))}
         </div>
 
-        {/* Bottom Text - Desktop: Inline images, Mobile: Full-width stacked */}
+        {/* Bottom Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="max-w-5xl mx-auto text-center mt-20"
         >
-          {/* Desktop Version - Hidden on Mobile */}
+          {/* Desktop */}
           <h2 className="hidden md:block text-4xl text-gray-700 leading-relaxed">
-           Join thousands who trust Ekaiva for budget-friendly packages{" "}savings on every booking,
+            Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,{" "}
             <span
               className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[0]})` }}
             ></span>
-           and stress-free travel.Get the lowest
+            and stress-free travel. Get the lowest{" "}
             <span
               className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[1]})` }}
             ></span>
-             prices on hotels and tours{" "}
+            prices on hotels and tours{" "}
             <span
               className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[2]})` }}
-            ></span>{" "}
-          always authentic and reliable.​
-
+            ></span>
+            always authentic and reliable.
           </h2>
 
-          {/* Mobile Version - Vertical Layout with Full-Width Images */}
+          {/* Mobile */}
           <div className="md:hidden text-center px-2">
-            <p className="text-4xl text-gray-800 leading-relaxed ">
-              Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,and 
-            </p>
             <p className="text-4xl text-gray-800 leading-relaxed mb-4">
-             stress-free travel. Get the lowest prices on hotels and tours always authentic and reliable.​
+              Join thousands who trust Ekaiva for budget-friendly packages, savings, and stress-free travel.
+              Get the lowest prices on hotels and tours — always authentic and reliable.
             </p>
-            
-            <div className="w-full h-full rounded-3xl overflow-hidden mb-4">
+            <div className="w-full h-40 rounded-3xl overflow-hidden mb-4">
               <img
                 src={bottomImages[1]}
                 alt="Nature surroundings"
-                className="w-lg h-10 "
+                className="w-full h-full object-cover"
               />
             </div>
-
-           
           </div>
         </motion.div>
       </div>
 
+      {/* Hide Scrollbar */}
       <style>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
