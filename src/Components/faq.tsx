@@ -92,7 +92,7 @@ function FAQ() {
               <img
                 src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Mountain lake landscape"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[730px] object-cover"
               />
             </div>
           </div>

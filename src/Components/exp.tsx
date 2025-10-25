@@ -19,7 +19,7 @@ function exp() {
             </h1>
           </div>
           <div>
-            <p className="text-gray-600  leading-relaxed lg:mt-4">
+            <p className="text-gray-600 text-md leading-relaxed lg:mt-4">
               Access expert MICE planning nationwide—meetings, incentives, conferences, and events, all budgeted for maximum value.Choose from state-of-the-art venues, local group excursions, and tailored activities to match your business goals and budget.
             </p>
           </div>
@@ -100,6 +100,7 @@ function exp() {
 
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
 < div className="relative order-2 lg:order-1">
+
     <img
       src={mon}
       loading="lazy"

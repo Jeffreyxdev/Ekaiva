@@ -38,7 +38,7 @@ export default function EkaivaMICE() {
               onMouseEnter={() => setHoveredCard(1)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3.5] overflow-hidden">
                 <img
                   src={ong}
                   alt="Corporate Meeting Setup"

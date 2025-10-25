@@ -62,9 +62,9 @@ const Hero = () => {
     alt="Background"
     loading="lazy"
     decoding="async"
-    className="absolute inset-0 w-full h-full object-cover"
+    className="absolute inset-0 w-full h-full  object-cover"
   /> 
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 " />
       </motion.div>
 
       {/* Content */}
@@ -106,12 +106,12 @@ const Hero = () => {
             {/* Desktop Layout */}
             
               {/* Origin */}
-             <div className="hidden lg:flex items-start justify-between gap-5  px-7 py-4  text-start  monst w-fit mx-auto">
+             <div className="hidden lg:flex items-start justify-between gap-5  px-5 py-5  text-start  monst w-fit mx-auto">
   {/* Origin */}
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Origin</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Origin</label>
       <input
         type="text"
         name="origin"
@@ -130,7 +130,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Destination</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Destination</label>
       <input
         type="text"
         name="destination"
@@ -149,7 +149,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <Users className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Guests</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Guests</label>
       <input
         type="text"
         name="guests"
@@ -161,14 +161,14 @@ const Hero = () => {
     </div>
   </div>
 
-  {/* Connect Button */}
+  {/* Connect Button */}<div className="flex items-center ml-3 mt-[-4px]">
   <button
     onClick={handleWhatsAppConnect}
     className="bg-[#333333] hover:bg-gray-800 text-white px-5 py-2 rounded-xl flex items-center gap-2 transition-colors group whitespace-nowrap"
   >
     Connect
     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-  </button>
+  </button></div>
 </div>
 
 

@@ -44,7 +44,7 @@ export default function Service() {
             03. Customer Gallery
           </button>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
            Focused on Meetings, <br />
            Seminars, and Team Synergy
           </h1>
@@ -72,7 +72,7 @@ export default function Service() {
             </div>
             
             {/* Content */}
-            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition-colors duration-300">
+            <h3 className="text-xl font-meduim text-gray-900 mb-3 group-hover:text-gray-600 transition-colors duration-300">
                 {feature.title}
             </h3>
             
@@ -95,9 +95,9 @@ export default function Service() {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-2  gap-8">
+        <div className="  gap-8">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2"></div>
+            <div className="text-4xl md:text-5xl  text-gray-900 mb-2"></div>
             <div className="text-gray-600 text-center font-medium">Each offering is led by expert facilitators and supported by dedicated event staff, so your team can focus fully on connection and achievement.</div>
           </div>
          

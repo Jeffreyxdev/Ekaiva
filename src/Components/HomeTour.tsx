@@ -13,7 +13,7 @@ const HomeTour = () => {
       title: "Taj Mahal Express",
       subtitle: "One Day Tour",
       description:
-        "See the iconic Taj Mahal, skip lines, expert guides",
+        "See tw-full max-w-7xl mx-authe iconic Taj Mahal, skip lines, expert guides",
       
       highlight: "UAH/night",
       image:
@@ -75,7 +75,7 @@ const HomeTour = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[#f8f9fa] py-16 px-4" id="tours">
+    <section className="  py-16 px-4" id="tours">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-10">
   <div className="flex flex-wrap justify-between items-start mb-12">
@@ -84,27 +84,17 @@ const HomeTour = () => {
       <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
         03. Tours
       </button>
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
+      <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight mb-2">
         Choose a Tour <br /> that speaks to you
       </h2>
     </div>
 
     {/* Right Side */}
-    <div className="flex flex-col items-start gap-3 mt-4 sm:mt-0 max-w-md">
-      <div className="flex gap-3">
-        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-          Date
-        </button>
-        <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-          People
-        </button>
-        <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
-          Choose Tour
-        </button>
-      </div>
+    <div className="flex flex-col items-start gap-3 mt-10 sm:mt-0 max-w-md">
+      
 
       {/* Paragraph now under buttons (opposite H2) */}
-      <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+      <p className="text-gray-600 text-md lg:mt-13 mt-0 leading-relaxed">
         Explore a curated list of top Indian packages each crafted for culture lovers,
         history buffs, and relaxation seekers. Every tour offers the best local guides,
         priority access, and savings you won’t find on mainstream travel sites.
@@ -230,23 +220,23 @@ const HomeTour = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="max-w-3xl mx-auto text-center mt-20"
+          className="max-w-5xl mx-auto text-center mt-20"
         >
           {/* Desktop Version - Hidden on Mobile */}
-          <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
-           Join thousands who trust Ekaiva for budget-friendly packages{" "}savings on every b
+          <h2 className="hidden md:block text-4xl text-gray-700 leading-relaxed">
+           Join thousands who trust Ekaiva for budget-friendly packages{" "}savings on every booking,
             <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[0]})` }}
             ></span>
-           king,and stress-free travel.Get the l
+           and stress-free travel.Get the lowest
             <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[1]})` }}
             ></span>
-            west prices on hotels and tours{" "}
+             prices on hotels and tours{" "}
             <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
+              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[2]})` }}
             ></span>{" "}
           always authentic and reliable.​
@@ -255,10 +245,10 @@ const HomeTour = () => {
 
           {/* Mobile Version - Vertical Layout with Full-Width Images */}
           <div className="md:hidden text-center px-2">
-            <p className="text-2xl text-gray-800 leading-relaxed ">
+            <p className="text-4xl text-gray-800 leading-relaxed ">
               Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,and 
             </p>
-            <p className="text-2xl text-gray-800 leading-relaxed mb-4">
+            <p className="text-4xl text-gray-800 leading-relaxed mb-4">
              stress-free travel. Get the lowest prices on hotels and tours always authentic and reliable.​
             </p>
             

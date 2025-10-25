@@ -27,7 +27,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="w-full max-w-7xl mx-auto">
+      <section className="o">
         <Homeabout />
       </section>
 

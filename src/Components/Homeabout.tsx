@@ -1,15 +1,22 @@
 import { motion } from 'framer-motion'
-import { FaXTwitter, FaInstagram, FaFacebook } from 'react-icons/fa6'
+import { FaInstagram, FaWhatsapp} from 'react-icons/fa6'
+import { MailIcon } from 'lucide-react'
 import image from '../assets/Frame 52.png'
 import { Link } from 'react-router-dom'
 
+
+const socialLinks = [
+  { Icon: FaWhatsapp, url: "https://wa.me/917011020040" },
+  { Icon: MailIcon, url: "mailto:info@ekaivaindia.com" },
+  { Icon: FaInstagram, url: "https://www.instagram.com/ekaivaindia/" },
+];
 const Homeabout = () => {
   return (
     <section
       id="about"
-      className="relative py-14 sm:py-20 bg-[#f6f8f7] overflow-hidden"
+      className="relative py-14 sm:py-16 bg-[#f6f8f7] overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top bar */}
         <div className="flex flex-wrap justify-between items-center mb-10 sm:mb-16">
           <button className="px-4 sm:px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors">
@@ -33,7 +40,7 @@ const Homeabout = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 leading-snug mb-6 font-montserrat">
+            <h2 className="text-3xl sm:text-3xl md:text-4xl font-medium text-gray-900 leading-snug mb-6 font-montserrat">
               Ekaiva is your trusted partner
               <br className="hidden sm:block" />for cheap India vacation deals
             </h2>
@@ -103,15 +110,17 @@ const Homeabout = () => {
             <div className="mt-10">
               <p className="text-sm text-gray-500 mb-3">Let’s connect</p>
               <div className="flex justify-center lg:justify-start gap-3">
-                {[FaFacebook, FaXTwitter, FaInstagram].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-9 h-9 bg-[#333333] rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                ))}
+                {socialLinks.map(({ Icon, url }, i) => (
+                <a
+                  key={i}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 bg-[#333333] rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
               </div>
             </div>
           </motion.div>

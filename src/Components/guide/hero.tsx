@@ -21,7 +21,7 @@ const Hero = () => {
   
 
 
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0" />
       </motion.div>
 
       {/* Content */}

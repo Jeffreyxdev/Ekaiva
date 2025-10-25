@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50">
       <nav
         className={`transition-all duration-300 ${
-          isScrolled ? 'bg-[#4A4A4A]/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
+          isScrolled ? 'bg-[#1a1a1a]/60 backdrop-blur-md  shadow-black/50' : 'bg-transparent'
         }`}
       >
         <div className="w-full px-4 sm:px-6 lg:px-8">

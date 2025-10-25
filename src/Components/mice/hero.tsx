@@ -68,7 +68,7 @@ const Hero = () => {
   />
 
 
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0" />
       </motion.div>
 
       {/* Content */}
@@ -116,7 +116,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <Building2 className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Company's Name</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Company's Name</label>
       <input
         type="text"
         name="Company Name"
@@ -135,7 +135,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Event Type</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Event Type</label>
       <input
         type="text"
         name="Event Type"
@@ -154,7 +154,7 @@ const Hero = () => {
   <div className="flex items-center gap-2 flex-1">
     <Users className="h-4 w-4 text-gray-400 flex-shrink-0" />
     <div className="flex flex-col">
-      <label className="text-xs font-semibold text-gray-800">Guests</label>
+      <label className="text-xs font-medium text-gray-800 mb-1">Guests</label>
       <input
         type="text"
         name="guests"
