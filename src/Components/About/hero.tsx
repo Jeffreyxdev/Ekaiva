@@ -17,12 +17,12 @@ const Hero = () => {
             backgroundImage: `url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80')`,
           }}
         />
-        <div className="absolute inset-0 " />
+        <div className="absolute inset-0 bg-black/60" />
       </motion.div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20">
-        <div className="text-white max-w-2xl">
+        <div className="text-white max-w-2xl ">
           {/* ABOUT Label */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mt-3 leading-tight"
+            className="text-5xl md:text-6xl font-bold mt-3 leading-tight shadow-sm"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Paragraph */}
           <motion.p
-            className="text-lg md:text-xl text-gray-200 mb-8"
+            className="text-lg md:text-xl text-gray-200 mb-8 shadow-sm"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}

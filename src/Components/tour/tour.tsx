@@ -87,23 +87,13 @@ const Tourc = () => {
 
     {/* Right Side */}
 <div className="  flex-col items-start gap-3 mt-4 sm:mt-0 max-w-md">
-  <div className="hidden sm:flex gap-3">
-    <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-      Date
-    </button>
-    <button className="px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50">
-      People
-    </button>
-    <button className="px-5 py-2 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-800">
-      Choose Tour
-    </button>
-  </div>
+  
 
 
 
       {/* Paragraph now under buttons (opposite H2) */}
       <p className="text-gray-600 text-sm mt-3 leading-relaxed">
-        Step into the heart of India on curated itineraries—whether you crave the majesty of the Taj Mahal, spiritual Varanasi, or the wild colors of Rajasthan. With Ekaiva, every Indian journey is guided by experts, enriched with local culture, and backed by 24/7 assistance from booking to your safe return.
+        Step into the heart of India on curated itineraries whether you crave the majesty of the Taj Mahal, spiritual Varanasi, or the wild colors of Rajasthan. With Ekaiva, every Indian journey is guided by experts, enriched with local culture, and backed by 24/7 assistance from booking to your safe return.
       </p>
     </div>
   </div>

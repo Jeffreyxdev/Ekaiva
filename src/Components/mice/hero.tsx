@@ -55,7 +55,7 @@ const Hero = () => {
         initial={{ scale: 1.2 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0   z-0"
       >
       
   <img
@@ -68,7 +68,7 @@ const Hero = () => {
   />
 
 
-        <div className="absolute inset-0" />
+        <div className="absolute bg-black/60 inset-0" />
       </motion.div>
 
       {/* Content */}
@@ -81,7 +81,7 @@ const Hero = () => {
           className="flex flex-col items-center"
         >
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-shadow-black"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}

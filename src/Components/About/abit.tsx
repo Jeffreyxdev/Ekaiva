@@ -101,7 +101,7 @@ function Abit() {
               <img
                 src={section.img}
                 alt={section.title}
-                className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
+                className="rounded-3xl w-full h-[500px] object-cover"
               />
             </div>
           </div>

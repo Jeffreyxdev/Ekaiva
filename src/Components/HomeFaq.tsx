@@ -45,7 +45,7 @@ const FAQSection = () => {
     <div className=" py-16 px-3 sm:px-10 lg:px-2">
       <div className="max-w-7xl mx-auto">
 <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-22 ">
-  <div className="flex flex-wrap justify-between items-start mb-10">
+  <div className="flex flex-wrap justify-between items-start lg:mb-10 sm:mb-3">
     {/* Left Side */}
     <div>
       <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-2">
@@ -58,10 +58,10 @@ const FAQSection = () => {
 </div>
 <div>
 
-   <div className="flex flex-col items-start gap-3 mt-20 sm:mt-0 max-w-md">
+   <div className="flex flex-col items-start gap-3 lg:mt-20 sm:mt-0 max-w-md">
       
   {/* Right side — Paragraph */}
-  <p className="text-gray-600 text-md lg:text-lg max-w-xl leading-relaxed mt-11">
+  <p className="text-gray-600 text-md lg:text-lg max-w-xl leading-relaxed sm:md-0 lg:mt-11">
    Enjoy year-round savings and unmatched travel flexibility through Ekaiva.Get exclusive rates not offered by other platforms, with genuine price transparency and secure payment.
   </p>
 </div>

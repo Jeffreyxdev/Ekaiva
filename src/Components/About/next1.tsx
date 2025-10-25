@@ -13,7 +13,7 @@ const Next1 = () => {
             <button className="px-4 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-6">
               02. About
             </button>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
               Customer Tour Success<br />
               
             </h1>
@@ -21,10 +21,10 @@ const Next1 = () => {
 
           {/* Right Side - Description */}
           <div className="flex-1 max-w-prose">
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed lg:mt-20 ">
+            <p className="text-gray-600 text-base md:text-sm leading-relaxed lg:mt-20 ">
              Real Stories, Real Smiles
-      Our proudest achievement is the delight of our travelers—families reuniting at the Taj Mahal, solo adventurers exploring hidden cities, and business teams celebrating milestones in style.
-      See their stories in photos, testimonials, and shared memories—each proof that Ekaiva’s commitment to excellence is more than just words.
+      Our proudest achievement is the delight of our travelers families reuniting at the Taj Mahal, solo adventurers exploring hidden cities, and business teams celebrating milestones in style.
+      See their stories in photos, testimonials, and shared memories each proof that Ekaiva’s commitment to excellence is more than just words.
 
             </p>
           </div>

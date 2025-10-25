@@ -70,22 +70,22 @@ const HomeTour = () => {
   return (
     <section className="py-16 px-4" id="tours">
       {/* Header */}
-      <div className="max-w-7xl mx-auto mb-10">
-        <div className="flex flex-wrap justify-between items-start mb-12">
+      <div className="max-w-7xl mx-auto lg:mb-10 sm:mb-0">
+        <div className="flex flex-wrap justify-between items-start mb-12 sm:mb-6">
           {/* Left */}
           <div>
             <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
               03. Tours
             </button>
-            <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight mb-2">
+            <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight sm:mb-5 lg:mb-2">
               Choose a Tour <br /> that speaks to you
             </h2>
           </div>
 
           {/* Right */}
-          <div className="flex flex-col items-start gap-3 mt-10 sm:mt-0 max-w-md">
+          <div className="flex flex-col items-start gap-3 lg:mt-10  sm:mt-5 max-w-md">
             <p className="text-gray-600 text-md leading-relaxed">
-              Explore a curated list of top Indian packages—crafted for culture lovers,
+              Explore a curated list of top Indian packages crafted for culture lovers,
               history buffs, and relaxation seekers. Enjoy the best guides, priority
               access, and savings not found elsewhere.
             </p>
@@ -156,7 +156,7 @@ const HomeTour = () => {
               className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[0]})` }}
             ></span>
-            and stress-free travel. Get the lowest{" "}
+            and stress free travel. Get the lowest{" "}
             <span
               className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
               style={{ backgroundImage: `url(${bottomImages[1]})` }}
@@ -171,11 +171,11 @@ const HomeTour = () => {
 
           {/* Mobile */}
           <div className="md:hidden text-center px-2">
-            <p className="text-4xl text-gray-800 leading-relaxed mb-4">
+            <p className="text-2xl text-gray-800 leading-relaxed mb-4">
               Join thousands who trust Ekaiva for budget-friendly packages, savings, and stress-free travel.
-              Get the lowest prices on hotels and tours — always authentic and reliable.
+              Get the lowest prices on hotels and tours  always authentic and reliable.
             </p>
-            <div className="w-full h-40 rounded-3xl overflow-hidden mb-4">
+            <div className="w-full h-10 rounded-3xl overflow-hidden mb-4">
               <img
                 src={bottomImages[1]}
                 alt="Nature surroundings"

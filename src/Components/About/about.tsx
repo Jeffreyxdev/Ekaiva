@@ -32,13 +32,13 @@ export default function Abouts() {
 
             {/* First Image - Conference Setup */}
             <div
-              className={`relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 order-1 lg:order-2 ${
+              className={`relative rounded-3xl overflow-hidden  transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 order-1 lg:order-2 ${
                 hoveredCard === 1 ? 'ring-2 ring-gray-300' : ''
               }`}
               onMouseEnter={() => setHoveredCard(1)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3.2] overflow-hidden">
                 <img
                   src={ong}
                   alt="Corporate Meeting Setup"
@@ -51,7 +51,7 @@ export default function Abouts() {
 
           {/* Right Column - Conference Image */}
           <div
-            className={`relative rounded-3xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 ${
+            className={`relative rounded-3xl overflow-hidden  transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer group lg:mt-20 ${
               hoveredCard === 2 ? 'ring-2 ring-gray-300' : ''
             }`}
             onMouseEnter={() => setHoveredCard(2)}

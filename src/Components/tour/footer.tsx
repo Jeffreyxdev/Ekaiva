@@ -14,20 +14,20 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-black/80 h-full"></div>
+        <div className="absolute inset-0 bg-black/60 h-full"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F6F8F7] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F6F8F7] via-transparent to-black/60 z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
         <div className="relative z-20 flex flex-col justify-between w-full">
           {/* CTA Section - increased top padding for fade area */}
           <div className="text-center pt-40 md:pt-44 xl:pt-48 pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-5 leading-tight tracking-tight drop-shadow-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center">
                 Ar
-                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden shadow-lg ring-2 ring-white/30">
+                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden ring-2 ring-white/30">
                   <img
                     src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=150&fit=crop"
                     alt="Travel"
@@ -43,7 +43,7 @@ const EkaivaFooter = () => {
               today and let's start planning your next unforgettable adventure.
             </p>
 
-            <button className="bg-[#232a2c] hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg">
+            <button className="bg-[#232a2c] hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 ">
               Join Trip
             </button>
           </div>

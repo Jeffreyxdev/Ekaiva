@@ -94,11 +94,11 @@ function FAQ() {
           </div>
 
           <div className="lg:sticky lg:top-16">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl mt-0 lg:mt-10">
+            <div className="relative rounded-3xl overflow-hidden  mt-0 lg:mt-10">
               <img
                 src={dv}
                 alt="Mountain lake landscape"
-                className="w-full h-[730px] object-cover"
+                className="w-full h-[680px] object-cover"
               />
             </div>
           </div>

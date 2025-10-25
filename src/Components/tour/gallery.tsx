@@ -26,7 +26,7 @@ const Gallery = () => {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Header Section */}
-        <div className="mt-32" id="gallery">
+        <div className="lg:mt-32" id="gallery">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left side — button + heading */}
             <div className="text-left">
