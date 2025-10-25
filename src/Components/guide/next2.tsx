@@ -12,7 +12,7 @@ const Next2 = () => {
             <button className="px-4 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-6">
               02. About
             </button>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
              Guided Memories, <br />
               Real Connection
             </h1>
@@ -20,8 +20,8 @@ const Next2 = () => {
 
           {/* Right Side - Description */}
           <div className="flex-1 max-w-prose">
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed lg:mt-20 ">
-            Explore photos and testimonials from travelers who discovered India’s best with Ekaiva guides. Smiles at iconic monuments, joyful local market strolls, and genuine cross-cultural friendships—every gallery image is a reflection of what great guidance delivers.
+            <p className="text-gray-600 text-base md:text-md leading-relaxed lg:mt-25 lg:ml-5 ">
+            Explore photos and testimonials from travelers who discovered India’s best with Ekaiva guides. Smiles at iconic monuments, joyful local market strolls, and genuine cross-cultural friendships every gallery image is a reflection of what great guidance delivers.
 
             </p>
           </div>

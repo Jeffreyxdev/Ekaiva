@@ -26,7 +26,7 @@ export default function Next1() {
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Discover the real India with passionate guides—handpicked for knowledge, hospitality, and reliability. Learn hidden histories, find the best food stalls, and get language help or safety advice throughout your trip.
+              Discover the real India with passionate guides handpicked for knowledge, hospitality, and reliability. Learn hidden histories, find the best food stalls, and get language help or safety advice throughout your trip.
                     Whether you want a relaxed experience or ambitious sightseeing, our guides create journeys tailored to your pace and interests.
 
 
@@ -40,7 +40,7 @@ export default function Next1() {
               onMouseEnter={() => setHoveredCard(1)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3.2] overflow-hidden">
                 <img
                   src={ong}
                   alt="Corporate Meeting Setup"

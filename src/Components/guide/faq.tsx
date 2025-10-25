@@ -67,7 +67,7 @@ const FAQSection = () => {
         {/* Header */}
         {/* Header Section */}
 <div className="mb-12 md:mb-20">
-  {/* FAQ Header Section */}<button className="px-5 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm mb-6">
+  {/* FAQ Header Section */}<button className="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 hover:-translate-y-0.5 hover:shadow-sm mb-6">
     06.WHY OUR GUIDE?
   </button>
 <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-12 mb-12">
@@ -77,15 +77,15 @@ const FAQSection = () => {
   
 
   <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight">
-    Why Our Guides Stand Out
+    Why Our Guides <br /> Stand Out
     <br />
   </h1>
 </div>
 
 
   {/* Right side — Paragraph */}
-  <p className="text-gray-600 text-base lg:text-lg max-w-xl leading-relaxed">
-   Ekaiva guides deliver more than directions—they bring expertise, safety, and cultural connection to every moment. Combining professional training with true local passion, our guides unlock authentic experiences and provide the care that travelers need for a seamless, memorable adventure.
+  <p className="text-gray-600 text-md lg:text-lg max-w-xl leading-relaxed">
+   Ekaiva guides deliver more than directions they bring expertise, safety, and cultural connection to every moment. Combining professional training with true local passion, our guides unlock authentic experiences and provide the care that travelers need for a seamless, memorable adventure.
   </p>
 </div>
 
