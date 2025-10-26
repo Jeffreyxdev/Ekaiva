@@ -9,7 +9,7 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
     location: "Agra, India",
-    route: "/tours/taj-mahal-express",
+    route: "/taj-mahal",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=800&q=80",
     location: "Amritsar, India",
-    route: "/tours/golden-triangle-classic",
+    route: "/golden-triangle",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
     location: "Jaipur, India",
-    route: "/tours/rajasthan-explorer",
+    route: "/rajasthan",
   },
   {
     id: 4,
@@ -45,6 +45,6 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
     location: "Kerala, India",
-    route: "/tours/kerala-backwaters-bliss",
+    route: "/kerala-backwaters-bliss",
   },
 ];

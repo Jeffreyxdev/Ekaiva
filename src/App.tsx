@@ -8,6 +8,8 @@ import Guide from "./Pages/Guide"
 import Category from "./Pages/Category"
 import Navbar from "./Components/Navbar"
 import ScrollToTop from "./Components/ScrolltoTop"
+import Index from "./Components/tour/taj mahal"
+import Indexs from "./Components/tour/dehli"
 function App() {
   
 
@@ -22,6 +24,11 @@ function App() {
         <Route path='/guide' element={<Guide/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/agra' element={<Category/>}/>
+        <Route path="/taj-mahal" element={<Index/>}/>
+        <Route path="/delhi-tours" element={<Indexs/>}/>
+        <Route path="/golden-triangle" element={<Index/>}/>
+        <Route path="/rajasthan" element={<Index/>}/>
+        <Route path="/kerala-backwaters-bliss" element={<Index/>}/>
       </Routes>
     </>
   )
