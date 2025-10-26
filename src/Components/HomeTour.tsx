@@ -1,57 +1,11 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // ✅ Correct import
-
+import { tours } from "./data";
 const HomeTour = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const tours = [
-    {
-      id: 1,
-      title: "Taj Mahal Express",
-      subtitle: "One Day Tour",
-      description:
-        "See the iconic Taj Mahal with expert guides and skip-the-line privileges.",
-      highlight: "₹4999 / night",
-      image:
-        "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
-      location: "Agra, India",
-    },
-    {
-      id: 2,
-      title: "Golden Triangle Classic",
-      subtitle: "5 Nights",
-      description:
-        "Delhi, Agra, Jaipur — explore culture, monuments, and heritage hotels.",
-      highlight: "₹8999 / night",
-      image:
-        "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=800&q=80",
-      location: "Amritsar, India",
-    },
-    {
-      id: 3,
-      title: "Rajasthan Explorer",
-      subtitle: "7 Nights",
-      description:
-        "Forts, palaces, deserts, and vibrant local markets across Rajasthan.",
-      highlight: "₹10999 / night",
-      image:
-        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80",
-      location: "Jaipur, India",
-    },
-    {
-      id: 4,
-      title: "Kerala Backwaters Bliss",
-      subtitle: "4 Nights",
-      description:
-        "Houseboats, tranquil backwaters, and authentic South Indian cuisine.",
-      highlight: "₹7499 / night",
-      image:
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
-      location: "Kerala, India",
-    },
-  ];
 
   const bottomImages = [
     "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
@@ -118,11 +72,12 @@ const HomeTour = () => {
                   <h3 className="text-2xl font-semibold">{tour.title}</h3>
                   <p className="text-sm text-gray-200 mt-1">{tour.subtitle}</p>
                   <div className="flex items-center justify-between mt-4">
-                    <Link to="/category">
-                      <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
-                        Know more
-                      </button>
-                    </Link>
+                  <Link to={tour.route}>
+  <button className="px-4 py-2 bg-white text-gray-900 text-sm font-semibold rounded-full hover:bg-gray-100">
+    Know more
+  </button>
+</Link>
+
                   </div>
                 </div>
               </div>

@@ -58,10 +58,10 @@ const FAQSection = () => {
 </div>
 <div>
 
-   <div className="flex flex-col items-start gap-3 lg:mt-5 sm:mt-0 max-w-md">
+   <div className="flex flex-col items-start gap-3 lg:mt-4 sm:mt-0 max-w-md">
       
   {/* Right side — Paragraph */}
-  <p className="text-gray-600 text-md lg:text-lg max-w-xl leading-relaxed sm:md-0 lg:mt-3">
+  <p className="text-gray-600 text-md lg:text-lg max-w-xl leading-relaxed sm:md-0 lg:mt-6">
    Enjoy year-round savings and unmatched travel flexibility through Ekaiva.Get exclusive rates not offered by other platforms, with genuine price transparency and secure payment.
   </p>
 </div>

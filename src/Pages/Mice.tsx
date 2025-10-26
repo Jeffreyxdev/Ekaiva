@@ -1,5 +1,5 @@
 import Hero from "../Components/mice/hero";
-import Navbar from "../Components/Navbar";
+
 import About from "../Components/mice/abouts";
 import Expm from "../Components/mice/expm";
 import Service from "../Components/mice/service";
@@ -13,7 +13,7 @@ import EkaivaFooter from "../Components/mice/Footer";
 const Mice = () => {
   return (
     <div>
-      <Navbar />
+      
       <Hero />
       <About/>
       <Service/>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { X, Mail, Menu } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { FaWhatsapp } from 'react-icons/fa'
-import { PiTelegramLogoLight } from "react-icons/pi"
+import { FaWhatsapp ,FaInstagram } from 'react-icons/fa'
+
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
@@ -52,24 +52,25 @@ export default function Navbar() {
             </div>
 
             {/* Icons */}
-            <div className="flex items-center space-x-4 ml-auto">
+           <div className="flex items-center space-x-4 ml-auto">
               <button
-                className="text-white hover:text-green-400 transition-colors"
+                className="text-white hover:text-gray-400 transition-colors"
                 onClick={() => window.open('https://wa.me/917011020040', '_blank')}
                 aria-label="WhatsApp"
               >
                 <FaWhatsapp className="h-5 w-5" />
               </button>
 
-              <button 
-                className="text-white hover:text-blue-400 transition-colors"
-                aria-label="Telegram"
+              <button
+                className="text-white hover:text-gray-400 transition-colors"
+                aria-label="Instagram"
+                onClick={()=>window.open("https://www.instagram.com/ekaivaindia/",'_blank')}
               >
-                <PiTelegramLogoLight className="h-5 w-5" />
+                <FaInstagram className="h-5 w-5" />
               </button>
 
-              <button 
-                className="text-white hover:text-orange-300 transition-colors"
+              <button
+                className="text-white hover:text-gray-300 transition-colors"
                 onClick={() => window.open('mailto:info@ekaivaindia.com', '_blank')}
                 aria-label="Email"
               >
@@ -98,15 +99,18 @@ export default function Navbar() {
           >
             <div className="px-4 space-y-1">
               {navLinks.map(link => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="block py-3 text-sm font-medium hover:text-gray-300 hover:bg-white/10 rounded-md px-3 transition-colors"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <Link
+                key={link.href}
+                to={link.href}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                  setMenuOpen(false)
+                }}
+                className="block py-3 text-sm font-medium hover:text-gray-300 hover:bg-white/10 rounded-md px-3 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             </div>
           </motion.div>
         )}

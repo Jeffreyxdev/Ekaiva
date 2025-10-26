@@ -2,25 +2,33 @@ import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const galleryCards = [
-    {
-      id: 1,
-      title: "European Explorer",
-      img: "https://images.pexels.com/photos/1796722/pexels-photo-1796722.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      details: "15 unforgettable days. Paris, Rome, Swiss Alps. Handpicked hotels and seamless transfers.",
-    },
-    {
-      id: 2,
-      title: "Swiss Scenic Trails",
-      img: "https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      details: "Majestic peaks, cultural city stops, and scenic rail adventures—an experience of a lifetime.",
-    },
-    {
-      id: 3,
-      title: "Mediterranean Mosaic",
-      img: "https://images.pexels.com/photos/4356144/pexels-photo-4356144.jpeg?auto=compress&cs=tinysrgb&w=800",
-      details: "Italian charm, Greek coasts, history, and fine dining—your sun-soaked getaway made simple.",
-    },
-  ];
+  {
+    id: 1,
+    title: "European Explorer",
+    img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+    details:
+      "15 unforgettable days. Paris, Rome, and the Swiss Alps — handpicked hotels and seamless transfers.",
+    route: "/tours/Europe",
+  },
+  {
+    id: 2,
+    title: "Southeast Asia Discovery",
+    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    details:
+      "Bangkok, Bali, and hidden local markets — cultural beauty and budget-friendly stays.",
+    route: "/tours/SouthAsia",
+  },
+  {
+    id: 3,
+    title: "Dubai Highlights",
+    img: "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=1200&q=80",
+    details:
+      "Burj Khalifa, desert safaris, and golden dunes — luxury meets adventure in the UAE.",
+    route: "/tours/uae",
+  },
+ 
+];
+
 
   return (
     <div className="">
@@ -66,7 +74,7 @@ const Gallery = () => {
                 <p className="text-gray-600 text-sm mb-4">{card.details}</p>
 
                 <button className="bg-gray-900 text-white px-6 py-3 rounded-2xl text-sm hover:bg-gray-800 transition-colors">
-                 <Link to='/category'> Know more</Link>
+                 <Link to={card.route}> View tour</Link>
                 </button>
               </div>
             ))}

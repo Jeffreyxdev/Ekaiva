@@ -1,5 +1,4 @@
 import Hero from "../Components/Hero"
-import Navbar from "../Components/Navbar"
 import Homeabout from "../Components/Homeabout"
 import HomeTour from "../Components/HomeTour"
 import FAQSection from "../Components/HomeFaq"
@@ -19,7 +18,7 @@ const Home = () => {
          
       "
     >
-      <Navbar />
+     
 
       {/* Hero Section */}
       <section className="w-full">
