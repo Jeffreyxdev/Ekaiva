@@ -10,7 +10,7 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1598977054780-2dc700fdc9d3?w=800&q=80",
     location: "Delhi, India",
-    route: "/delhi-tours",
+    route: "/delhi",
   },
  
   

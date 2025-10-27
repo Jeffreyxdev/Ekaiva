@@ -12,9 +12,9 @@ const Hero = () => {
       >
         
   <img
-    src='https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?auto=compress'
+    src='https://plus.unsplash.com/premium_photo-1753386391883-5a155fd42921?auto=compress'
     alt="Background"
-    
+   
     decoding="async"
     className="absolute inset-0 w-full h-full object-cover"
   />
@@ -44,9 +44,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Tar Mahal Tour
+          Agra & Delhi 
+
             <br />
-           From Bengaluru
+           Heritage Tour
 
           </motion.h1>
 
@@ -57,7 +58,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-           Make every moment count fly from Bangalore, discover the world’s wonder, and return in comfort the same day. Designed for travelers who want to see the Taj Mahal without missing work or wasting time on travel hassles.
+           Uncover India’s world wonders—explore centuries of history, architecture, and vibrant markets in Delhi and Agra, all in just two unforgettable days.
 
           </motion.p>
 
@@ -67,8 +68,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            
-          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20taj%20mahal%20booking%20a%20stay.">
+          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20Dehli%20booking%20for%20___days.">
             Book Now</a>
           </motion.button>
         </div>
