@@ -1,7 +1,7 @@
 import EkaivaFooter from "../../Footer"
 import Gallery from "../gallery"
 import Tour from "../taj mahal/tour"
-import Tourc from "../tour"
+
 import Kabout from "./aout"
 import FAQ from "./faq"
 import FAQSection from "./fas"
