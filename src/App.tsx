@@ -14,6 +14,8 @@ import Mains from './Components/tour/Rajasthan/main'
 import Jep from "./Components/tour/jaipur/jep"
 import Gold from "./Components/tour/Golden/Gold"
 import Kerala from "./Components/tour/Kerala/Kerala"
+import Dubai from "./Components/tour/Dubai/Dubai"
+import Europe from "./Components/tour/Europe/Europe"
 function App() {
   
 
@@ -27,8 +29,8 @@ function App() {
         <Route path='/tours' element={<Tour/>}/>
         <Route path='/guide' element={<Guide/>}/>
         <Route path='/about' element={<About/>}/>
-        
-         
+        <Route path='/Dubai' element={<Dubai/>}/>
+        <Route path='/Europe' element={<Europe/>}/>
         <Route path='/agra' element={<Category/>}/>
         <Route path="/taj-mahal" element={<Index/>}/>
         <Route path="/delhi" element={<Indexs/>}/>

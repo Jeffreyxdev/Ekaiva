@@ -1,8 +1,12 @@
+import Hero from "./Hero"
 
 
 const Gold = () => {
   return (
-    <div>Gold</div>
+    <div>
+      <Hero/>
+      
+    </div>
   )
 }
 

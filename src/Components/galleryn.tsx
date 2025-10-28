@@ -8,7 +8,7 @@ const Gallery = () => {
     img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
     details:
       "15 unforgettable days. Paris, Rome, and the Swiss Alps — handpicked hotels and seamless transfers.",
-    route: "/tours/Europe",
+    route: "/Europe",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const Gallery = () => {
     img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     details:
       "Bangkok, Bali, and hidden local markets — cultural beauty and budget-friendly stays.",
-    route: "/tours/SouthAsia",
+    route: "/SouthAsia",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const Gallery = () => {
     img: "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=1200&q=80",
     details:
       "Burj Khalifa, desert safaris, and golden dunes — luxury meets adventure in the UAE.",
-    route: "/tours/uae",
+    route: "/Dubai",
   },
  
 ];
