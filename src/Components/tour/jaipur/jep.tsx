@@ -3,6 +3,9 @@ import Hero from "./hero"
 import FAQSection from './aq'
 import Timeline from "./timeline"
 import Gallery from "./Gallery"
+import FAQr from "./faqn"
+import Tour from "../taj mahal/tour"
+import EkaivaFooter from "../../guide/Footer"
 
 const Jep = () => {
   return (
@@ -18,6 +21,9 @@ const Jep = () => {
     <FAQSection /></div> 
     <Timeline/>
     <Gallery/>
+    <FAQr/>
+    <Tour/>
+    <EkaivaFooter/>
     
     </div>
   )

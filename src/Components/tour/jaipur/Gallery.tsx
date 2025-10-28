@@ -12,15 +12,15 @@ const Gallery = () => {
               02. About
             </button>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
-             Guided Memories, <br />
-              Real Connection
+            Majestic forts of<br />
+              Jodhpur
             </h1>
           </div>
 
           {/* Right Side - Description */}
           <div className="flex-1 max-w-prose">
             <p className="text-gray-600 text-base md:text-md leading-relaxed lg:mt-16 lg:ml-5 ">
-From the quiet golden dawn at the Taj Mahal to laughter-filled rickshaw rides through Chandni Chowk’s colorful markets, every moment captures India’s magic. Guests marvel at the ancient grandeur of Agra Fort, taking in sweeping views and timeless walls, before diving into Delhi’s vibrant rhythm—street food, monuments, and the city’s unstoppable energy.
+From the pink-hued walls of Jaipur to the royal echoes of its palaces, every corner of the city tells a story of grandeur. Guests wander through the majestic Amber Fort, explore the intricate courtyards of the City Palace, and gaze up at the honeycombed beauty of Hawa Mahal. Between colorful bazaars, elephant rides, and sunsets over Nahargarh Fort, Jaipur shines with timeless charm and regal spirit.
             </p>
           </div>
         </div>
@@ -28,7 +28,7 @@ From the quiet golden dawn at the Taj Mahal to laughter-filled rickshaw rides th
         {/* Large Conference Image */}
         <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
           <img
-            src='https://plus.unsplash.com/premium_photo-1697729555861-e406b4989ee1'
+            src='https://plus.unsplash.com/premium_photo-1661962387472-553d96ed01a3'
             alt="Conference Hall"
             className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
           />

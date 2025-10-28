@@ -12,6 +12,8 @@ import Index from "./Components/tour/taj mahal"
 import Indexs from "./Components/tour/dehli"
 import Mains from './Components/tour/Rajasthan/main'
 import Jep from "./Components/tour/jaipur/jep"
+import Gold from "./Components/tour/Golden/Gold"
+import Kerala from "./Components/tour/Kerala/Kerala"
 function App() {
   
 
@@ -31,9 +33,9 @@ function App() {
         <Route path="/taj-mahal" element={<Index/>}/>
         <Route path="/delhi" element={<Indexs/>}/>
         <Route path='/jaipur' element={<Jep/>}/>
-        <Route path="/golden-triangle" element={<Index/>}/>
+        <Route path="/golden-triangle" element={<Gold/>}/>
         <Route path="/rajasthan" element={<Mains/>}/>
-        <Route path="/kerala-backwaters-bliss" element={<Index/>}/>
+        <Route path="/kerala-backwaters-bliss" element={<Kerala/>}/>
       </Routes>
     </>
   )
