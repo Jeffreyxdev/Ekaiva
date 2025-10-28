@@ -1,7 +1,7 @@
 import footer from '../../assets/gide.png'
 const EkaivaFooter = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#F6F8F7]">
+    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#ffffff]">
       {/* Placeholder for main content */}
       <div className="min-h-[10vh]" />
 
@@ -17,7 +17,7 @@ const EkaivaFooter = () => {
         <div className="absolute inset-0 bg-black/60 h-full"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F6F8F7] via-transparent to-black/60 z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#ffffff] via-transparent to-black/60 z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
         <div className="relative z-20 flex flex-col justify-between w-full">
@@ -57,10 +57,10 @@ const EkaivaFooter = () => {
                   Get in touch with us
                 </h3>
                 <a
-                  href="mailto:connect@ekaiva.travel"
+                  href="mailto:info@ekaivaindia.com"
                   className="text-white/90 hover:text-white text-xs md:text-sm transition-colors"
                 >
-                  connect@ekaiva.travel
+                  info@ekaivaindia.com
                 </a>
               </div>
 

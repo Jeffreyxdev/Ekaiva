@@ -66,14 +66,14 @@ const Timeline = () => {
 
   return (
     <div className="py-20 px-4">
-      <div className="mx-auto bg-white rounded-2xl p-10 md:p-16">
+      <div className="mmx-auto bg-white rounded-2xl p-10 sm:p-8 md:p-16">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12  md:mb-16">
           <button className="px-4 py-1.5 border border-gray-300 rounded-full text-gray-600 text-sm mb-6 hover:bg-gray-100 transition">
             Day Itinerary
           </button>
 
-          <h1 className="text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
             Your One-Day Taj Mahal Experience from Bengaluru
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
@@ -84,9 +84,10 @@ const Timeline = () => {
         </div>
 
         {/* Timeline */}
-        <div className="relative mt-20">
+        <div className="relative mt-12 md:mt-20">
           {/* Central Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-800 transform -translate-x-1/2"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-800 transform -translate-x-1/2"></div>
+          <div className="block md:hidden absolute left-4 top-0 bottom-0 w-[2px] bg-gray-300"></div>
 
           {timelineData.map((item) => (
             <div
@@ -99,11 +100,11 @@ const Timeline = () => {
             >
               {/* Text Content */}
               <div
-                className={`w-full md:w-1/2 px-4 md:px-10 ${
+                className={`w-full md:w-1/2 px-8 md:px-10 ${
                   item.direction === "left" ? "md:text-left" : "md:text-right"
                 }`}
               >
-                <p className="text-sm text-gray-500 mb-2">{item.time}</p>
+                <p className="text-sm text-gray-500 sm:ml-2 mb-2">{item.time}</p>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {item.title}
                 </h3>
@@ -113,7 +114,15 @@ const Timeline = () => {
               </div>
 
               {/* Marker */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 bg-gray-900 text-white rounded-full border-4 border-white shadow-md z-10">
+              <div className={`
+              absolute 
+              flex items-center justify-center 
+              w-7 h-7 md:w-10 md:h-10 
+              bg-gray-900 text-white rounded-full 
+              border-4 border-white shadow-md z-10
+              ${item.direction === "left" ? "md:left-1/2 md:-translate-x-1/2" : "md:left-1/2 md:-translate-x-1/2"}
+              left-0.5 md:left-1/2 md:-translate-x-1/2
+            `}>
                 {item.id}
               </div>
 

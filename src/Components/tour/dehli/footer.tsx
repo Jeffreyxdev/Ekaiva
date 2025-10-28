@@ -1,7 +1,8 @@
-import footer from '../../assets/fter.png'
+import { Link } from 'react-router-dom';
+import footer from '../../../assets/sick.png'
 const EkaivaFooter = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#FFFF]">
+    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#ffffff]">
       {/* Placeholder for main content */}
       <div className="min-h-[10vh]" />
 
@@ -14,20 +15,20 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-black/70 h-full"></div>
+        <div className="absolute inset-0 bg-black/60 h-full"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFF] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFFFF] via-transparent to-black/60 z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
         <div className="relative z-20 flex flex-col justify-between w-full">
           {/* CTA Section - increased top padding for fade area */}
           <div className="text-center pt-40 md:pt-44 xl:pt-48 pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black/90 mb-5 leading-tight tracking-tight ">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center">
                 Ar
-                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden  ring-2 ring-white/30">
+                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden ring-2 ring-white/30">
                   <img
                     src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=150&fit=crop"
                     alt="Travel"
@@ -38,14 +39,14 @@ const EkaivaFooter = () => {
               </span>
             </h1>
 
-            <p className="text-black/90 text-xs sm:text-sm md:text-base xl:text-lg max-w-2xl mb-6 mx-auto leading-relaxed">
+            <p className="text-gray-800 text-xs sm:text-sm md:text-base xl:text-lg max-w-2xl mb-6 mx-auto leading-relaxed">
               Ready to turn your travel dreams into reality? Get in touch with us
               today and let's start planning your next unforgettable adventure.
             </p>
-
-            <button className="bg-[#232a2c] hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg">
+            <Link to='/category'>
+            <button className="bg-black hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300">
               Join Trip
-            </button>
+            </button></Link>
           </div>
 
           {/* Contact + Navigation */}
@@ -53,7 +54,7 @@ const EkaivaFooter = () => {
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
               {/* Contact */}
               <div className="text-left">
-                <h3 className="text-white text-sm md:text-base font-medium mb-1">
+                <h3 className="text-gray-800 text-sm md:text-base font-medium mb-1">
                   Get in touch with us
                 </h3>
                 <a

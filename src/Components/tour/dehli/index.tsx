@@ -1,6 +1,8 @@
+import Tour from "../taj mahal/tour"
 import Dehliabout from "./dehliabout"
 import FAQ from "./FAQ"
 import FAQSection from "./ffaq"
+import EkaivaFooter from "./footer"
 import Gallery from "./gallery"
 import Hero from "./hero"
 import Timeline from "./timeline"
@@ -20,7 +22,9 @@ const indexs = () => {
     <FAQSection /></div> 
     <Timeline/>      
     <Gallery/>      
-    <FAQ/>                                                                                                                                                                                  
+    <FAQ/>     
+    <Tour/>
+    <EkaivaFooter/>                                                                                                                                                                             
     </div>
   )
 }

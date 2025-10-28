@@ -12,9 +12,9 @@ const Hero = () => {
       >
         
   <img
-    src='https://plus.unsplash.com/premium_photo-1753386391883-5a155fd42921?auto=compress'
+    src='https://plus.unsplash.com/premium_photo-1661962404003-e0ca40da40ef?auto=compress'
     alt="Background"
-   
+    
     decoding="async"
     className="absolute inset-0 w-full h-full object-cover"
   />
@@ -39,26 +39,26 @@ const Hero = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mt-3 leading-tight shadow-black"
+            className="text-5xl md:text-6xl font-bold mt-3 leading-tight shadow-sm"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Agra & Delhi 
+         Delhi Agra Jaipur 
 
             <br />
-           Heritage Tour
+          Jodhpur Udaipur Tour - 10 Days
 
           </motion.h1>
 
           {/* Paragraph */}
           <motion.p
-            className="text-lg md:text-xl text-white mb-8 shadow-sm"
+            className="text-lg md:text-xl text-gray-100 mb-8 shadow-sm"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-           Uncover India’s world wonders—explore centuries of history, architecture, and vibrant markets in Delhi and Agra, all in just two unforgettable days.
+           Discover Rajasthan’s royal jewels and India’s timeless heritage across five vibrant cities.
 
           </motion.p>
 
@@ -68,7 +68,8 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20Dehli%20booking%20for%20___days.">
+            
+          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20Jaipur%20booking%20a%20stay.">
             Book Now</a>
           </motion.button>
         </div>

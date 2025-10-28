@@ -57,10 +57,10 @@ const EkaivaFooter = () => {
                   Get in touch with us
                 </h3>
                 <a
-                  href="mailto:connect@ekaiva.travel"
+                  href="mailto:info@ekaivaindia.com"
                   className="text-white/90 hover:text-white text-xs md:text-sm transition-colors"
                 >
-                  connect@ekaiva.travel
+                  info@ekaivaindia.com
                 </a>
               </div>
 
@@ -90,7 +90,7 @@ const EkaivaFooter = () => {
                 <p className="text-white/80 mb-1">
                   Vinobha Puri, Lajpat Nagar, New<br />
                   Delhi, India
-                </p>
+                </p>connect@ekaiva.travel
                 <a
                   href="tel:+919006142781"
                   className="text-white/80 hover:text-white transition-colors"
