@@ -39,7 +39,7 @@ const timelineData = [
     description:
       "Cruise the serene waters of Loch Lomond surrounded by stunning scenery. Take a gondola ride on Ben Nevis, the UK’s highest peak, and visit the Glenfinnan Viaduct — the iconic bridge from the Harry Potter films.",
     image:
-      "https://images.unsplash.com/photo-1606214174585-9e4e7b57b3a3?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1603834608556-88bb4f1b174d?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
@@ -49,7 +49,7 @@ const timelineData = [
     description:
       "Wrap up your journey with a visit to a local whiskey distillery in Glasgow to learn about Scotland’s beloved spirit. Transfer to the airport for your onward flight, taking home unforgettable memories of the UK and Ireland.",
     image:
-      "https://images.unsplash.com/photo-1599158150601-8c3f0648b7a7?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1621519604512-85ea63c15ca2?w=800&h=500&fit=crop",
     direction: "right",
   },
 ];
