@@ -26,7 +26,7 @@ export default function TourLoadingScreen({
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/60" aria-hidden />
 
-      <div className="relative z-10 max-w-3xl w-full px-6 py-12 sm:py-20">
+      <div className="relative z-10 max-w-2xl w-full px-6 py-12 sm:py-20">
         <div className="flex items-center justify-between mb-8">
           <div>
             {showBrand && (
@@ -74,13 +74,10 @@ export default function TourLoadingScreen({
 
               <div className="mt-2 text-xs text-white/60 flex items-center justify-between">
                 <span>{progress != null ? `${pct}% complete` : "Starting up"}</span>
-                <span>Estimated two minutes</span>
+                <span>Estimated  2 seconds</span>
               </div>
 
-              <div className="mt-6 flex gap-3">
-                <button className="px-4 py-2 rounded-full bg-white/10 text-white text-sm hover:bg-white/12">View itinerary</button>
-                <button className="px-4 py-2 rounded-full bg-transparent border border-white/10 text-sm text-white/90">Contact guide</button>
-              </div>
+              
             </div>
           </div>
 
