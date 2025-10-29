@@ -1,5 +1,11 @@
+import EkaivaFooter from "../../Footer"
+import Gallery from "../gallery"
+import Tour from "../taj mahal/tour"
+import FAQ from "./Faqt"
+import FAQQ from "./Faxx"
 import Goldabout from "./Goldabout"
 import Hero from "./Hero"
+import Timeline from "./timeline"
 
 
 const Gold = () => {
@@ -12,7 +18,13 @@ const Gold = () => {
         w-full overflow-hidden  
         text-gray-900
       ">
-    <FAQSection /></div> 
+    <FAQQ /></div> 
+    <Timeline/>
+    <Gallery/>
+    <FAQ/>
+    <Tour/>
+    <EkaivaFooter/>
+
 
     </div>
   )

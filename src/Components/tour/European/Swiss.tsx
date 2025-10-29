@@ -1,8 +1,12 @@
-import React from 'react'
+import EAbout from "./About"
+import Hero from "./Hero"
 
 const European = () => {
   return (
-    <div>European</div>
+    <div>
+      <Hero/>
+      <EAbout/>
+    </div>
   )
 }
 

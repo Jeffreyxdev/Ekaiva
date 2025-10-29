@@ -1,106 +1,76 @@
 
 
 const Timeline = () => {
-  const timelineData = [
+const timelineData = [
   {
     id: 1,
     time: "Day 1 — Arrival",
-    title: "Arrival in Delhi",
+    title: "Welcome to Dubai",
     description:
-      "Arrive in Delhi, meet your local representative, and transfer to your hotel. Spend the rest of the day relaxing and preparing for your adventure ahead.",
+      "Arrive at Dubai International Airport and enjoy a smooth transfer to your hotel. Spend the evening at leisure exploring nearby malls or relaxing after your flight.",
     image:
-      "https://images.unsplash.com/photo-1598977054780-2dc700fdc9d3?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1510665724063-f77a01074aa2?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 2,
-    time: "Day 2 — Sightseeing",
-    title: "Old & New Delhi City Tour",
+    time: "Day 2 — Morning to Evening",
+    title: "Iconic Dubai City Tour",
     description:
-      "Explore the vibrant contrasts of Delhi — visit Jama Masjid, India Gate, Red Fort (outside), Qutub Minar, Chandni Chowk, and more to capture the essence of India's capital.",
+      "Begin your city exploration with visits to the Burj Khalifa, Dubai Frame, and Jumeirah Mosque. Capture scenic views along Jumeirah Beach, Palm Jumeirah, and Atlantis The Phttps://images.unsplash.com/photo-1603262110263-fb0112e7cc33?alm before ending at the Dubai Mall fountain show.",
     image:
-      "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?w=800&h=500&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1697729749013-d5263b662999?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 3,
-    time: "Day 3 — Morning to Evening",
-    title: "Delhi to Agra Journey",
+    time: "Day 3 — Morning",
+    title: "Old Dubai Heritage & Shopping",
     description:
-      "Travel from Delhi to Agra. Upon arrival, visit Itmad-ud-Daulah (Baby Taj) and Mehtab Bagh for stunning sunset views of the Taj Mahal. Overnight stay in Agra.",
+      "Step back in time at Al Fahidi Historical District and the Gold and Spice Souks. Ride an abra (water taxi) across Dubai Creek, and spend the afternoon shopping or relaxing at your hotel pool.",
     image:
-      "https://images.unsplash.com/photo-1582801396492-705377f39876?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1588408687414-434a389defac?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 4,
-    time: "Day 4 — Sunrise & Travel",
-    title: "Taj Mahal Sunrise & Drive to Jaipur",
+    time: "Day 4 — Afternoon & Evening",
+    title: "Desert Safari Adventure",
     description:
-      "Witness the Taj Mahal at sunrise, then explore Agra Fort before driving to Jaipur with a stop at the historic Fatehpur Sikri. Arrive in Jaipur for an overnight stay.",
+      "Head into the Arabian Desert for dune bashing, camel rides, and sandboarding. Enjoy a traditional BBQ dinner under the stars with live belly dance and tanoura performances before returning to the city.",
     image:
-      "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1615747476328-41153cf6da54?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 5,
     time: "Day 5 — Full Day",
-    title: "Jaipur City Tour & Elephant Ride",
+    title: "Abu Dhabi Excursion",
     description:
-      "Enjoy Jaipur’s highlights — Amber Fort, City Palace, Jantar Mantar, and Hawa Mahal. Experience a traditional elephant ride, then travel to Pushkar for overnight stay.",
+      "Travel to the UAE’s capital to visit Sheikh Zayed Grand Mosque, the Louvre Abu Dhabi, and Yas Island. Enjoy panoramic views of the Corniche and return to Dubai in the evening.",
     image:
-      "https://images.unsplash.com/photo-1612810436541-336b73fbcf9f?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1664906939378-22d8b1c240b1?w=800&h=400&fit=crop",
     direction: "right",
   },
   {
     id: 6,
-    time: "Day 6 — Exploration & Travel",
-    title: "Pushkar & Journey to Jodhpur",
+    time: "Day 6 — Evening",
+    title: "Leisure & Dhow Cruise Dinner",
     description:
-      "Discover Pushkar’s sacred lake, colorful markets, and temples. Take a short camel safari before driving to Jodhpur for an overnight stay.",
+      "Relax at leisure or opt for optional tours like skydiving over the Palm or a beach day at JBR. In the evening, enjoy a romantic dhow cruise dinner along Dubai Marina with stunning city lights.",
     image:
-      "https://plus.unsplash.com/premium_photo-1697729555861-e406b4989ee1?w=800&h=400&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1734581719459-9f208733ebdd?w=800&h=400&fit=crop",
     direction: "left",
   },
   {
     id: 7,
-    time: "Day 7 — Full Day",
-    title: "Jodhpur Sightseeing",
+    time: "Day 7 — Morning",
+    title: "Departure from Dubai",
     description:
-      "Visit the magnificent Mehrangarh Fort, Jaswant Thada, and explore Jodhpur’s old city filled with blue houses and lively bazaars.",
+      "After breakfast, spend your final hours shopping for souvenirs or relaxing before your private airport transfer. Depart with unforgettable memories of the Emirates.",
     image:
-      "https://plus.unsplash.com/premium_photo-1661962404003-e0ca40da40ef?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1580562419526-6ee56d2e617f?w=800&h=500&fit=crop",
     direction: "right",
-  },
-  {
-    id: 8,
-    time: "Day 8 — En Route",
-    title: "Jodhpur to Udaipur via Ranakpur",
-    description:
-      "Travel through scenic Rajasthan to Udaipur, stopping at the stunning marble Jain Temple in Ranakpur. Check into your Udaipur hotel for an evening at leisure.",
-    image:
-      "https://images.unsplash.com/photo-1654004753042-498b4d02e7ea?w=800&h=500&fit=crop",
-    direction: "left",
-  },
-  {
-    id: 9,
-    time: "Day 9 — Full Day",
-    title: "Udaipur City Tour",
-    description:
-      "Explore Udaipur’s beauty — visit the City Palace, Jagdish Temple, and enjoy a serene boat ride on Lake Pichola as the sun sets over the water.",
-    image:
-      "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=800&h=500&fit=crop",
-    direction: "right",
-  },
-  {
-    id: 10,
-    time: "Day 10 — Departure",
-    title: "Farewell from Udaipur",
-    description:
-      "After breakfast, bid farewell to Rajasthan as you take your flight or overland transfer from Udaipur — marking the end of your unforgettable journey.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661964079694-ccfaf7dc8028?w=800&h=500&fit=crop",
-    direction: "left",
   },
 ];
 
@@ -140,7 +110,7 @@ const Timeline = () => {
               }`}
             >
               {/* Text Content */}
-               <div
+              <div
                 className={`w-full md:w-1/2 px-8 md:px-10 ${
                   item.direction === "left" ? "md:text-left" : "md:text-right"
                 }`}
@@ -153,7 +123,6 @@ const Timeline = () => {
                   {item.description}
                 </p>
               </div>
-
 
               {/* Marker */}
               <div className={`

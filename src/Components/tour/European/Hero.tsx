@@ -12,7 +12,7 @@ const Hero = () => {
       >
         
   <img
-    src='https://images.unsplash.com/photo-1602659507564-563b04d257d8?auto=compress'
+    src='https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=compress'
     alt="Background"
    
     decoding="async"
@@ -44,10 +44,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Agra & Delhi 
+         European Jewels
 
             <br />
-           Heritage Tour
+        -15 Days
 
           </motion.h1>
 
@@ -58,7 +58,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-           Uncover India’s world wonders—explore centuries of history, architecture, and vibrant markets in Delhi and Agra, all in just two unforgettable days.
+          Explore the heart of Europe’s most iconic cities and breathtaking landscapes on a luxurious 17-day journey
 
           </motion.p>
 
@@ -68,7 +68,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20Dehli%20booking%20for%20___days.">
+          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva,%20I'm%20interested%20in%20Europen%20%20booking%20for%20___days.">
             Book Now</a>
           </motion.button>
         </div>

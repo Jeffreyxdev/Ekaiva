@@ -108,7 +108,7 @@ const Timeline = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 sm:ml-3">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-96 sm:ml-3">
+                <p className="text-sm text-gray-600 sm:leading-96 md:leading-relaxed sm:ml-3">
                   {item.description}
                 </p>
               </div>

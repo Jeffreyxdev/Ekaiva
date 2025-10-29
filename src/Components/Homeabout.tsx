@@ -49,9 +49,7 @@ const Homeabout = () => {
               Discover India like never before. Ekaiva brings you budget-friendly travel, seamless booking, and exclusive deals you won’t find anywhere else. Whether you’re a local explorer or an international traveler, we make every trip easy, affordable, and unforgettable.
             </p>
 
-            <p className="text-gray-500 italic text-sm">
-              Silence, stars, and your own home.
-            </p>
+           
           </motion.div>
 
           {/* Center image */}
@@ -79,7 +77,7 @@ const Homeabout = () => {
                   Absolute privacy and space
                 </h3>
                 <p className="text-sm text-gray-600 mt-1 px-2">
-                  Just you, nature, and comfort — ideal for a reboot or romance.
+                
                 </p>
               </div>
             </div>

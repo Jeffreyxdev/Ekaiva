@@ -12,7 +12,7 @@ const Hero = () => {
       >
         
   <img
-    src='https://plus.unsplash.com/premium_photo-1723809635838-d4c02e969f37?auto=compress'
+    src='https://images.unsplash.com/photo-1614252371231-f6c9b1f99fe9?auto=compress'
     alt="Background"
    
     decoding="async"
@@ -44,10 +44,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Agra & Delhi 
+          Golden triangle
 
             <br />
-           Heritage Tour
+           Tour
 
           </motion.h1>
 

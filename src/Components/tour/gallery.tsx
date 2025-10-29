@@ -11,10 +11,10 @@ const Gallery = () => {
   },
   {
     id: 2,
-    title: "Swiss Scenic Trails",
-    img: "https://plus.unsplash.com/premium_photo-1742457620013-6a9c3b0efdca?auto=compress&cs=tinysrgb&w=1200",
+    title: "Europena jewels",
+    img: "https://images.unsplash.com/photo-1529943247435-a5974e63d6e4?auto=format&fit=crop&w=1200&q=80",
     details: "Majestic peaks, cultural city stops, and scenic rail adventures—an experience of a lifetime.",
-    route: "/swiss",
+    route: "/European-jewels",
   },
   {
     id: 3,
