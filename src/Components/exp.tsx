@@ -1,7 +1,7 @@
 import exp2 from '../assets/exp.png'
 import india from '../assets/india.png'
 import delhi from '../assets/Delhi.jpg'
-import mon from '../assets/mon.png'
+
 import Gallery from './galleryn'
 function exp() {
   return (
