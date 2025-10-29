@@ -18,12 +18,29 @@ import Dubai from "./Components/tour/Dubai/Dubai"
 import Europe from "./Components/tour/Europe/Europe"
 import European from "./Components/tour/European/Swiss"
 import Medi from "./Components/tour/Medi/Medi"
+import TourLoadingScreen from "./Components/loading"
+import { useState, useEffect } from "react"
 function App() {
   
+const [progress, setProgress] = useState<number>(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((prev) => (prev < 100 ? prev + 10 : 100));
+    }, 300);
+    return () => clearInterval(timer);
+  }, []);
   return (
     <>
     <Navbar/><ScrollToTop behavior="smooth" />
+  {progress < 100 ? (
+        <TourLoadingScreen
+          title="Ekaiva india"
+          subtitle="From sunrise to sunset, journey across London, Dublin, and Edinburgh in comfort and style"
+          bgImage="https://images.unsplash.com/photo-1505765050516-f72dcac9c60b?w=1600&q=80&auto=format&fit=crop"
+          progress={progress}
+        />
+      ) : (
       <Routes>
         
         <Route path='/' element={<Home/>}/>
@@ -43,6 +60,7 @@ function App() {
         <Route path="/rajasthan" element={<Mains/>}/>
         <Route path="/kerala-backwaters-bliss" element={<Kerala/>}/>
       </Routes>
+      )}
     </>
   )
 }
