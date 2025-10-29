@@ -42,7 +42,8 @@ const Homeabout = () => {
           >
             <h2 className="text-3xl sm:text-3xl md:text-4xl font-medium text-gray-900 leading-snug mb-6 font-montserrat">
               Ekaiva is your trusted partner
-              <br className="hidden sm:block" />for cheap India vacation deals
+            <br className="hidden sm:block" />
+              {" "}for cheap India vacation deals
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
