@@ -54,7 +54,7 @@ function exp() {
   <div className="relative order-2 lg:order-1">
     <img
       src={india}
-      loading="lazy"
+      loading="eager"
       decoding="async"
       alt="India travel event"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
@@ -90,7 +90,7 @@ function exp() {
     <img
       src={delhi}
       alt="Delhi event"
-      loading="lazy"
+      loading="eager"
       decoding="async"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"
     />
@@ -103,7 +103,7 @@ function exp() {
 
     <img
       src={mon}
-      loading="lazy"
+      loading="eager"
       decoding="async"
       alt="Delhi event"
       className="rounded-3xl w-full h-[500px] object-cover shadow-lg"

@@ -15,3 +15,6 @@ if (rootElement) {
 } else {
   console.error("Root element not found");
 }
+
+document.querySelectorAll('img:not([loading])')
+  .forEach(img => img.setAttribute('loading', 'eager'))

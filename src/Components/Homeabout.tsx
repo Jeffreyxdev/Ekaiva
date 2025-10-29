@@ -70,6 +70,7 @@ const Homeabout = () => {
               <img
                 src={image}
                 alt="Traveler by the sea - Ekaiva"
+                loading='eager'
                 className="w-full h-60 sm:h-72 object-cover rounded-2xl"
               />
               <div className="mt-4 text-center">

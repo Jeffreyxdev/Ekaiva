@@ -61,8 +61,8 @@ const Hero = () => {
   <img
     src={bgImage}
     alt="Background"
-    loading="lazy"
-    decoding="async"
+    loading="eager"
+   
     draggable="false"
     className="absolute inset-0 w-full h-full object-cover"
   />

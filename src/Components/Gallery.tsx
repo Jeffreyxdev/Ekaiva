@@ -90,7 +90,7 @@ const Gallery = () => {
                 <img
                   src={faq.image}
                   alt={faq.question}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
                 />
