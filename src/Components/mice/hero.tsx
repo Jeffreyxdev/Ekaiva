@@ -37,16 +37,15 @@ const Hero = () => {
 
  const [bgImage, setBgImage] = useState("");
   useEffect(() => {
-    const updateBg = () => {
-      const image = window.innerWidth < 768 ? heroBgMobile : heroBg;
-      const img = new Image();
-      img.src = image;
-      img.onload = () => setBgImage(image);
-    };
-    updateBg();
-    window.addEventListener("resize", updateBg);
-    return () => window.removeEventListener("resize", updateBg);
-  }, []);
+  const updateBg = () => {
+    const image = window.innerWidth < 768 ? heroBgMobile : heroBg;
+    setBgImage(image); // <-- immediate set, no wait
+  };
+  updateBg();
+  window.addEventListener("resize", updateBg);
+  return () => window.removeEventListener("resize", updateBg);
+}, []);
+
 
   return (
     <section id="home" className="relative min-h-screen pb-5 flex items-center justify-center overflow-hidden mb-5">
