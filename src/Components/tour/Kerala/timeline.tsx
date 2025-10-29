@@ -140,19 +140,20 @@ const Timeline = () => {
               }`}
             >
               {/* Text Content */}
-              <div
+               <div
                 className={`w-full md:w-1/2 px-8 md:px-10 ${
                   item.direction === "left" ? "md:text-left" : "md:text-right"
                 }`}
               >
-                <p className="text-sm text-gray-500 mb-2 sm:ml-2">{item.time}</p>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <p className="text-sm text-gray-500 mb-3 sm:ml-3">{item.time}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3 sm:ml-3">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-96 sm:ml-3">
                   {item.description}
                 </p>
               </div>
+
 
               {/* Marker */}
               <div className={`

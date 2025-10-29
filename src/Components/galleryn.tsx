@@ -12,11 +12,11 @@ const Gallery = () => {
   },
   {
     id: 2,
-    title: "Southeast Asia Discovery",
+    title: "European jewels",
     img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     details:
       "Bangkok, Bali, and hidden local markets — cultural beauty and budget-friendly stays.",
-    route: "/SouthAsia",
+    route: "/European-jewels",
   },
   {
     id: 3,

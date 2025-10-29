@@ -16,6 +16,7 @@ import Gold from "./Components/tour/Golden/Gold"
 import Kerala from "./Components/tour/Kerala/Kerala"
 import Dubai from "./Components/tour/Dubai/Dubai"
 import Europe from "./Components/tour/Europe/Europe"
+import European from "./Components/tour/European/Swiss"
 function App() {
   
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/Dubai' element={<Dubai/>}/>
         <Route path='/Europe' element={<Europe/>}/>
+        <Route path='/European-jewels'element={<European/>}/>
         <Route path='/agra' element={<Category/>}/>
         <Route path="/taj-mahal" element={<Index/>}/>
         <Route path="/delhi" element={<Indexs/>}/>
