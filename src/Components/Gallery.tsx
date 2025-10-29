@@ -8,7 +8,7 @@ const Gallery = () => {
       answer: 'Ekaiva organized our trip perfectly. Every day was filled with surprises, and the price was truly unbeatable. We felt supported and welcomed the whole time.',
       author: 'Priya M',
       location: 'Local Specialist',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: '002',
@@ -16,7 +16,7 @@ const Gallery = () => {
       answer: 'I compared lots of sites, but Ekaiva’s deal was the best. The local guide made history come alive, and booking was so easy. Will use Ekaiva again!',
       author: 'John L.',
       location: 'Booking Specialist',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1524613032530-449a5d94c285?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: '003',
@@ -24,7 +24,7 @@ const Gallery = () => {
       answer: 'Visiting from overseas, Ekaiva’s team made our family feel special. The itinerary fit our needs perfectly, and the hotel was both safe and affordable.',
       author: 'Ashok S.',
       location: 'Professional Supervisor',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1519955266818-0231b63402bc?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: '004',
@@ -32,7 +32,7 @@ const Gallery = () => {
       answer: 'I highly recommend Floris. It has been so important for us as we continue to grow our company.',
       author: 'James Krogerman',
       location: 'Local Specialist',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: '005',
@@ -40,7 +40,7 @@ const Gallery = () => {
       answer: 'Our Mumbai team event was a hit thanks to Ekaiva. Hotel, workshop space, and sightseeing blended smoothly—all at a price the boss loved.',
       author: 'Sarah B.',
       location: 'Booking Specialist',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1461603950871-cd64bcf7acf0?auto=compress&cs=tinysrgb&w=800'
     },
     {
       id: '006',
@@ -48,7 +48,7 @@ const Gallery = () => {
       answer: 'If you are a small business owner and you don\'t have Floris in your closet yet, I highly recommend that you check it out.',
       author: 'Mark Hallen',
       location: 'Professional Supervisor',
-      image: 'https://images.pexels.com/photos/3290075/pexels-photo-3290075.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=compress&cs=tinysrgb&w=800'
     },
   ];
 

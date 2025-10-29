@@ -102,7 +102,7 @@ function exp() {
 < div className="relative order-2 lg:order-1">
 
     <img
-      src={mon}
+      src='https://images.unsplash.com/photo-1461603950871-cd64bcf7acf0'
       loading="eager"
       decoding="async"
       alt="Delhi event"
