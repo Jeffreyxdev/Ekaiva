@@ -7,32 +7,32 @@ function FAQ() {
   const faqs = [
     {
       
-      question: 'Is the itinerary flexible?',
-      answer: 'Absolutely — adjust stops and timing to fit your preferences.Our team ensures a seamless experience.',
+      question: 'Is the tour suitable for all ages?',
+      answer: 'Yes, this coach-based trip is designed for family-friendly and senior travelers alike',
       
     },
     {
       
-      question: 'Are all transfer and guide services included?',
-      answer: 'Yes — private car, driver, and tour guides at each location are provided.No hidden transportation costs.',
+      question: 'Are entrance fees included?',
+      answer: 'Are entrance fees included?',
       
     },
     {
       
-      question: 'Do I need to pay extra at monuments?',
-      answer: 'Monument entrance fees are excluded; we assist with ticketing.Save time with pre-booked entries.',
-      
-    },
-    {
-     
-      question: 'Can special requirements be accommodated?',
-      answer: 'Yes — we welcome requests for dietary, accessibility, or activity preferences.Let us know when booking.',
+      question: 'Can the itinerary be changed?',
+      answer: 'Customizations are possible with advance notice to enhance your experience',
       
     },
     {
      
-      question: 'What languages do guides speak?',
-      answer: 'English is standard; other major languages available upon request.Perfect support for international travelers',
+      question: 'What level of hotels are provided?',
+      answer: 'Selected comfortable hotels with options for upgrades on request.',
+      
+    },
+    {
+     
+      question: 'Are meals included?',
+      answer: 'Daily breakfasts and some group dinners are provided, with other meals at your discretion.',
      
     },
     

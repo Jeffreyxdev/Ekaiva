@@ -18,40 +18,35 @@ const FAQQ = () => {
     },
     {
       id: '003',
-      question: 'Elephant ride in Jaipur',
-      answer: 'Enjoy Jaipur elepahant rides',
-      image: 'https://images.unsplash.com/photo-1650709244937-1cc6a280ee3c?w=800&h=500&fit=crop'
+      question: 'Monument Entrance Tickets',
+      answer: 'All major site entry tickets in Delhi and Agra are included. Skip the lines and head straight in—see more while waiting less, all at no extra cost.',
+      image: 'https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=800&h=500&fit=crop'
     },
     {
       id: '004',
-      question: 'Rickshaw Ride in Old Delhi',
+      question: 'Rickshaw Ride in Amsterdan',
       answer: 'Enjoy a charming rickshaw ride through Chandni Chowk. Soak in the color, history, and incredible bustle of Old Delhi’s legendary market streets.',
       image: 'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&h=500&fit=crop'
     },
     {
       id: '005',
-      question: 'Live tour guide services across all destinations',
+      question: 'Live Tour Guide Service',
       answer: 'Benefit from guided insight at every stop—learn hidden stories, get answers, and make each monument more meaningful with Ekaiva’s expert guides.',
       image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop'
     }, {
       id: '006',
-      question: '9-Night Hotel with Breakfast',
-      answer: 'We’ll pick you up wherever suits you in Jaipur hotel, home, or anywhere central, for total convenience.',
+      question: '1-Night Hotel with Breakfast',
+      answer: 'We’ll pick you up wherever suits you in Bangalore—hotel, home, or anywhere central, for total convenience.',
       image: 'https://plus.unsplash.com/premium_photo-1679865372673-8d1655a73b50?w=800&h=500&fit=crop'
     }, {
       id: '007',
-      question: 'Scenic boat ride in Udaipur',
+      question: 'Mineral Water Bottles',
       answer: 'Complimentary mineral water for your comfort on the road—stay hydrated during sightseeing and transfers',
-      image: 'https://plus.unsplash.com/premium_photo-1718146019714-a7a0ab9e8e8d?w=800&h=500&fit=crop'
-    },
-    {
-      id: '008',
-      question: 'Exclusions:',
-      answer: 'Monument entrance fees, meals other than breakfast, personal expenses, Udaipur to Delhi flight, and tips.',
       image: 'https://plus.unsplash.com/premium_photo-1718146019714-a7a0ab9e8e8d?w=800&h=500&fit=crop'
     },
     
   ];
+
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };

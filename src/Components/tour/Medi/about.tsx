@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 
 
-export default function Goldabout() {
+export default function ENabout() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
@@ -22,11 +22,12 @@ export default function Goldabout() {
           {/* Left Column - Text Content */}
           <div className="space-y-6 lg:pr-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight mont">
-             Your Golden triange Adventure
+             Your Ireland Adventure
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-             This expertly curated tour blends Delhi’s colorful chaos with Agra’s serene marvels. Enjoy private transfers, fast-track entry, and handpicked local guides who ensure your two-day journey is smooth, informative, and comfortable from start to finish.
+             Travel through three iconic countries, experiencing London’s landmarks, Dublin’s vibrant streets and historic Guinness Storehouse, and Scotland’s majestic castles and natural wonders. From river cruises to royal castles, this itinerary blends urban energy with serene countryside beauty, offering a diverse and immersive journey.
+
             </p>
 
             {/* First Image - Conference Setup */}
@@ -39,7 +40,7 @@ export default function Goldabout() {
             >
               <div className="relative aspect-[4/3.5] overflow-hidden">
                 <img
-                  src='https://images.unsplash.com/photo-1586261709963-7a93cad40d44'
+                  src='https://images.unsplash.com/photo-1590089415225-401ed6f9db8e'
                   loading='lazy'
                   alt="Corporate Meeting Setup"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -59,7 +60,7 @@ export default function Goldabout() {
           >
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src='https://images.unsplash.com/photo-1662920390934-3687e7e5f4b0'
+                src='https://images.unsplash.com/photo-1515718644198-5daf5b208966'
                 alt="Business Presentation"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

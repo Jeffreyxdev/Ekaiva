@@ -1,0 +1,56 @@
+# ===========================================
+# robots.txt for Ekaiva Hotel
+# Smart Travel & Boutique Stays in India
+# ===========================================
+
+User-agent: *
+# Allow all pages to be indexed
+Allow: /
+
+# Disallow system, config, and build directories
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /scripts/
+
+# Disallow query search parameters (if you use ?search= etc.)
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+
+# Allow images, JS, CSS
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap for search engines
+Sitemap: https://ekaivaindia.com/sitemap.xml
+
+# ===============================
+# Additional Crawlers
+# ===============================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Ahrefs, Semrush, etc. (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# ===============================
+# End of robots.txt
+# ===============================

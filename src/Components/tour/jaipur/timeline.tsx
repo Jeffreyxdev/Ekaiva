@@ -116,10 +116,10 @@ const Timeline = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your two-Day Dehli Experience
+            Your ten-Day Jaipur Experience
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            From sunrise to sunset, explore Dehli most iconic treasures in
+            From sunrise to sunset, explore Jaipur most iconic treasures in
             comfort and style — with seamless transfers, curated experiences,
             and local expertise at every step.
           </p>

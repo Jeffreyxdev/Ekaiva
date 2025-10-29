@@ -4,76 +4,75 @@ const Timeline = () => {
 const timelineData = [
   {
     id: 1,
-    time: "Day 1 — Arrival in Delhi",
-    title: "Welcome to Incredible India",
+    time: "Days 1-2 — Arrival",
+    title: "Arrived in Amsterdam",
     description:
-      "Arrive at Indira Gandhi International Airport, Delhi. Meet your tour representative and transfer to your hotel. Relax after your journey or explore Connaught Place for a first taste of Indian life.",
+      "Arrival in Amsterdam, Canal Cruise, Madurodam, and The Hague.",
     image:
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602552990492-194601ef29ab?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 2,
-    time: "Day 2 — Full Day",
-    title: "Historic Sights of Delhi",
+    time: "Days 3-4 — Morning to Evening",
+    title: "Cologne city tour",
     description:
-      "Discover both Old and New Delhi. Visit Jama Masjid, Red Fort, and Raj Ghat in the morning. Later, drive past India Gate, Rashtrapati Bhavan, and explore Qutub Minar and Humayun’s Tomb. Enjoy a traditional dinner at a local restaurant.",
+      "Cologne city tour, Rhine River cruise, and transfer to Mannheim",
     image:
-      "https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?w=800&h=500&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1697729749013-d5263b662999?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 3,
-    time: "Day 3 — Morning to Evening",
-    title: "Delhi to Agra",
+    time: "Days 5-6",
+    title: " Heritage & Shopping",
     description:
-      "Drive to Agra (around 4 hours). Upon arrival, visit the magnificent Agra Fort and enjoy sunset views of the Taj Mahal from Mehtab Bagh. Evening at leisure or optional cultural show.",
+      "Black Forest visit, Rhine Falls boat ride, Swarovski Crystal World, and Innsbruck sightseeing with cable car ride.",
     image:
-      "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1588408687414-434a389defac?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 4,
-    time: "Day 4 — Early Morning & Afternoon",
-    title: "Taj Mahal & Drive to Jaipur",
+    time: "Days 7-10",
+    title: "tour",
     description:
-      "Witness the breathtaking sunrise over the Taj Mahal — an unforgettable experience. After breakfast, drive to Jaipur, stopping en route at Fatehpur Sikri, the abandoned Mughal capital. Check in to your hotel and relax for the evening.",
+      "Venice’s waterways, Rome’s historic landmarks, Vatican Museum, Florence’s art treasures, Pisa Leaning Tower visit.",
     image:
-      "https://images.unsplash.com/photo-1705777467792-9f5874cdd077?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1698085101069-f31612b046a4?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 5,
-    time: "Day 5 — Full Day",
-    title: "Royal Jaipur Exploration",
+    time: "Days 11-13",
+    title: "Excursion",
     description:
-      "Start with an excursion to the Amber Fort, where you can ascend by jeep or elephant. Visit City Palace, Jantar Mantar, and the Hawa Mahal. Stroll through the colorful bazaars of the Pink City for handicrafts and jewelry.",
+      "Lucerne city tour, Mt. Titlis with Ice Flyer, Lake Lucerne dinner cruise, Mt. Pilatus, Interlaken shopping.",
     image:
-      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1624132343613-5791bbc2061e?w=800&h=400&fit=crop",
     direction: "right",
   },
   {
     id: 6,
-    time: "Day 6 — Leisure or Optional Tours",
-    title: "Jaipur Heritage & Culture",
+    time: "Days 14-16",
+    title: "Leisure & Disneyland Cruise",
     description:
-      "Spend the day at leisure or opt for a local cooking class, elephant village visit, or a traditional Rajasthani dinner with folk music and dance under the stars.",
+      "Traverse to Paris, visit iconic sites including Eiffel Tower and River Seine cruise, optional Disneyland day.",
     image:
-      "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602271886918-bafecc837c7a?w=800&h=400&fit=crop",
     direction: "left",
   },
   {
     id: 7,
-    time: "Day 7 — Morning",
-    title: "Return to Delhi & Departure",
+    time: "Day 17",
+    title: "Departure from paris airport",
     description:
-      "After breakfast, drive back to Delhi for your onward flight. Depart with cherished memories of India’s Golden Triangle — a journey through history, culture, and royal grandeur.",
+      "After breakfast, spend your final hours shopping for souvenirs or relaxing before your private airport transfer. Depart with unforgettable memories of the Emirates.",
     image:
-      "https://images.unsplash.com/photo-1524228529766-4d7fe5dc55ca?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1674444589678-373b56a61a6f?w=800&h=500&fit=crop",
     direction: "right",
   },
 ];
-
 
 
 
@@ -87,7 +86,7 @@ const timelineData = [
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your Seven-Day Dehli Experience
+            Your two-Day Dehli Experience
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
             From sunrise to sunset, explore Dehli most iconic treasures in

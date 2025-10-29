@@ -5,7 +5,7 @@ const Gallery = () => {
   {
     id: 1,
     title: "European Explorer",
-    img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?auto=format&fit=crop&w=1200&q=80",
     details:
       "15 unforgettable days. Paris, Rome, and the Swiss Alps — handpicked hotels and seamless transfers.",
     route: "/Europe",
@@ -13,7 +13,7 @@ const Gallery = () => {
   {
     id: 2,
     title: "European jewels",
-    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1608817576203-3c27ed168bd2?auto=format&fit=crop&w=1200&q=80",
     details:
       "Bangkok, Bali, and hidden local markets — cultural beauty and budget-friendly stays.",
     route: "/European-jewels",
@@ -21,7 +21,7 @@ const Gallery = () => {
   {
     id: 3,
     title: "Dubai Highlights",
-    img: "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1510665724063-f77a01074aa2?auto=format&fit=crop&w=1200&q=80",
     details:
       "Burj Khalifa, desert safaris, and golden dunes — luxury meets adventure in the UAE.",
     route: "/Dubai",

@@ -116,12 +116,10 @@ const Timeline = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your two-Day Dehli Experience
+            Your ten-Day Kerala Experience
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            From sunrise to sunset, explore Dehli most iconic treasures in
-            comfort and style — with seamless transfers, curated experiences,
-            and local expertise at every step.
+            Explore Delhi’s timeless highlights in comfort and style — effortless transfers, curated experiences, and expert guidance throughout.
           </p>
         </div>
 

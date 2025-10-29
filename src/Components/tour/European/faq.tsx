@@ -7,32 +7,38 @@ function FAQ() {
   const faqs = [
     {
       
-      question: 'Is the itinerary flexible?',
-      answer: 'Absolutely — adjust stops and timing to fit your preferences.Our team ensures a seamless experience.',
+      question: 'Can I customize parts of the itinerary?',
+      answer: 'Yes, we offer flexibility to adjust sites and days.Contact us to personalize your European adventure.',
       
     },
     {
       
-      question: 'Are all transfer and guide services included?',
-      answer: 'Yes — private car, driver, and tour guides at each location are provided.No hidden transportation costs.',
+      question: 'Are all entrance fees included in the tour price?',
+      answer: 'Most monument admissions are covered; optional extras may cost extra. We clearly list all included and excluded tickets.',
       
     },
     {
       
-      question: 'Do I need to pay extra at monuments?',
-      answer: 'Monument entrance fees are excluded; we assist with ticketing.Save time with pre-booked entries.',
-      
-    },
-    {
-     
-      question: 'Can special requirements be accommodated?',
-      answer: 'Yes — we welcome requests for dietary, accessibility, or activity preferences.Let us know when booking.',
+      question: 'What type of accommodation is provided?',
+      answer: 'Hotels range from 3-4 stars, carefully selected for comfort and location.Room upgrades and preferences can be requested.',
       
     },
     {
      
-      question: 'What languages do guides speak?',
-      answer: 'English is standard; other major languages available upon request.Perfect support for international travelers',
+      question: 'Are meals included?',
+      answer: 'Daily continental breakfasts and select dinners are included. Other meals are at your discretion.',
+      
+    },
+    {
+     
+      question: 'Is travel insurance included?',
+      answer: 'No, travelers should arrange their own insurance.We can recommend trusted providers.',
+     
+    },
+     {
+     
+      question: 'How are airport transfers managed?',
+      answer: 'Transfers at beginning and end of tour are included.On-tour transport is via private coach',
      
     },
     

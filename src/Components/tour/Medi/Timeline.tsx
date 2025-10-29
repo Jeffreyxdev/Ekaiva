@@ -4,75 +4,56 @@ const Timeline = () => {
 const timelineData = [
   {
     id: 1,
-    time: "Day 1 — Arrival in Delhi",
-    title: "Welcome to Incredible India",
+    time: "Days 1–3",
+    title: "London & Windsor",
     description:
-      "Arrive at Indira Gandhi International Airport, Delhi. Meet your tour representative and transfer to your hotel. Relax after your journey or explore Connaught Place for a first taste of Indian life.",
+      "Arrive in London and begin your adventure with a panoramic city tour. Enjoy iconic experiences like the London Eye and Thames River Cruise, visit the world-famous Madame Tussauds, and explore the royal grandeur of Windsor Castle.",
     image:
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 2,
-    time: "Day 2 — Full Day",
-    title: "Historic Sights of Delhi",
+    time: "Days 4–6",
+    title: "Dublin & Belfast",
     description:
-      "Discover both Old and New Delhi. Visit Jama Masjid, Red Fort, and Raj Ghat in the morning. Later, drive past India Gate, Rashtrapati Bhavan, and explore Qutub Minar and Humayun’s Tomb. Enjoy a traditional dinner at a local restaurant.",
+      "Cross over to Ireland and uncover Dublin’s charm through its historic landmarks and a visit to the Guinness Storehouse. Continue to Belfast for a fascinating Titanic Experience and explore the city’s Victorian architecture and lively streets.",
     image:
-      "https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 3,
-    time: "Day 3 — Morning to Evening",
-    title: "Delhi to Agra",
+    time: "Days 7–8",
+    title: "Glasgow & Edinburgh",
     description:
-      "Drive to Agra (around 4 hours). Upon arrival, visit the magnificent Agra Fort and enjoy sunset views of the Taj Mahal from Mehtab Bagh. Evening at leisure or optional cultural show.",
+      "Journey to Scotland’s cultural heartlands. Enjoy panoramic tours of Glasgow and Edinburgh, exploring Edinburgh Castle, the Royal Mile, and the city’s magnificent cathedrals. Immerse yourself in Scottish history and vibrant city life.",
     image:
-      "https://images.unsplash.com/photo-1515091943-9d5c0ad475af?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 4,
-    time: "Day 4 — Early Morning & Afternoon",
-    title: "Taj Mahal & Drive to Jaipur",
+    time: "Days 9–10",
+    title: "Loch Lomond & Ben Nevis",
     description:
-      "Witness the breathtaking sunrise over the Taj Mahal — an unforgettable experience. After breakfast, drive to Jaipur, stopping en route at Fatehpur Sikri, the abandoned Mughal capital. Check in to your hotel and relax for the evening.",
+      "Cruise the serene waters of Loch Lomond surrounded by stunning scenery. Take a gondola ride on Ben Nevis, the UK’s highest peak, and visit the Glenfinnan Viaduct — the iconic bridge from the Harry Potter films.",
     image:
-      "https://images.unsplash.com/photo-1705777467792-9f5874cdd077?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1606214174585-9e4e7b57b3a3?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 5,
-    time: "Day 5 — Full Day",
-    title: "Royal Jaipur Exploration",
+    time: "Day 11",
+    title: "Glasgow & Departure",
     description:
-      "Start with an excursion to the Amber Fort, where you can ascend by jeep or elephant. Visit City Palace, Jantar Mantar, and the Hawa Mahal. Stroll through the colorful bazaars of the Pink City for handicrafts and jewelry.",
+      "Wrap up your journey with a visit to a local whiskey distillery in Glasgow to learn about Scotland’s beloved spirit. Transfer to the airport for your onward flight, taking home unforgettable memories of the UK and Ireland.",
     image:
-      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=500&fit=crop",
-    direction: "right",
-  },
-  {
-    id: 6,
-    time: "Day 6 — Leisure or Optional Tours",
-    title: "Jaipur Heritage & Culture",
-    description:
-      "Spend the day at leisure or opt for a local cooking class, elephant village visit, or a traditional Rajasthani dinner with folk music and dance under the stars.",
-    image:
-      "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=800&h=500&fit=crop",
-    direction: "left",
-  },
-  {
-    id: 7,
-    time: "Day 7 — Morning",
-    title: "Return to Delhi & Departure",
-    description:
-      "After breakfast, drive back to Delhi for your onward flight. Depart with cherished memories of India’s Golden Triangle — a journey through history, culture, and royal grandeur.",
-    image:
-      "https://images.unsplash.com/photo-1524228529766-4d7fe5dc55ca?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1599158150601-8c3f0648b7a7?w=800&h=500&fit=crop",
     direction: "right",
   },
 ];
+
 
 
 
@@ -87,12 +68,10 @@ const timelineData = [
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your Seven-Day Dehli Experience
+            Your 11-Day Ireland Experience
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            From sunrise to sunset, explore Dehli most iconic treasures in
-            comfort and style — with seamless transfers, curated experiences,
-            and local expertise at every step.
+            From sunrise to sunset, explore Delhi’s most iconic treasures in comfort and style — with seamless transfers, handpicked experiences, and the insight of local experts at every step.
           </p>
         </div>
 
