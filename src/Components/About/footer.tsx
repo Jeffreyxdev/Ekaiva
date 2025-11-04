@@ -27,14 +27,7 @@ const EkaivaFooter = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center">
-                Ar
-                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden ring-2 ring-white/30">
-                  <img
-                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=150&fit=crop"
-                    alt="Travel"
-                    className="w-full h-full object-cover"
-                  />
-                </span>
+                Aro
                 und the World
               </span>
             </h1>
@@ -67,10 +60,10 @@ const EkaivaFooter = () => {
 
               {/* Navigation */}
               <nav className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium uppercase tracking-wider">
-                {["INFO", "TOURS", "GALLERY", "ABOUT US", "CONTACT"].map((link) => (
+                {["HOME", "TOURS", "MICE", "ABOUT US", "GUIDE"].map((link) => (
                   <a
                     key={link}
-                    href={`#${link.toLowerCase().replace(" ", "")}`}
+                    href={`${link.toLowerCase().replace(" ", "")}`}
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     {link}

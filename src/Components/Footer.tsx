@@ -8,10 +8,11 @@ const EkaivaFooter = () => {
 
       {/* Footer */}
       <footer
-        className="relative w-screen left-0 right-0 bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('" + Footer + "')",
+        className="relative w-screen  left-0 right-0 bg-cover bg-center bg-no-repeat overflow-hidden"
+         style={{
+          backgroundImage: `url('${Footer}')`,
+          minHeight: '120vh', // Makes image stretch longer
+          
         }}
       >
         {/* Dark overlay on the image */}
@@ -21,33 +22,32 @@ const EkaivaFooter = () => {
         <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#F6F8F7] via-[#F6F8F7]/80 via-[#5D7B83]/50 via-[#607D85]/20 to-transparent z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
-        <div className="relative z-20 flex flex-col justify-between w-full">
-          {/* CTA Section - increased top padding for fade area */}
-          <div className="text-center pt-40 md:pt-44 xl:pt-48 pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
+                <div className="relative z-20 flex flex-col justify-between w-full pt-48 md:pt-56 xl:pt-64">
+          {/* CTA Section - pushed down more */}
+          <div className="text-center pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-black mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
-              <span className="inline-flex flex-wrap items-center gap-3 justify-center">
-                Ar
-                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden  ring-2 ring-white/30">
-                  <img
-                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=150&fit=crop"
-                    alt="Travel"
-                    className="w-full h-full object-cover"
-                  />
-                </span>
-                und the World
+              <span className="inline-flex flex-wrap items-center gap-3 justify-center text-black">
+                Around the World
               </span>
             </h1>
 
-            <p className="text-black text-xs sm:text-sm md:text-base xl:text-lg max-w-2xl mb-6 mx-auto leading-relaxed">
+            <p className="text-black/90 text-xs sm:text-sm md:text-base xl:text-lg max-w-2xl mb-8 mx-auto leading-relaxed drop-shadow">
               Ready to turn your travel dreams into reality? Get in touch with us
               today and let's start planning your next unforgettable adventure.
             </p>
-
-            <button className="bg-black hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300">
-              Join Trip
-            </button>
+            
+            <a
+  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I%20want%20to%20join%20a%20trip%20and%20explore%20the%20world%20with%20you!%20Please%20send%20me%20the%20latest%20tours%20and%20offers."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white px-8 md:px-10 py-3 md:py-3.5 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+>
+ 
+  Join Trip
+</a>
           </div>
+
 
           {/* Contact + Navigation */}
           <div className="py-6 md:py-8 px-6 md:px-12 xl:px-16">
@@ -67,10 +67,10 @@ const EkaivaFooter = () => {
 
               {/* Navigation */}
               <nav className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium uppercase tracking-wider">
-                {["INFO", "TOURS", "GALLERY", "ABOUT US", "CONTACT"].map((link) => (
+                {[ "TOURS", "MICE", "ABOUT", "GUIDE"].map((link) => (
                   <a
                     key={link}
-                    href={`#${link.toLowerCase().replace(" ", "")}`}
+                    href={`${link.toLowerCase().replace(" ", "")}`}
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     {link}

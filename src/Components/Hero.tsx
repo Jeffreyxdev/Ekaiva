@@ -62,7 +62,7 @@ const Hero = () => {
     alt="Background"
     loading="eager"
     
-    className="absolute inset-0 w-full h-full  object-cover"
+    className="absolute inset-0 w-full h-full"
   /> 
         <div className="absolute inset-0 " />
       </motion.div>

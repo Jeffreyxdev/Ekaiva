@@ -7,11 +7,7 @@ const HomeTour = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
 
-  const bottomImages = [
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
-  ];
+
 
   const handleScroll = () => {
     if (!scrollRef.current) return;
@@ -108,20 +104,11 @@ const HomeTour = () => {
           {/* Desktop */}
           <h2 className="hidden md:block text-4xl text-gray-700 leading-relaxed">
             Join thousands who trust Ekaiva for budget-friendly packages, savings on every booking,{" "}
-            <span
-              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[0]})` }}
-            ></span>
+           
             and stress free travel. Get the lowest{" "}
-            <span
-              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[1]})` }}
-            ></span>
+          
             prices on hotels and tours{" "}
-            <span
-              className="inline-block w-28 h-9 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[2]})` }}
-            ></span>
+            
             always authentic and reliable.
           </h2>
 
@@ -132,11 +119,7 @@ const HomeTour = () => {
               Get the lowest prices on hotels and tours  always authentic and reliable.
             </p>
             <div className="w-full h-10 rounded-3xl overflow-hidden mb-4">
-              <img
-                src={bottomImages[1]}
-                alt="Nature surroundings"
-                className="w-full h-full object-cover"
-              />
+             
             </div>
           </div>
         </motion.div>

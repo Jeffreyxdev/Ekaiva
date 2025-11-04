@@ -35,8 +35,9 @@ const Home = () => {
         <HomeTour />
       </section>
 
-      {/* Planning Section */}
-      <FAQSection />
+      <section className='w-full max-w-7xl mx-auto'>
+      <FAQSection  />
+      </section>
       {/* Footer Section */}
       <Exp/>
       <FAQ/>
