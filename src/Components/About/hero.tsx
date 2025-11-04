@@ -57,14 +57,19 @@ const Hero = () => {
           </motion.p>
 
           {/* Button */}
-          <motion.button
-            className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-          >
-            Get Terrif now
-          </motion.button>
+          <motion.a
+  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I'd%20love%20to%20explore%20travel%20options%20with%20your%20team."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300 inline-block"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.9 }}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  Get Terrif now
+</motion.a>
         </div>
       </div>
     </section>

@@ -26,14 +26,7 @@ const EkaivaFooter = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black/90 mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center">
-                Ar
-                <span className="inline-block w-20 h-8 sm:w-24 sm:h-9 md:w-28 md:h-10 xl:w-32 xl:h-11 rounded-full overflow-hidden  ring-2 ring-white/30">
-                  <img
-                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=150&fit=crop"
-                    alt="Travel"
-                    className="w-full h-full object-cover"
-                  />
-                </span>
+                Aro
                 und the World
               </span>
             </h1>
@@ -43,9 +36,15 @@ const EkaivaFooter = () => {
               today and let's start planning your next unforgettable adventure.
             </p>
 
-            <button className="bg-[#232a2c] hover:bg-[#2d3a3e] text-white px-8 md:px-10 py-2.5 md:py-3 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg">
-              Join Trip
-            </button>
+                     <a
+  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I%20want%20to%20join%20a%20trip%20and%20explore%20the%20world%20with%20you!%20Please%20send%20me%20the%20latest%20tours%20and%20offers."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white px-8 md:px-10 py-3 md:py-3.5 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+>
+ 
+  Join Trip
+</a>
           </div>
 
           {/* Contact + Navigation */}
@@ -65,11 +64,11 @@ const EkaivaFooter = () => {
               </div>
 
               {/* Navigation */}
-              <nav className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium uppercase tracking-wider">
-                {["INFO", "TOURS", "GALLERY", "ABOUT US", "CONTACT"].map((link) => (
+               <nav className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium uppercase tracking-wider">
+                {[ "TOURS", "MICE", "ABOUT", "GUIDE"].map((link) => (
                   <a
                     key={link}
-                    href={`#${link.toLowerCase().replace(" ", "")}`}
+                    href={`${link.toLowerCase().replace(" ", "")}`}
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     {link}

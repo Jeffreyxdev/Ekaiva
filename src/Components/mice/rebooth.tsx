@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion"
-
+import img from '../../assets/bgnk.png'
 export default function EkaivaRebootSection() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const [touchStart, setTouchStart] = useState<number>(0);
@@ -50,13 +50,13 @@ const bottomImages = [
               02. About
             </button>
 
-            <h1 className="text-4xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-4xl lg:text-4xl font-semibold text-black leading-tight tracking-tight">
               Ekaiva is not<br />
               just a vacation,<br />
               It’s a reboot
             </h1>
 
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base lg:text-sm text-black leading-relaxed">
               We have combined the comfort of boutique hotel and the solitude of nature: separate houses,
               panoramic views, caring service and an atmosphere where you want to breathe deeper.
             </p>
@@ -81,7 +81,7 @@ const bottomImages = [
                 }`}
               >
                 <img src={image} alt={`Ekaiva view ${index + 1}`} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 min-h-[100vh] bg-gradient-to-t from-black/30 via-transparent to-transparent" />
               </div>
             ))}
           </div>
@@ -110,22 +110,22 @@ const bottomImages = [
       {/* --- DESKTOP LAYOUT --- */}
       <div className="hidden md:block relative h-[90vh]">
         <img
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&h=900&fit=crop"
+          src={img}
           alt="Ekaiva experience"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full  min-h-[100vh] object-cover"
         />
 
         {/* Soft gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F6F8F7] via-white/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFFF] via-white/60 to-transparent" />
 
         {/* Text content */}
         <div className="relative z-10 flex items-center justify-between h-full max-w-6xl mx-auto px-12">
           <div className="max-w-lg">
-            <button className="px-5 py-2 mb-6 border-2 border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide">
+            <button className="px-5 py-2  border-2 border-gray-300 rounded-full text-gray-700 text-sm font-medium tracking-wide">
               02. About
             </button>
 
-            <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-4xl lg:text-4xl font-semibold text-black leading-tight tracking-tight">
               Curated Experiences for Every Group<br />
               
             </h1>
@@ -133,7 +133,7 @@ const bottomImages = [
 
           <div className="max-w-sm">
             <h3 className="text-gray-800 font-semibold mb-2"></h3>
-            <p className="text-gray-700 leading-relaxed mt-20">
+            <p className="text-sm md:text-base lg:text-sm text-black leading-relaxed">
             Unlock inspiring team journeys, premium venues, and curated activities—each crafted to deliver business results and unforgettable group moments. Ekaiva’s tours are tailored for high-performing teams, incentives, conferences, or relaxing escapes, blending expert planning with seamless service from start to finish.
             </p>
           </div>
@@ -141,32 +141,7 @@ const bottomImages = [
         </div>
         
       </div>
-      <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="max-w-3xl mx-auto text-center mt-20"
-        >
-          {/* Desktop Version - Hidden on Mobile */}
-          <h2 className="hidden md:block text-3xl text-gray-700 leading-relaxed">
-            Whether you're planning a{" "}
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[0]})` }}
-            ></span>{" "}
-            romantic getaway, a solo getaway or a cozy weekend every home{" "}
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[1]})` }}
-            ></span>{" "}
-            is more than just a place to be surrounded by nature, with{" "}
-            <span
-              className="inline-block w-20 h-8 bg-cover bg-center rounded-full align-middle mx-1"
-              style={{ backgroundImage: `url(${bottomImages[2]})` }}
-            ></span>{" "}
-            everything taken care of.
-          </h2>          
-        </motion.div>
+      
     </section>
   );
 }

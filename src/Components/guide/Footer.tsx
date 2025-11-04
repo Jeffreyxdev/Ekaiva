@@ -66,10 +66,10 @@ const EkaivaFooter = () => {
 
               {/* Navigation */}
               <nav className="flex flex-wrap gap-4 md:gap-6 text-xs md:text-sm font-medium uppercase tracking-wider">
-                {["INFO", "TOURS", "GALLERY", "ABOUT US", "CONTACT"].map((link) => (
+                {["HOME", "TOURS", "MICE", "ABOUT", "GUIDE"].map((link) => (
                   <a
                     key={link}
-                    href={`#${link.toLowerCase().replace(" ", "")}`}
+                    href={`${link.toLowerCase().replace(" ", "")}`}
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     {link}
