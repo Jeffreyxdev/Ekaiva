@@ -1,5 +1,4 @@
-import React from "react";
-import micem from "../../assets/hrr.png";
+
 import hrt from '../../assets/bgnk.png'
 import { motion } from "framer-motion";
 

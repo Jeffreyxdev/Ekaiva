@@ -4,7 +4,7 @@ const EkaivaFooter = () => {
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#F6F8F7]">
       {/* Placeholder for main content */}
-      <div className="min-h-[10vh]" />
+      <div className="min-h-[20vh]" />
 
       {/* Footer */}
       <footer
@@ -16,15 +16,15 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-[#00000049]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#7070701e] to-[#0000006f]"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#F6F8F7] via-[#F6F8F7]/80 via-[#5D7B83]/50 via-[#607D85]/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#f6f8f7]  to-transparent z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
                 <div className="relative z-20 flex flex-col justify-between w-full pt-48 md:pt-56 xl:pt-64">
           {/* CTA Section - pushed down more */}
-          <div className="text-center pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
+          <div className="text-center pb-18 md:pb-17 xl:pb-30 px-6 md:px-20 xl:px-56">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-black mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center text-black">

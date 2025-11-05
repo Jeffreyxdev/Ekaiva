@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion } from "framer-motion"
+
 import img from '../../assets/bgnk.png'
 export default function EkaivaRebootSection() {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -12,11 +12,7 @@ export default function EkaivaRebootSection() {
     "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&h=800&fit=crop",
     "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&h=800&fit=crop"
   ];
-const bottomImages = [
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80",
-  ];
+
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % images.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   const goToSlide = (index: number) => setCurrentSlide(index);

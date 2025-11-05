@@ -3,7 +3,7 @@ import footer from '../../assets/gide.png'
 
 const EkaivaFooter = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#F6F8F7]">
+    <div className="relative w-full min-h-screen flex flex-col justify-between overflow-x-hidden bg-[#F9FAFB]">
       {/* Placeholder for main content */}
       <div className="min-h-[10vh]" />
 
@@ -17,10 +17,10 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-[#00000049]"></div>
+        <div className="absolute inset-0 bg-[#00000020]"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
-        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#F6F8F7] via-[#F6F8F7]/80 via-[#5D7B83]/50 via-[#607D85]/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-70 bg-gradient-to-b from-[#F9FAFB] via-[#acd3dc78]  to-transparent z-10 pointer-events-none"></div>
 
         {/* Footer Content */}
                 <div className="relative z-20 flex flex-col justify-between w-full pt-48 md:pt-56 xl:pt-64">

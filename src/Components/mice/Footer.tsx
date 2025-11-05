@@ -14,7 +14,7 @@ const EkaivaFooter = () => {
         }}
       >
         {/* Dark overlay on the image */}
-        <div className="absolute inset-0 bg-black/70 h-full"></div>
+        <div className="absolute inset-0 bg-[#00000054]"></div>
 
         {/* ✅ Enhanced fade/blur at the top - key difference */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFF] to-transparent z-10 pointer-events-none"></div>
@@ -26,8 +26,7 @@ const EkaivaFooter = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black/90 mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center">
-                Aro
-                und the World
+                Around the World
               </span>
             </h1>
 
