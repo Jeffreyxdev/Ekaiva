@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaInstagram, FaWhatsapp} from 'react-icons/fa6'
 import { MailIcon } from 'lucide-react'
-import image from '../assets/Frame 52.png'
+import image from '../assets/logo.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -41,9 +41,9 @@ const Homeabout = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl sm:text-3xl md:text-4xl font-medium text-gray-900 leading-snug mb-6 font-montserrat">
-              Ekaiva is your trusted partner
+              Ekaiva india is your trusted partner
             <br className="hidden sm:block" />
-              {" "}for cheap India vacation deals
+              {" "}for Premuim India vacation deals
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
@@ -95,11 +95,11 @@ const Homeabout = () => {
           >
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                The Ekaiva Advantage
+                The Ekaiva India Advantage
               </h3>
 
               <p className="text-gray-600 leading-relaxed mb-6 text-base sm:text-lg max-w-md mx-auto lg:mx-0">
-                From start to finish, we make travel planning simple. Save more, explore more, and enjoy journeys crafted with care — trusted by locals, NRI travelers, and global explorers alike.
+                From start to finish, we make travel planning simple. Save more, explore more, and enjoy journeys crafted with care  trusted by locals, NRI travelers, and global explorers alike.
               </p>
 
               <button className="bg-[#333333] hover:bg-gray-800 text-white px-6 py-2.5 rounded-full text-sm transition-colors">

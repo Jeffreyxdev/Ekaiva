@@ -115,7 +115,7 @@ const HomeTour = () => {
           {/* Mobile */}
           <div className="md:hidden text-center px-2">
             <p className="text-2xl text-gray-800 leading-relaxed mb-4">
-              Join thousands who trust Ekaiva for budget-friendly packages, savings, and stress-free travel.
+              Join thousands who trust Ekaiva for premium packages, savings, and stress-free travel.
               Get the lowest prices on hotels and tours  always authentic and reliable.
             </p>
             <div className="w-full h-10 rounded-3xl overflow-hidden mb-4">

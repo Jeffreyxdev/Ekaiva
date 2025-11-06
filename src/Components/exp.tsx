@@ -14,13 +14,16 @@ function exp() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-10">
           <div>
             <h1 className="text-5xl sm:text-4xl font-light leading-tight lg:mb-8">
-              Unlock India’s Best Budget <br />
-              MICE Packages
+              Unlock India’s Most Trusted <br />
+              Travel Services
             </h1>
           </div>
           <div>
             <p className="text-gray-600 text-md leading-relaxed lg:mt-4">
-              Access expert MICE planning nationwide—meetings, incentives, conferences, and events, all budgeted for maximum value.Choose from state-of-the-art venues, local group excursions, and tailored activities to match your business goals and budget.
+              Benefit from Ekaiva’s expert travel planning
+              nationwide from curated itineraries and
+              handpicked stays to seamless transport and
+              personalized experiences.
             </p>
           </div>
         </div>
@@ -32,10 +35,18 @@ function exp() {
       <span className="w-12 h-px bg-gray-300"></span>
     </div>
     <h2 className="text-4xl sm:text-3xl font-light mb-6">
-      Smart, Cost-Efficient MICE Solutions
+      Reliable, Cost-Effective Travel Solutions
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
-      Enjoy professional venues, seamless event logistics, and custom group activities—all designed to maximize impact while saving costs for teams of any size.
+      Count on Ekaiva India for thoughtfully chosen
+      hotels, smooth city transfers, and reliable travel
+      partners at every step. Our services are designed to
+      offer comfort and efficiency, letting you relax while
+      every detail is covered. Budget-friendly deals and
+      up-front pricing mean your trip stays both
+      affordable and transparent from start to finish. With
+      Ekaiva, experience worry-free journeys where
+      service meets value on every road traveled.
     </p>
   </div>
 
@@ -65,10 +76,18 @@ function exp() {
       <span className="w-12 h-px bg-gray-300"></span>
     </div>
     <h2 className="text-4xl sm:text-3xl  font-light mb-6">
-      Why Choose Ekaiva for MICE?
+      Why Choose Ekaiva for Travel?
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
-      Save more with exclusive discounts, trusted partners, and transparent pricing. We ensure stress-free planning for corporate travel, team retreats, and large group events—all tailored for NRIs and global businesses.
+       Ekaiva India combines local knowledge with
+        global standards to create safe and memorable
+        experiences for all travelers. Every trip is guided by
+        our in-depth expertise and a genuine passion for
+        exploring new destinations. We deliver ongoing
+        support and honest advice, giving you confidence
+        at every stage of your journey. For leisure,
+        adventure, or business travel, trust Ekaiva to
+        surpass your expectations each time you travel.
     </p>
   </div>
 </div>
@@ -80,10 +99,19 @@ function exp() {
       <span className="w-12 h-px bg-gray-300"></span>
     </div>
     <h2 className="text-4xl sm:text-3xl  font-light mb-6">
-      Custom Itineraries and Group Perks
+       Custom Itineraries and Special Perks
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
-      Every Ekaiva MICE package is flexible, letting you add local excursions, cultural experiences, and special amenities for a truly unique event.
+      Ekaiva India personalizes every itinerary, blending
+      local culture, special requests, and unique activities
+      to your taste. Our team listens to your wishes,
+      ensuring each trip includes added touches and
+      exclusive experiences. Whether you seek
+      adventure, relaxation, or discovery, we curate
+      journeys that reflect your interests and timeline.
+      Every guest enjoys memorable extras and
+      dedicated attentionmaking travel extraordinary
+      with Ekaiva.
     </p>
   </div>
   <div className="relative order-2 lg:order-2">
@@ -113,10 +141,18 @@ function exp() {
       <span className="w-12 h-px bg-gray-300"></span>
     </div>
     <h2 className="text-4xl sm:text-3xl  font-light mb-6">
-        Get a Free MICE Quote Today
+        Get a Free Travel Quote Today
     </h2>
     <p className="text-gray-600 leading-relaxed mb-4">
-      Contact Ekaiva for competitive rates, seasonal offers, and dedicated support for every stage—from concept to completion
+      Begin by reaching out to Ekaiva India’s responsive
+      consultants, who listen and tailor packages to your
+      needs. We quickly provide transparent quotes, clear
+      recommendations, and the best deals suited for
+      you. Our friendly team stays with you from planning
+      to booking and beyond, offering expert support at
+      every turn. Let Ekaiva simplify your travel dreams
+      into a smooth reality, starting with a no-obligation
+      quote today.
     </p>
   </div>
   

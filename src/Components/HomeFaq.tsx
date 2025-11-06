@@ -10,7 +10,7 @@ const FAQSection = () => {
       id: '001',
       question: 'Lowest Cost, Every Time',
       answer:
-        'Always get the cheapest deals on every booking—hotels, tours, and more.',
+        'Enjoy price transparency on every package—no hidden charges or lastminute surprises. Ekaiva India negotiates directly for exclusive rates you won’t find elsewhere.Your travel budget goes further, giving you more value every time you book.',
       image:
         'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop',
     },
@@ -18,7 +18,7 @@ const FAQSection = () => {
       id: '002',
       question: 'Custom Trips',
       answer:
-        'Personalize your itinerary for a trip that fits you perfectly—ideal for NRIs and international guests.',
+        'Design your ideal journey with trips built around your interests, pace, and needs.Choose from flexible itineraries and special activity add-ons for any travel style.Every aspect is tailored so your vacation feels truly your own.',
       image:
         'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop',
     },
@@ -26,7 +26,7 @@ const FAQSection = () => {
       id: '003',
       question: 'Authentic Experiences',
       answer:
-        'Get real local flavors, trusted guides, and offbeat adventures.',
+        'Discover handpicked stays, local guides, and immersive cultural moments everywhere you go.Ekaiva India connects you to the heart of each destination beyond the typical tourist path.',
       image:
         'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=500&fit=crop',
     },
@@ -34,7 +34,7 @@ const FAQSection = () => {
       id: '004',
       question: 'Fast, Easy Booking',
       answer:
-        'Instant confirmation, secure payment, and 24/7 customer care whenever you need.',
+        'Book in just a few clicks with instant confirmations for tours, hotels, and transfers.Our user-friendly platform and responsive customer support team simplify every step.Plan spontaneously or ahead—either way,booking with Ekaiva India is always smooth.',
       image:
         'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&h=500&fit=crop',
     },
@@ -42,7 +42,7 @@ const FAQSection = () => {
       id: '005',
       question: 'Trusted By Many',
       answer:
-        'NRIs and global travelers rate Ekaiva for honest service and seamless journeys.',
+        'Benefit from 24/7 assistance, expert recommendations, and reliable partners for every trip detail.Ekaiva India manages all the logistics, so you enjoy a seamless, stress free adventure.We’re committed to your comfort,safety, and satisfaction at every journey stage.',
       image:
         'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop',
     },

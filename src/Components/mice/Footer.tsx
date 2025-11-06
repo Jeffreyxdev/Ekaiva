@@ -19,32 +19,35 @@ const EkaivaFooter = () => {
         {/* ✅ Enhanced fade/blur at the top - key difference */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFF] to-transparent z-10 pointer-events-none"></div>
 
-        {/* Footer Content */}
-        <div className="relative z-20 flex flex-col justify-between w-full">
-          {/* CTA Section - increased top padding for fade area */}
-          <div className="text-center pt-40 md:pt-44 xl:pt-48 pb-12 md:pb-16 xl:pb-20 px-6 md:px-20 xl:px-56">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black/90 mb-5 leading-tight tracking-tight ">
-              Lets Just Get Travel <br className="hidden sm:block" />
-              <span className="inline-flex flex-wrap items-center gap-3 justify-center">
-                Around the World
-              </span>
-            </h1>
+       
+<div className="relative z-10 flex flex-col justify-start w-full min-h-[80vh]">
+  {/* Hero Text Section */}
+  <div className="text-center pt-16 md:pt-20 xl:pt-24 px-4 md:px-12 xl:px-24">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-thin text-gray-900 mb-3 leading-tight tracking-tight w-full max-w-6xl mx-auto">
+      Let’s Just Get Travel <br className="hidden sm:block" />
+      <span className="inline-flex flex-wrap items-center gap-3 justify-center">
+        Around the World
+      </span>
+    </h1>
 
-            <p className="text-black/90 text-xs sm:text-sm md:text-base xl:text-lg max-w-2xl mb-6 mx-auto leading-relaxed">
-              Ready to turn your travel dreams into reality? Get in touch with us
-              today and let's start planning your next unforgettable adventure.
-            </p>
+    <p className="text-black/90 text-sm sm:text-base md:text-lg xl:text-xl max-w-3xl mx-auto mb-6 leading-relaxed">
+      Ready to turn your travel dreams into reality? Get in touch with us today
+      and let's start planning your next unforgettable adventure.
+    </p>
 
-                     <a
-  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I%20want%20to%20join%20a%20trip%20and%20explore%20the%20world%20with%20you!%20Please%20send%20me%20the%20latest%20tours%20and%20offers."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white px-8 md:px-10 py-3 md:py-3.5 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
->
- 
-  Join Trip
-</a>
-          </div>
+    <a
+      href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I%20want%20to%20join%20a%20trip%20and%20explore%20the%20world%20with%20you!%20Please%20send%20me%20the%20latest%20tours%20and%20offers."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white px-8 md:px-10 py-3 md:py-3.5 rounded-2xl font-semibold tracking-wide text-sm md:text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+    >
+      Join Trip
+    </a>
+  </div>
+
+
+
+
 
           {/* Contact + Navigation */}
           <div className="py-6 md:py-8 px-6 md:px-12 xl:px-16">

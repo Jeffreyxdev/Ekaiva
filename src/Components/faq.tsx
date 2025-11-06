@@ -13,8 +13,8 @@ function FAQ() {
     },
     {
       
-      question: 'Can NRIs and foreigners customize their trips?',
-      answer: 'Yes—Ekaiva’s experts actively work to personalize your journey. From local guides to unique stops, elderly care, and family priorities, every detail can be tailored.You’ll receive 1:1 support and recommendations, so you experience India exactly as you want.',
+      question: 'Can customers customize their trips?',
+      answer: 'Absolutely! Ekaiva specializes in tailoring trips around your preferences. From handpicking destinations and hotels to adding unique local experiences, your journey can be fully personalized. Just let us know your interests and we’ll create the ideal itinerary.',
       
     },
     {
@@ -25,8 +25,8 @@ function FAQ() {
     },
     {
      
-      question: 'Are group or senior discounts available?',
-      answer: 'Absolutely—special rates for families, large friend groups, business travelers, and seniors are available on both tours and accommodation.Simply mention your group details when booking or reach out to customer care for easy savings on tailored travel plans.',
+      question: 'What support does Ekaiva offer during the trip?',
+      answer: 'Ekaiva provides round-the-clock assistance for travelers, ensuring peace of mind from start to end.Our team handles issues like last-minute changes or special requests swiftly and professionally. You’re never alone—help is always just a call or message away.',
       
     },
     {
