@@ -23,7 +23,7 @@ const EkaivaFooter = () => {
 <div className="relative z-10 flex flex-col justify-start w-full min-h-[80vh]">
   {/* Hero Text Section */}
   <div className="text-center pt-16 md:pt-20 xl:pt-24 px-4 md:px-12 xl:px-24">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-thin text-gray-900 mb-3 leading-tight tracking-tight w-full max-w-6xl mx-auto">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-gray-900 mb-3 leading-tight tracking-tight w-full max-w-6xl mx-auto">
       Let’s Just Get Travel <br className="hidden sm:block" />
       <span className="inline-flex flex-wrap items-center gap-3 justify-center">
         Around the World

@@ -44,7 +44,7 @@ const Gallery = () => {
             05. Customer Gallery
           </button>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 leading-tight mb-4">
             Journey through the moments<br />
            
           </h2>

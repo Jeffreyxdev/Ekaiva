@@ -12,7 +12,7 @@ const MiceHeroSection = () => {
             <button className="px-4 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-6">
               02. About
             </button>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
               Ekaiva is not<br />
               just a vacation,
             </h1>
