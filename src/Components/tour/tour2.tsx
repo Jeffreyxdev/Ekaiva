@@ -1,8 +1,9 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // ✅ Correct import
-import { tours } from "./agradata.ts";
-const Tourc = () => {
+import { tours } from "./data";
+
+const Tour2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -24,7 +25,7 @@ const Tourc = () => {
           {/* Left */}
           <div>
             <button className="px-5 py-1.5 border border-gray-300 rounded-full text-sm text-gray-700 hover:bg-gray-100 transition-colors mb-4">
-              03. Agra Tours
+              03. Tours
             </button>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight sm:mb-5 lg:mb-2">
               Choose a Tour <br /> that speaks to you
@@ -109,4 +110,4 @@ const Tourc = () => {
   );
 };
 
-export default Tourc;
+export default Tour2;
