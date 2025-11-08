@@ -19,36 +19,12 @@ import Europe from "./Components/tour/Europe/Europe";
 import European from "./Components/tour/European/Swiss";
 import Medi from "./Components/tour/Medi/Medi";
 import Sagra from "./Components/tour/Same-day-agra/Sagra";
-import Logo from './assets/logo.jpg'
+
 export default function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+
 
   // This ensures the app only renders once the entire page has loaded
-  useEffect(() => {
-    const handlePageLoad = () => setIsLoaded(true);
-
-    // Check if page already loaded (useful for fast reloads)
-    if (document.readyState === "complete") {
-      setIsLoaded(true);
-    } else {
-      window.addEventListener("load", handlePageLoad);
-    }
-
-    // Cleanup
-    return () => window.removeEventListener("load", handlePageLoad);
-  }, []);
-
-if (!isLoaded) {
-  return (
-    <div className="flex items-center justify-center h-screen bg-white">
-      <img
-        src={Logo}
-        alt="Loading..."
-        className="w-16 h-16 animate-blink-fade"
-      />
-    </div>
-  );
-}
+ 
   return (
     <>
       <Navbar />
