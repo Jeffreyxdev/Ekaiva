@@ -31,7 +31,7 @@ const Tour = () => {
     content="Discover India and beyond with Ekaiva — your trusted travel agency for unforgettable tours, honeymoon packages, and luxury holidays."
   />
   <meta property="og:image" content="https://raw.githubusercontent.com/Jeffreyxdev/Ekaiva/refs/heads/main/public/Group%2037.png" />
-  <meta property="og:url" content="https://ekaivaindia.com/" />
+  <meta property="og:url" content="https://ekaivaindia.com/tour" />
   <meta property="og:type" content="website" />
 
   {/* Twitter Card */}
@@ -44,7 +44,7 @@ const Tour = () => {
   <meta name="twitter:image" content="https://raw.githubusercontent.com/Jeffreyxdev/Ekaiva/refs/heads/main/public/Group%2037.png" />
 
   {/* Canonical link */}
-  <link rel="canonical" href="https://ekaivaindia.com/" />
+  <link rel="canonical" href="https://ekaivaindia.com/tour" />
 </Helmet>
 
       
