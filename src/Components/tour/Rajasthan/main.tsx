@@ -16,7 +16,7 @@ const mains = () => {
 
   <meta
     name="description"
-    content="Ekaiva is India’s best-rated travel and tour agency offering affordable holiday packages, honeymoon trips, group tours, and custom travel experiences across India and abroad."
+    content="Ekaiva is India’s best-rated travel and tour agency offering affordable holiday packages, honeymoon trips, group tours,visit Rajastan tour packages, and custom travel experiences across India and abroad."
   />
 
   <meta
