@@ -19,7 +19,7 @@ import Europe from "./Components/tour/Europe/Europe";
 import European from "./Components/tour/European/Swiss";
 import Medi from "./Components/tour/Medi/Medi";
 import Sagra from "./Components/tour/Same-day-agra/Sagra";
-
+import { HelmetProvider } from "react-helmet-async";
 export default function App() {
 
 
@@ -27,6 +27,7 @@ export default function App() {
  
   return (
     <>
+    <HelmetProvider>
       <Navbar />
       <ScrollToTop behavior="smooth" />
 
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="/rajasthan" element={<RajasthanMain />} />
         <Route path="/kerala-backwaters-bliss" element={<Kerala />} />
       </Routes>
+      </HelmetProvider>
     </>
   );
 }
