@@ -13,9 +13,9 @@ const Hero = () => {
         
   <img
     src={mfb}
-    alt="Background"
+    alt="private-taj-tour"
     loading="lazy"
-   
+     fetchPriority="high"
     className="absolute inset-0 w-full h-full object-cover"
   />
   

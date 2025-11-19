@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const FAQSection = () => {
+const inq = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqData = [
@@ -72,7 +72,7 @@ const FAQSection = () => {
 
 
         {/* FAQ Items */}
-        <div className="space-y- max-w-7xl mx-auto rounded-xl">
+        <div className="sspace-y- max-w-7xl mx-auto rounded-xl">
           {faqData.map((faq, index) => (
             <div
               key={faq.id}
@@ -142,4 +142,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;
+export default inq;

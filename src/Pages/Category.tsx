@@ -12,14 +12,8 @@ const Category = () => {
      
       <Hero/>
     <Next1/>
-    <div  className="
-        flex flex-col items-center justify-center 
-        w-full overflow-hidden 
-         
-        text-gray-900 
-         
-      ">
-    <Next2 /></div>
+    
+    <Next2 />
     <Timeline/>
     <Next4/>
     <FAQ/>

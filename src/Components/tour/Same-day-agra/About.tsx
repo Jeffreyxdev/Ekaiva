@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ong from '../../../assets/fv.png';
-import miceh from '../../../assets/hj.png';
+import ong from '../../../assets/day.png';
+import miceh from '../../../assets/same.png';
 
 export default function Next1() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -42,7 +42,7 @@ export default function Next1() {
               <div className="relative aspect-[4/3.2] overflow-hidden">
                 <img
                   src={ong}
-                  alt="Corporate Meeting Setup"
+                  alt="agra tour images"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -61,7 +61,7 @@ export default function Next1() {
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
                 src={miceh}
-                alt="Business Presentation"
+                alt="same day agra tour"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

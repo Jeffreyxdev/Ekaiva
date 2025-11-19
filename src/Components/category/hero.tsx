@@ -15,7 +15,7 @@ const Hero = () => {
     src={mfb}
     alt="Background"
     loading="lazy"
-   
+     fetchPriority="high"
     className="absolute inset-0 w-full h-full object-cover"
   />
   

@@ -1,5 +1,5 @@
 
-import micem from "../../assets/private-taj-banner3.webp";
+import micem from "../../../assets/private-taj-banner3.webp";
 
 const Next4 = () => {
   return (
@@ -31,7 +31,7 @@ const Next4 = () => {
         <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
           <img
             src={micem}
-            alt="Conference Hall"
+            alt="Ekaiva tour pictures"
             className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
           />
           
