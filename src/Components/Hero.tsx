@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {  useState, useEffect } from "react";
+import {  useState, } from "react";
 import type { ChangeEvent } from "react";
 import { ArrowRight, MapPin,  Users,Search } from "lucide-react";
 import heroBg from "../assets/hero.png";
@@ -34,18 +34,8 @@ const Hero = () => {
   };
 
 
- const [bgImage, setBgImage] = useState("");
-  useEffect(() => {
-    const updateBg = () => {
-      const image = window.innerWidth < 768 ? heroBgMobile : heroBg;
-      const img = new Image();
-      img.src = image;
-      img.onload = () => setBgImage(image);
-    };
-    updateBg();
-    window.addEventListener("resize", updateBg);
-    return () => window.removeEventListener("resize", updateBg);
-  }, []);
+
+
 
   return (
     <section id="home" className="relative min-h-screen pb-5 flex items-center justify-center overflow-hidden mb-5">
@@ -56,14 +46,13 @@ const Hero = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-      
-  <img
-    src={bgImage}
-    alt="Background"
-    loading="eager"
-    
-    className="absolute inset-0 w-full h-full"
-  /> 
+<img
+  src={window.innerWidth < 768 ? heroBgMobile : heroBg}
+  alt="india best tour package, ekaiva india, premuim package"
+  loading="eager"
+    fetchPriority="high"
+  className="absolute inset-0 w-full h-full"
+/>
         <div className="absolute inset-0 " />
       </motion.div>
 

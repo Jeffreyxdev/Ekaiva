@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {  useState, useEffect } from "react";
+import {  useState, } from "react";
 import type { ChangeEvent } from "react";
 import { ArrowRight, MapPin, Users,Search ,Building2 } from "lucide-react";
 import heroBg from "../../assets/mice.png";
@@ -35,16 +35,6 @@ const Hero = () => {
   };
 
 
- const [bgImage, setBgImage] = useState("");
-  useEffect(() => {
-  const updateBg = () => {
-    const image = window.innerWidth < 768 ? heroBgMobile : heroBg;
-    setBgImage(image); // <-- immediate set, no wait
-  };
-  updateBg();
-  window.addEventListener("resize", updateBg);
-  return () => window.removeEventListener("resize", updateBg);
-}, []);
 
 
   return (
@@ -57,17 +47,16 @@ const Hero = () => {
         className="absolute inset-0   z-0"
       >
       
-  <img
-    src={bgImage}
-    alt="Background"
-    loading="eager"
-   
-    draggable="false"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
+<img
+  src={window.innerWidth < 768 ? heroBgMobile : heroBg}
+  alt="indian mice package, ekaiva india, tour package"
+  loading="eager"
+    fetchPriority="high"
+  className="absolute inset-0 w-full h-full"
+/>
 
 
-        <div className="absolute bg-black/60 inset-0" />
+        <div className="absolute  inset-0" />
       </motion.div>
 
       {/* Content */}
