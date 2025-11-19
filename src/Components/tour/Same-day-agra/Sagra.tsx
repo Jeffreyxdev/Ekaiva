@@ -4,7 +4,7 @@ import Inq from './inq'
 import Timeline from './timeline'
 import Next4 from './next4'
 import FAQ from './FAQ'
-
+import Footer from '../footer'
 const Sagra = () => {
   return (
     <div>
@@ -15,6 +15,7 @@ const Sagra = () => {
         <Timeline/>
         <Next4/>
         <FAQ/>
+
     </div>
   )
 }

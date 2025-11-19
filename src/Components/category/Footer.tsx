@@ -51,10 +51,10 @@ const EkaivaFooter = () => {
                   Get in touch with us
                 </h3>
                 <a
-                  href="mailto:connect@ekaiva.travel"
+                  href="mailto:info@ekaivaindia.com"
                   className="text-white/90 hover:text-white text-xs md:text-sm transition-colors"
                 >
-                  connect@ekaiva.travel
+                 info@ekaivaindia.com
                 </a>
               </div>
 
