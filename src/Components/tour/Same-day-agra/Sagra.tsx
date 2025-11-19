@@ -15,6 +15,7 @@ const Sagra = () => {
         <Timeline/>
         <Next4/>
         <FAQ/>
+        <Footer/>
 
     </div>
   )

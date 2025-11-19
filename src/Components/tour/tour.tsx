@@ -27,16 +27,18 @@ const Tourc = () => {
               03. Agra Tours
             </button>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight sm:mb-5 lg:mb-2">
-              Choose a Tour <br /> that speaks to you
+             Agra: Where Eternal Love
+            <br /> and Legacy Stand Tall
             </h2>
           </div>
 
           {/* Right */}
           <div className="flex flex-col items-start gap-3 lg:mt-10  sm:mt-5 max-w-md">
             <p className="text-gray-600 text-md leading-relaxed">
-              Explore a curated list of top Indian packages crafted for culture lovers,
-              history buffs, and relaxation seekers. Enjoy the best guides, priority
-              access, and savings not found elsewhere.
+               Witness the timeless beauty of the Taj Mahal as it glows under the rising sun.
+            Stroll through Mughal gardens, ancient forts, and marble masterpieces that whisper royal tales.
+            Agra is more than a city it’s a poetic blend of history, romance, and craftsmanship.
+
             </p>
           </div>
         </div>
