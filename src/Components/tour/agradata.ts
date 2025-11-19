@@ -33,7 +33,7 @@ export const tours = [
     image:
       "https://images.unsplash.com/photo-1523980077198-60824a7b2148?iw=800&q=80",
     location: "Taj Mahal, India",
-    route: "/rajasthan",
+    route: "/taj-mahal",
   },
   {
     id: 4,

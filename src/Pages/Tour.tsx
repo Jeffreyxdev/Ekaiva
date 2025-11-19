@@ -10,12 +10,12 @@ import { useTitle, useMeta, useCanonical } from "../Components/usemeta";
 
 const Tour = () => {
   // TITLE
-  useTitle("Best Travel Agency in India | Ekaiva Tours & Holidays");
+  useTitle("Best Travel Agency in India | India tour package & Holidays");
 
   // DESCRIPTION & KEYWORDS
   useMeta(
     "description",
-    "Ekaiva is India’s best-rated travel and tour agency offering affordable holiday packages, honeymoon trips, group tours, and custom travel experiences across India and abroad."
+    "Ekaiva is India’s best-rated travel and tour agency offering affordable holiday packages,tour packages, honeymoon trips, group tours, and custom travel experiences across India and abroad."
   );
 
   useMeta(

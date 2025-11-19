@@ -28,16 +28,17 @@ const Tour2 = () => {
               03. Tours
             </button>
             <h2 className="text-4xl md:text-5xl font-medium text-gray-900 leading-tight sm:mb-5 lg:mb-2">
-              Choose a Tour <br /> that speaks to you
+              Delhi: The Timeless Symphony 
+ <br />of Cultures and Contrasts
             </h2>
           </div>
 
           {/* Right */}
           <div className="flex flex-col items-start gap-3 lg:mt-10  sm:mt-5 max-w-md">
             <p className="text-gray-600 text-md leading-relaxed">
-              Explore a curated list of top Indian packages crafted for culture lovers,
-              history buffs, and relaxation seekers. Enjoy the best guides, priority
-              access, and savings not found elsewhere.
+               From centuries-old monuments to buzzing markets, Delhi blends the old with the new.
+ Lose yourself in grand mosques, serene temples, and vibrant street life pulsing with stories.
+ It’s not just India’s capital it’s where every era leaves its mark
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Hero = () => {
   <img
     src='https://plus.unsplash.com/premium_photo-1661962404003-e0ca40da40ef?auto=compress'
     alt="Background"
-    
+    fetchPriority="high"
     decoding="async"
     className="absolute inset-0 w-full h-full object-cover"
   />

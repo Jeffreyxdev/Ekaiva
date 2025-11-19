@@ -43,6 +43,7 @@ export default function App() {
         <Route path="/mediterranean-mosaic" element={<Medi />} />
         <Route path="/agra" element={<Category />} />
         <Route path="/Same-day-agra" element={<Sagra />} />
+        
         <Route path="/taj-mahal" element={<TajMahal />} />
         <Route path="/delhi" element={<Delhi />} />
         <Route path="/jaipur" element={<Jaipur />} />
