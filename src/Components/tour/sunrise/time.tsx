@@ -1,68 +1,69 @@
 
 
 const Timeline = () => {
-  const timelineData = [
-    {
-      id: 1,
-      time: "07:30 AM",
-      title: "Pick-Up from Hotel / Airport in Delhi",
-      description:
-        "Your tour will start with a pick-up from your hotel in Delhi / NCR. You can choose the pick-up time between 6:30 AM to 8 AM to start your tour. After pick-up from the hotel in Delhi, continue the drive to Agra. It will take up to 3 hours to arrive in Agra. Travel through the fastest and safest route from Delhi to Agra via Expressway.",
-      image:
-        "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop",
-      direction: "right",
-    },
-    {
-      id: 2,
-      time: "8:00 AM",
-      title: "Guided visit to the Taj Mahal",
-      description:
-        "At 8:00 AM, you will arrive in Agra, and you will meet your tour guide. Upon arrival in Agra, you will meet your tour guide and proceed to visit the Taj Mahal. Explore this majestic building and you can spend up to 3 hours at this monument.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1718146019714-a7a0ab9e8e8d?w=800&h=500&fit=crop",
-      direction: "left",
-    },
-    {
-      id: 3,
-      time: "12:30 PM ",
-      title: "Proceed for a Lunch Break",
-      description:
-        "After visiting Taj Mahal, you will proceed for a lunch break. You will enjoy a luxury buffet lunch at 5 Star Hotel in Agra. Enjoy your lunch and spend some time in leisure.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1680030235748-70ac34678387?w=800&h=400&fit=crop",
-      direction: "right",
-    },
-    {
-      id: 4,
-      time: "11:30 AM",
-      title: "Visit to Agra Fort",
-      description:
-        "Explore the majestic red sandstone fort that once housed Mughal emperors. Enjoy about 1.5 hours immersed in its history and panoramic views of the Yamuna River.",
-      image:
-        "https://images.unsplash.com/photo-1612810436541-336b73fbcf9f?w=800&h=400&fit=crop",
-      direction: "left",
-    },
-    {
-      id: 5,
-      time: "1:00 PM",
-      title: "Visit Baby Taj (Optional)",
-      description:
-        "After visiting Agra Fort, if you can also visit Itimad-Ud-Daulah also known as Baby Taj (optional). You can spend up to half hour at this building",
-      image:
-        "https://images.unsplash.com/photo-1687227722559-156d93f23e6c?w=800&h=400&fit=crop",
-      direction: "right",
-    },
-    {
-      id: 6,
-      time: "3:30 PM – Evening",
-      title: "Return journey to Dehli",
-      description:
-        "Enjoy a comfortable transfer back to Delhi or Agra airport for your evening flight. Upon arrival in Bangalore, a private car drops you home—refreshed and ready for the week ahead.",
-      image:
-        "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=800&h=400&fit=crop",
-      direction: "left",
-    },
-  ];
+const timelineData = [
+  {
+    id: 1,
+    time: "03:30 AM",
+    title: "Pick-Up from Delhi",
+    description:
+      "Pick-up from Delhi hotel or airport in a private, AC vehicle.",
+    image:
+      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop",
+    direction: "right",
+  },
+  {
+    id: 2,
+    time: "06:15 AM",
+    title: "Taj Mahal Sunrise Visit",
+    description:
+      "Arrive at the Taj Mahal for exclusive sunrise viewing with your guide, enjoying the beauty of this iconic monument.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1718146019714-a7a0ab9e8e8d?w=800&h=500&fit=crop",
+    direction: "left",
+  },
+  {
+    id: 3,
+    time: "08:00 AM",
+    title: "Explore Agra Fort",
+    description:
+      "Explore the grandeur of Agra Fort and learn its rich Mughal history.",
+    image:
+      "https://images.unsplash.com/photo-1612810436541-336b73fbcf9f?w=800&h=400&fit=crop",
+    direction: "right",
+  },
+  {
+    id: 4,
+    time: "09:30 AM",
+    title: "Breakfast at 5-Star Hotel",
+    description:
+      "Enjoy a delicious breakfast at a 5-star hotel nearby.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1680030235748-70ac34678387?w=800&h=400&fit=crop",
+    direction: "left",
+  },
+  {
+    id: 5,
+    time: "11:00 AM",
+    title: "Return Journey to Delhi",
+    description:
+      "Begin your return journey to Delhi, enjoying a comfortable ride back.",
+    image:
+      "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=800&h=400&fit=crop",
+    direction: "right",
+  },
+  {
+    id: 6,
+    time: "02:30 PM",
+    title: "Drop-Off in Delhi",
+    description:
+      "Drop-off at your hotel or airport in Delhi, concluding an unforgettable day.",
+    image:
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop",
+    direction: "left",
+  },
+];
+
 
   return (
     <div className="py-20 px-4">
@@ -74,7 +75,7 @@ const Timeline = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your same-day Taj Mahal Experience 
+            Your Taj Mahal Experience
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
             From sunrise to sunset, explore Agra’s most iconic treasures in

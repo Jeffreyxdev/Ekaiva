@@ -19,6 +19,7 @@ import Europe from "./Components/tour/Europe/Europe";
 import European from "./Components/tour/European/Swiss";
 import Medi from "./Components/tour/Medi/Medi";
 import Sagra from "./Components/tour/Same-day-agra/Sagra";
+import Sunrise from "./Components/tour/sunrise/sunrise";
 
 export default function App() {
 
@@ -42,8 +43,8 @@ export default function App() {
         <Route path="/European-jewels" element={<European />} />
         <Route path="/mediterranean-mosaic" element={<Medi />} />
         <Route path="/agra" element={<Category />} />
-        <Route path="/Same-day-agra" element={<Sagra />} />
-        
+        <Route path="/Same-day-agra" element={<Sagra/>} />
+        <Route path="/sunrise-taj-mahal-tour" element={< Sunrise/>} />
         <Route path="/taj-mahal" element={<TajMahal />} />
         <Route path="/delhi" element={<Delhi />} />
         <Route path="/jaipur" element={<Jaipur />} />
