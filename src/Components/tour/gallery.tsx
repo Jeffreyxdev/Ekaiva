@@ -35,6 +35,7 @@ const Gallery = () => {
     location: "Bangkok,",
     route: "/bangkok",
   },
+  
 ];
 
 

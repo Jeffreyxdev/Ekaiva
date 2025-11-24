@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ong from '../../../assets/day.png';
-import miceh from '../../../assets/same.png';
 
 export default function Next1() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
