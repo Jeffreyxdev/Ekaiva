@@ -23,6 +23,18 @@ const Gallery = () => {
     details: "Italian charm, Greek coasts, history, and fine dining—your sun-soaked getaway made simple.",
     route: "/mediterranean-mosaic",
   },
+  {
+    id: 4,
+    title: "Bangkok & Pattaya Tour ",
+    subtitle: "04 Nights / 05 Days",
+    details:
+      "Discover Thailand’s vibrant heart — from golden temples and floating markets to Coral Island’s turquoise calm. A journey that balances peace, flavor, and fun.",
+   
+    img:
+      "https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=800&q=80",
+    location: "Bangkok,",
+    route: "/bangkok",
+  },
 ];
 
 

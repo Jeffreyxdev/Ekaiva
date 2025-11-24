@@ -55,15 +55,22 @@ useEffect(() => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-       <img
+   {/* Preload image */}
+<img
   src={bgImage}
-  className='absolute inset-0 w-full h-full'
   alt="indian tour package"
+  className="hidden"
   fetchPriority="high"
   loading="eager"
-
 />
 
+{/* Background div */}
+<div
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: `url('${bgImage}')`,
+  }}
+/>
         <div className="absolute inset-0" />
       </motion.div>
 

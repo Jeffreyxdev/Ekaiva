@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mfb from "../../assets/mfb.png";
+
 const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden">
@@ -10,25 +10,18 @@ const Hero = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-<img
-  src={mfb}
-  alt="tour guide"
-  className="hidden"
-  loading="lazy"
-  fetchPriority="high"
-/>
-
-{/* Background div */}
-<div
-  className="absolute inset-0 bg-cover bg-center"
-  style={{
-    backgroundImage: `url('${mfb}')`,
-  }}
-/>
+        
+  <img
+    src='https://plus.unsplash.com/premium_photo-1697730309688-cc2a3a573494?auto=compress'
+    alt="Background"
+   fetchPriority="high"
+    decoding="async"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
   
 
 
-        <div className="absolute inset-0" />
+        <div className="absolute inset-0 bg-black/20" />
       </motion.div>
 
       {/* Content */}
@@ -46,41 +39,37 @@ const Hero = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mt-3 leading-tight"
+            className="text-5xl md:text-6xl font-bold mt-3 leading-tight shadow-black"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Trusted Experts,
+       Half day
             <br />
-            Your Journey Enhanced
+             Dehli Tour
 
           </motion.h1>
 
           {/* Paragraph */}
           <motion.p
-            className="text-lg md:text-xl text-gray-200 mb-8"
+            className="text-lg md:text-xl text-white mb-8 shadow-sm"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Travel deeper and smarter with Ekaiva’s certified guides. Our experts bring every destination to life, sharing stories, insider tips, and seamless support from your arrival to departure.
+           Make every hour count—explore Old or New Delhi’s top sights with comfort, speed, and expert guidance.
 
           </motion.p>
 
-                   <motion.a
-  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I'd%20love%20to%20explore%20travel%20options%20with%20your%20team."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300 inline-block"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.9 }}
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
->
-  Get Terrif now
-</motion.a>
+          {/* Button */}
+          <motion.button
+            className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+          ><a href="https://wa.me/917011020040?text=Hi%20Ekaiva%20Im%20interested%20in%20a%20half%20day%20Dehli%20tour%20booking%20details">
+            Book Now</a>
+          </motion.button>
         </div>
       </div>
     </section>

@@ -1,0 +1,68 @@
+import Hero from "./hero"
+import { useTitle, useMeta, useCanonical } from "../../usemeta";
+import Next1 from "./About";
+import Inq from "./inq"
+import Timeline from "./timeline";
+import Next4 from "./NExt2";
+import FAQ from "./faq";
+import EkaivaFooter from "../../Footer";
+const index = () => {
+      useTitle("8 days tour package");
+    
+      // DESCRIPTION & KEYWORDS
+      useMeta(
+        "description",
+        "Ekaiva is India’s best-rated travel and tour agency offering affordable holiday packages, visit varanasi best tour package, honeymoon trips india, group tours, and custom travel experiences across India and abroad."
+      );
+    
+      useMeta(
+        "keywords",
+        "best travel India,varanasi tour,japiur, delhi tour, tour packages, Best place to visit in india for foreigners, holiday planner, honeymoon destinations, affordable tours, India travel agency, luxury travel India, adventure trips, family vacations, group travel, custom tours"
+      );
+    
+      // OPEN GRAPH (property=)
+      useMeta("og:title", "Ekaiva - Best Travel & Tour Agency in India", true);
+      useMeta(
+        "og:description",
+        "Discover India and beyond with Ekaiva — your trusted travel agency for unforgettable tours, honeymoon packages, and luxury holidays.",
+        true
+      );
+      useMeta(
+        "og:image",
+        "https://raw.githubusercontent.com/Jeffreyxdev/Ekaiva/refs/heads/main/public/Group%2037.png",
+        true
+      );
+      useMeta("og:url", "https://ekaivaindia.com/delhi-agra", true);
+      useMeta("og:type", "website", true);
+    
+      // TWITTER META
+      useMeta("twitter:card", "summary_large_image");
+      useMeta("twitter:title", "Ekaiva - Delhi Best Travel & Tour Agency");
+      useMeta(
+        "twitter:description",
+        "Book your next trip with Ekaiva for affordable, luxurious, and stress-free travel experiences across India and the world."
+      );
+      useMeta(
+        "twitter:image",
+        "https://raw.githubusercontent.com/Jeffreyxdev/Ekaiva/refs/heads/main/public/Group%2037.png"
+      );
+    
+      // CANONICAL
+      useCanonical("https://ekaivaindia.com/delhi-agra");
+    
+  return (
+    <div>
+
+   <Hero/>
+   <Next1/>
+   <Inq/>
+   <Timeline/>
+   <Next4/>
+   <FAQ/>
+   <EkaivaFooter/>
+
+    </div>
+  )
+}
+
+export default index

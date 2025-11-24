@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mfb from "../../assets/mfb.png";
+
 const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden">
@@ -10,21 +10,14 @@ const Hero = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-<img
-  src={mfb}
-  alt="tour guide"
-  className="hidden"
-  loading="lazy"
-  fetchPriority="high"
-/>
-
-{/* Background div */}
-<div
-  className="absolute inset-0 bg-cover bg-center"
-  style={{
-    backgroundImage: `url('${mfb}')`,
-  }}
-/>
+        
+  <img
+    src='https://plus.unsplash.com/premium_photo-1693149386423-2e4e264712e5?q=80&w=1632'
+    alt="bangkok tour"
+    loading="lazy"
+     fetchPriority="high"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
   
 
 
@@ -51,9 +44,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-          Trusted Experts,
+         Bangkok & Pattaya Tour -4days
             <br />
-            Your Journey Enhanced
+          
 
           </motion.h1>
 
@@ -64,23 +57,24 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            Travel deeper and smarter with Ekaiva’s certified guides. Our experts bring every destination to life, sharing stories, insider tips, and seamless support from your arrival to departure.
+          Discover Thailand’s vibrant heart — from golden temples and floating markets to Coral Island’s turquoise calm. A journey that balances peace, flavor, and fun.
 
           </motion.p>
 
-                   <motion.a
-  href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20I'd%20love%20to%20explore%20travel%20options%20with%20your%20team."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300 inline-block"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.9 }}
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
->
-  Get Terrif now
-</motion.a>
+       
+                    <motion.a
+                    href="https://wa.me/917011020040?text=Hi%20Ekaiva!%20Id%20love%20to%20explore%20travel%20options%20with%20your%20team%20to%20bangkok"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-gray-900 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition duration-300 inline-block"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.9 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    >
+                    Get Terrif now
+                    </motion.a>
         </div>
       </div>
     </section>

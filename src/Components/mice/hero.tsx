@@ -47,13 +47,25 @@ const Hero = () => {
         className="absolute inset-0   z-0"
       >
       
+{/* Preload image */}
 <img
   src={window.innerWidth < 768 ? heroBgMobile : heroBg}
   alt="indian mice package, ekaiva india, tour package"
+  className="hidden"
   loading="eager"
-    fetchPriority="high"
-  className="absolute inset-0 w-full h-full"
+  fetchPriority="high"
 />
+
+{/* Background */}
+<div
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: `url('${window.innerWidth < 768 ? heroBgMobile : heroBg}')`,
+  }}
+/>
+
+{/* Optional dark overlay */}
+<div className="absolute inset-0 bg-black/10" />
 
 
         <div className="absolute  inset-0" />

@@ -4,7 +4,7 @@ import Inq from './inq'
 import Timeline from './timeline'
 import Next4 from './next4'
 import FAQ from './FAQ'
-import Footer from '../footer'
+import Footer from '../../Footer'
 const Sagra = () => {
   return (
     <div>

@@ -20,7 +20,10 @@ import European from "./Components/tour/European/Swiss";
 import Medi from "./Components/tour/Medi/Medi";
 import Sagra from "./Components/tour/Same-day-agra/Sagra";
 import Sunrise from "./Components/tour/sunrise/sunrise";
-
+import Index from './Components/tour/dehli-agra/index'
+import Hindex from "./Components/tour/half-dehli/hindex";
+import Temp from "./Components/tour/dehliTemp/Temp";
+import Bindex from "./Components/tour/bangkok/bindex";
 export default function App() {
 
 
@@ -39,6 +42,10 @@ export default function App() {
         <Route path="/guide" element={<Guide />} />
         <Route path="/about" element={<About />} />
         <Route path="/Dubai" element={<Dubai />} />
+        <Route path="/bangkok" element={<Bindex />} />
+        <Route path="/delhi-agra" element={<Index/>}/>
+        <Route path="/half-delhi" element={<Hindex/>}/> 
+        <Route path="/delhi-temple" element={<Temp/>}/>
         <Route path="/Europe" element={<Europe />} />
         <Route path="/European-jewels" element={<European />} />
         <Route path="/mediterranean-mosaic" element={<Medi />} />

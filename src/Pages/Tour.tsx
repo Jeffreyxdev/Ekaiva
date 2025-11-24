@@ -7,6 +7,7 @@ import EkaivaFooter from "../Components/tour/footer";
 import Tour2 from "../Components/tour/tour2";
 
 import { useTitle, useMeta, useCanonical } from "../Components/usemeta";
+import Tour3 from "./Tour3";
 
 const Tour = () => {
   // TITLE
@@ -51,6 +52,7 @@ const Tour = () => {
       <Hero />
       <Tourc />
       <Tour2 />
+      <Tour3/>
       <Gallery />
       <View />
       <FAQ />
