@@ -19,7 +19,7 @@ const Timeline = () => {
     description:
       "Begin with a guided city tour covering Dubai Creek, Gold & Spice Souks, Jumeirah Mosque, Atlantis Palm, and more. In the afternoon, head for Desert Safari with dune bashing, camel rides, henna art, and a BBQ dinner with belly dance and fire show under the stars.",
     image:
-      "https://images.unsplash.com/photo-1504278599468-225fceec5793?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1639424546125-4366570b8c4b?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
@@ -29,7 +29,7 @@ const Timeline = () => {
     description:
       "After breakfast, visit the iconic Burj Khalifa and enjoy breathtaking panoramic views from the 124th floor. Later, drive to Abu Dhabi and check in at your hotel. Spend the evening exploring cafés or relaxing at leisure.",
     image:
-      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d8?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1589991974309-c6b38c198466?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
@@ -39,7 +39,7 @@ const Timeline = () => {
     description:
       "Visit the magnificent Sheikh Zayed Grand Mosque, admire Emirates Palace from outside, explore Corniche Beach and Heritage Village, and shop for dates and souvenirs at the Date Market before returning to your hotel.",
     image:
-      "https://images.unsplash.com/photo-1589802829985-817a888ea438?w=800&h=500&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1697730277346-a2b62a84684d?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
@@ -49,7 +49,7 @@ const Timeline = () => {
     description:
       "Experience thrill and excitement at Ferrari World, home to the world’s fastest roller coaster, Formula Rossa. Then explore Warner Bros Studio, themed worlds like Gotham City and Cartoon Junction. Overnight stay in Abu Dhabi.",
     image:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1723815264488-a906461c770f?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
@@ -75,10 +75,10 @@ const Timeline = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-            Your same-day Taj Mahal Experience 
+            Your Premuim Dubai Experience 
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            From sunrise to sunset, explore Agra’s most iconic treasures in
+            From sunrise to sunset, explore Dubai most iconic treasures in
             comfort and style — with seamless transfers, curated experiences,
             and local expertise at every step.
           </p>

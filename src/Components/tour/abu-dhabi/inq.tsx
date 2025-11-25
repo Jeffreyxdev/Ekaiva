@@ -4,38 +4,72 @@ const inq = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqData = [
-    {
-      id: '001',
-      question: 'Lowest Cost, Every Time',
-      answer: 'Always get the cheapest deals on every booking—hotels, tours, and more.',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop'
-    },
-    {
-      id: '002',
-      question: 'Custom Trips',
-      answer: 'Personalize your itinerary for a trip that fits you perfectly—ideal for NRIs and international guests.',
-      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop'
-    },
-    {
-      id: '003',
-      question: 'Authentic Experiences',
-      answer: 'Get real local flavors, trusted guides, and offbeat adventures.',
-      image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=500&fit=crop'
-    },
-    {
-      id: '004',
-      question: 'Fast, Easy Booking',
-      answer: 'Instant confirmation, secure payment, and 24/7 customer care whenever you need.',
-      image: 'https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=800&h=500&fit=crop'
-    },
-    {
-      id: '005',
-      question: 'Trusted By Many',
-      answer: 'NRIs and global travelers rate Ekaiva for honest service and seamless journeys.',
-      image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop'
-    },
-    
-  ];
+  {
+    id: '001',
+    question: 'Airport / Hotel Pick-Up & Drop-Off',
+    answer:
+      'Private transfers for your arrival and departure, ensuring comfort and convenience.',
+    image:
+      'https://images.unsplash.com/photo-1549897411-b06572cdf806?w=800&h=500&fit=crop'
+  },
+  {
+    id: '002',
+    question: '5-Night Stay in Premium Hotels',
+    answer:
+      'Enjoy comfortable stays in hand-picked 3-star properties with daily breakfast included.',
+    image:
+      'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&h=500&fit=crop'
+  },
+  {
+    id: '003',
+    question: 'Dhow Cruise Dinner – Dubai Marina',
+    answer:
+      'Sail across the illuminated skyline with a buffet dinner and live onboard entertainment.',
+    image:
+      'https://images.unsplash.com/photo-1463183547458-6a2c760d0912?w=800&h=500&fit=crop'
+  },
+  {
+    id: '004',
+    question: 'Desert Safari with BBQ Dinner',
+    answer:
+      'Experience thrilling dune bashing, Arabian performances, and a delicious barbecue dinner.',
+    image:
+      'https://plus.unsplash.com/premium_photo-1664471482655-126b77fb3395?w=800&h=500&fit=crop'
+  },
+  {
+    id: '005',
+    question: 'Burj Khalifa Entry – 124th Floor',
+    answer:
+      'Skip the lines and enjoy breathtaking panoramic views from the world’s tallest tower.',
+    image:
+      'https://images.unsplash.com/photo-1583759604327-f9dcd23499d5?w=800&h=500&fit=crop'
+  },
+  {
+    id: '006',
+    question: 'Half-Day City Tours – Dubai & Abu Dhabi',
+    answer:
+      'Discover the UAE’s most iconic landmarks with expert-guided sightseeing experiences.',
+    image:
+      'https://images.unsplash.com/photo-1728970381104-e04eb2094724?w=800&h=500&fit=crop'
+  },
+  {
+    id: '007',
+    question: 'Entry Tickets – Ferrari World & Warner Bros Studio',
+    answer:
+      'Enjoy hours of fun, thrilling rides, shows, and themed worlds at these top attractions.',
+    image:
+      'https://images.unsplash.com/photo-1578152882785-df9744e359e5?w=800&h=500&fit=crop'
+  },
+  {
+    id: '008',
+    question: 'Includes Water, Taxes & Driver Allowances',
+    answer:
+      'All essential charges and inclusions covered for a seamless and stress-free trip.',
+    image:
+      'https://images.unsplash.com/photo-1609100846580-54a309a0a43e?w=800&h=500&fit=crop'
+  }
+];
+
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? -1 : index);
