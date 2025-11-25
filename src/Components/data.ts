@@ -35,16 +35,16 @@ export const tours = [
     location: "Jaipur, India",
     route: "/rajasthan",
   },
-  {
+{
     id: 4,
-    title: "Kerala Backwaters Bliss",
-    subtitle: "4 Nights",
+    title: "Taj Mahal Tour from Bengaluru",
+    subtitle: "Tour",
     description:
-      "Houseboats, tranquil backwaters, and authentic South Indian cuisine.",
-    highlight: "₹7499 / night",
+      "Forts, palaces, deserts, and vibrant local markets across Taj Mahal.",
+    highlight: "₹10999 / night",
     image:
-      "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
-    location: "Kerala, India",
-    route: "/kerala-backwaters-bliss",
+      "https://images.unsplash.com/photo-1523980077198-60824a7b2148?iw=800&q=80",
+    location: "Taj Mahal, India",
+    route: "/taj-mahal",
   },
 ];

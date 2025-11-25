@@ -24,7 +24,7 @@ const EkaivaFooter = () => {
         {/* Footer Content */}
                 <div className="relative z-20 flex flex-col justify-between w-full pt-48 md:pt-56 xl:pt-64">
           {/* CTA Section - pushed down more */}
-          <div className="text-center pb-24 md:pb-37 xl:pb-40 px-6 md:px-20 xl:px-56 mt-[-19vh]">
+          <div className="text-center pb-20 md:pb-32 xl:pb-35 px-6 md:px-20 xl:px-56 mt-[-19vh]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-black mb-5 leading-tight tracking-tight ">
               Lets Just Get Travel <br className="hidden sm:block" />
               <span className="inline-flex flex-wrap items-center gap-3 justify-center text-black">

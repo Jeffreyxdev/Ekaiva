@@ -1,56 +1,66 @@
 
 
 const Timeline = () => {
- const timelineData = [
+  const timelineData = [
   {
     id: 1,
-    time: "Start — Pick-Up & Welcome",
-    title: "Pickup from Hotel / Airport",
+    time: "Day 1",
+    title: "Arrival in Dubai | Dhow Dinner Cruise",
     description:
-      "Your expert guide greets you at your hotel, airport, or any preferred location in Delhi, Gurgaon, or Noida. Begin the day with a short trip briefing before the tour begins.",
+      "Arrive in Dubai and check in to your hotel. In the evening, enjoy a Dhow Cruise along Dubai Marina with an international buffet, Tanoura dance, and stunning skyline views. Overnight stay in Dubai.",
     image:
-      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590140568849-f27028e1f822?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 2,
-    time: "Stop 1 — Old Delhi’s Spiritual Core",
-    title: "Jama Masjid & Chandni Chowk",
+    time: "Day 2",
+    title: "Half-Day Dubai City Tour | Desert Safari with BBQ",
     description:
-      "Visit Jama Masjid, India’s largest mosque, then enjoy a scenic rickshaw ride through Chandni Chowk. Pass landmarks like Gurudwara Sis Ganj and a hidden Jain Temple nestled within the bustling market.",
+      "Begin with a guided city tour covering Dubai Creek, Gold & Spice Souks, Jumeirah Mosque, Atlantis Palm, and more. In the afternoon, head for Desert Safari with dune bashing, camel rides, henna art, and a BBQ dinner with belly dance and fire show under the stars.",
     image:
-      "https://images.unsplash.com/photo-1705923620684-683a7473b504?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1504278599468-225fceec5793?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 3,
-    time: "Stop 2 — Modern Monuments",
-    title: "Akshardham Temple & Lotus Temple",
+    time: "Day 3",
+    title: "Burj Khalifa Visit | Transfer to Abu Dhabi",
     description:
-      "Experience the beauty and engineering marvel of Akshardham Temple, then visit the peaceful Bahai Lotus Temple—open to all, regardless of faith.",
+      "After breakfast, visit the iconic Burj Khalifa and enjoy breathtaking panoramic views from the 124th floor. Later, drive to Abu Dhabi and check in at your hotel. Spend the evening exploring cafés or relaxing at leisure.",
     image:
-      "https://plus.unsplash.com/premium_photo-1691030925341-71b0a6994815?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d8?w=800&h=500&fit=crop",
     direction: "right",
   },
   {
     id: 4,
-    time: "Stop 3 — Sikh & Hindu Traditions",
-    title: "Gurudwara Bangla Sahib & Birla Mandir",
+    time: "Day 4",
+    title: "Half-Day Abu Dhabi City Tour",
     description:
-      "Visit Gurudwara Bangla Sahib, soak in soul-stirring devotional music, and even taste langar. Then continue to Birla Mandir, known for its vibrant shrines and cultural heritage.",
+      "Visit the magnificent Sheikh Zayed Grand Mosque, admire Emirates Palace from outside, explore Corniche Beach and Heritage Village, and shop for dates and souvenirs at the Date Market before returning to your hotel.",
     image:
-      "https://images.unsplash.com/photo-1649072814953-2ba8a7a8a0d4?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1589802829985-817a888ea438?w=800&h=500&fit=crop",
     direction: "left",
   },
   {
     id: 5,
-    time: "Final Stop — Reflection & Return",
-    title: "Sacred Heart Cathedral",
+    time: "Day 5",
+    title: "Ferrari World & Warner Bros Studio",
     description:
-      "Step into Sacred Heart Cathedral and witness Delhi’s Christian heritage. After a moment of reflection, your driver returns you comfortably to your chosen destination.",
+      "Experience thrill and excitement at Ferrari World, home to the world’s fastest roller coaster, Formula Rossa. Then explore Warner Bros Studio, themed worlds like Gotham City and Cartoon Junction. Overnight stay in Abu Dhabi.",
     image:
-      "https://images.unsplash.com/photo-1687227722559-156d93f23e6c?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=500&fit=crop",
     direction: "right",
+  },
+  {
+    id: 6,
+    time: "Day 6",
+    title: "Departure",
+    description:
+      "After breakfast, check out and transfer to Abu Dhabi International Airport. Depart with unforgettable memories of luxury, culture, and adventure.",
+    image:
+      "https://images.unsplash.com/photo-1536323760109-ca8c07450053?w=800&h=500&fit=crop",
+    direction: "left",
   },
 ];
 
@@ -65,10 +75,12 @@ const Timeline = () => {
           </button>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 leading-snug mb-4">
-           Your temple adventure
+            Your same-day Taj Mahal Experience 
           </h1>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            Step beyond city chaos and discover Delhi’s sacred heart on this spiritual journey. 
+            From sunrise to sunset, explore Agra’s most iconic treasures in
+            comfort and style — with seamless transfers, curated experiences,
+            and local expertise at every step.
           </p>
         </div>
 
@@ -117,11 +129,11 @@ const Timeline = () => {
               </div>
 
               {/* Image */}
-              <div className="w-full md:w-1/2 px-9 md:px-10 mt-8 md:mt-0">
+              <div className="w-full md:w-1/2 px-9 md:px-10 mt-8 md:mt-0 sm:ml-10 lg:ml-0">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="rounded-lg w-full h-48 object-cover shadow-sm"
+                  className="rounded-lg w-full h-48 object-cover  shadow-sm"
                 />
               </div>
             </div>

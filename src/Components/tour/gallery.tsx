@@ -29,13 +29,19 @@ const Gallery = () => {
     subtitle: "04 Nights / 05 Days",
     details:
       "Discover Thailand’s vibrant heart — from golden temples and floating markets to Coral Island’s turquoise calm. A journey that balances peace, flavor, and fun.",
-   
     img:
       "https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=800&q=80",
     location: "Bangkok,",
     route: "/bangkok",
   },
-  
+  {
+    id:5,
+    title: "Dubai & Abu Dhabi with Ferrari World",
+    img: "https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?w=800&q=80",
+    details:"Abu Dhabi",
+    route: "/abu-dhabi"
+  }
+
 ];
 
 
